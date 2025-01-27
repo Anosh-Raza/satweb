@@ -37,7 +37,7 @@ const HomeBanner = () => {
       className="text-2xl sm:text-4xl md:text-5xl lg:text-2xl text-theme-white">
         Turning Ambitions Into Achievements with Smart Digital Marketing
       </h5>
-        
+        <h3>THIS IS TEST</h3>
       <h1 
       ref={textRef}
       className="text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-6xl font-bold text-theme-white my-8">
