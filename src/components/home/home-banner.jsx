@@ -43,7 +43,7 @@ const HomeBanner = () => {
         Struggling to Grow? Let the Best Digital Marketing Agency Help!
       </h1>
       <span className="text-3xl text-theme-white uppercase font-bold my-10">
-        Creativity
+        Creativity | Collaboration | Innovation
       </span>
       <br />
       <br />
