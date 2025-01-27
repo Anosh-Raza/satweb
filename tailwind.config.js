@@ -1,0 +1,31 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'logo-purple': '#5D41CA',
+        'logo-dark-blue': '#0D1F71',
+        'logo-medium-blue-1': '#0D2075',
+        'logo-medium-blue-2': '#0D2074',
+        'theme-white': '#f2f2f2',
+        'light-theme': '#f6fbff',
+      },
+      textShadow: {
+        sm: '0 1px 2px white',
+        DEFAULT: '0 2px 4px white',
+        lg: '0 8px 16px white',
+      },
+      backgroundImage: {
+        'gradient-logo': 'linear-gradient(90deg, #5D41CA 10%, #0d2075d9 50%, #0D2074)',
+        'home-gradient': 'linear-gradient(90deg, #5D41CA 10%, #0d207547 50%, #0D2074)',
+      },
+    },
+  },
+  plugins: [
+    require('tailwindcss-textshadow')
+  ]
+}
+

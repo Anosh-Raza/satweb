@@ -1,0 +1,76 @@
+:root {
+    --logo-purple: #5D41CA;
+    --logo-dark-blue: #0D1F71;
+    --logo-medium-blue-1: #0D2075;
+    --logo-medium-blue-2: #0D2074;
+    --theme-white: #f2f2f2;
+  }
+
+.buttonHover{
+    transition: 500ms;
+    box-shadow: 0 0 10px 4px rgb(255 255 255);
+}
+.buttonHover:hover {
+    background: linear-gradient(90deg, #0D2074 10%, transparent);
+    transition: 500ms ease-in-out;
+}
+
+/* Container for the marquee */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+}
+
+  /* Scrolling container */
+  .marquee {
+    display: flex;
+    animation: marquee 30s linear infinite;
+    justify-content: space-between;
+}
+  
+  /* Styling the logos */
+  .logo {
+    margin-right: 50px;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(1);
+}
+.logo:hover{
+  filter: none;
+}
+  
+  /* Marquee animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logo_carousel::before{
+    content: "";
+    position: absolute;
+    left: -10%;
+    right: 30%;
+    top: -30%;
+    bottom: -30%;
+    background: radial-gradient(ellipse at center, #00b9ff 0, rgba(0, 185, 255, 0) 70%, rgba(0, 185, 255, 0) 100%);
+    opacity: .45;
+    z-index: 1;
+  }
+
+  .logo_carousel::after{
+    content: "";
+    position: absolute;
+
+    left: 30%;
+    top: -50%;
+    bottom: -40%;
+    background: radial-gradient(ellipse at center, #9536e5 0, rgba(149, 54, 229, 0) 74%, rgba(149, 54, 229, 0) 100%);
+    opacity: .45;
+    z-index: 1;
+  }

@@ -1,24 +1,49 @@
-import logo from './logo.svg';
+import Home from './sections/home';
+import Header from './components/header';
+import Footer from './components/footer';
 import './App.css';
+import "./index.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Routes, Route } from 'react-router-dom';
+import About from './pages/about';
+import Services from './pages/services';
+import Portfolio from './pages/portfolio';
+import Packages from './pages/packages';
+import Blogs from './pages/blogs';
+import Contact from './pages/contact'
+import Amazon from './pages/services/amazon'
+import LogoBranding from './pages/services/logoBranding'
+import WebDevs from './pages/services/webdev';
+import SEO from './pages/services/seo';
+import SMM from './pages/services/smm';
+import Content from './pages/services/contentWriting';
+import PPC from './pages/services/ppc';
+import MobileApp from './pages/services/mobileApp';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header/>
+    <Routes>
+      <Route path='/' element={<Home/>} />
+      <Route path='/about-us' element={<About/>} />
+      <Route path='/services' element={<Services/>} />
+      <Route path='/portfolio' element={<Portfolio/>} />
+      <Route path='/packages' element={<Packages/>} />
+      <Route path='/blogs' element={<Blogs/>} />
+      <Route path='/contact' element={<Contact  />} />
+      <Route path="/amazon-services/" element={<Amazon />} />
+      <Route path="/logo-branding-services" element={<LogoBranding />} />
+      <Route path="/web-development-services" element={<WebDevs />} />
+      <Route path="/search-engine-optimization/" element={<SEO />} />
+      <Route path="/social-media-marketing-services/" element={<SMM />} />
+      <Route path="/content-writing-services/" element={<Content />} />
+      <Route path="/pay-per-click/" element={<PPC />} />
+      <Route path="/mobile-app-development-services/" element={<MobileApp />} />
+    </Routes>
+    <Footer/>
+    </>
   );
 }
 
