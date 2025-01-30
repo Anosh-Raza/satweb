@@ -5,6 +5,7 @@ import logo from "../assets/images/logo-white.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isServicesHovered, setIsServicesHovered] = useState(false);
   const [imageAvailable, setImageAvailable] = useState(false);
 
   useEffect(() => {
@@ -17,6 +18,18 @@ function Navbar() {
   // Function to handle link click
   const handleLinkClick = () => {
     setIsOpen(false);
+  };
+
+  // Function to handle Services hover
+  const handleServicesHover = (isHovered) => {
+    if (isHovered) {
+      setIsServicesHovered(true);
+    } else {
+      // Delay closing the mega menu by 300ms
+      setTimeout(() => {
+        setIsServicesHovered(false);
+      }, 300);
+    }
   };
 
   return (
@@ -64,140 +77,159 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li className="py-2 lg:py-0">
-              <Link
-                to="/about-us"
-                className="hover:text-gray-300"
-                onClick={handleLinkClick}
+            <li
+              className="relative group"
+              onMouseEnter={() => handleServicesHover(true)}
+              onMouseLeave={() => handleServicesHover(false)}
+            >
+              {/* Services Mega Menu */}
+              <button className="hover:text-gray-300">Services</button>
+              <div
+                className={`absolute ${
+                  isServicesHovered ? "block" : "hidden"
+                } bg-logo-medium-blue-1 text-white mt-2 p-4 rounded-xl shadow-lg shadow-theme-white z-10 w-[600px] transition-opacity duration-300 ${
+                  isServicesHovered ? "opacity-100" : "opacity-0"
+                }`}
               >
-                About
-              </Link>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <h3 className="font-bold mb-2">Ecommerce Services</h3>
+                    <ul>
+                      <li className="py-2">
+                        <Link
+                          to="/shopify-services"
+                          className="hover:text-gray-300"
+                          onClick={handleLinkClick}
+                        >
+                          Shopify Services
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          to="/etsy-services"
+                          className="hover:text-gray-300"
+                          onClick={handleLinkClick}
+                        >
+                          Etsy
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          to="/ebay-services"
+                          className="hover:text-gray-300"
+                          onClick={handleLinkClick}
+                        >
+                          Ebay
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          to="/amazon-services"
+                          className="hover:text-gray-300"
+                          onClick={handleLinkClick}
+                        >
+                          Amazon
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-bold mb-2">Digital Marketing</h3>
+                    <ul>
+                      <li className="py-2">
+                        <Link
+                          to="/platform-adv"
+                          className="hover:text-gray-300"
+                          onClick={handleLinkClick}
+                        >
+                          Platform Advertising
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          to="/social-media"
+                          className="hover:text-gray-300"
+                          onClick={handleLinkClick}
+                        >
+                          Social Media
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          to="/email-marketing"
+                          className="hover:text-gray-300"
+                          onClick={handleLinkClick}
+                        >
+                          Email Marketing
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-bold mb-2">SEO</h3>
+                    <ul>
+                      <li className="py-2">
+                        <Link
+                          to="/seo"
+                          className="hover:text-gray-300"
+                          onClick={handleLinkClick}
+                        >
+                          SEO Services
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-bold mb-2">Web Development</h3>
+                    <ul>
+                      <li className="py-2">
+                        <Link
+                          to="/wordpress"
+                          className="hover:text-gray-300"
+                          onClick={handleLinkClick}
+                        >
+                          WordPress
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          to="/js-dev"
+                          className="hover:text-gray-300"
+                          onClick={handleLinkClick}
+                        >
+                          JS Dev
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li className="relative group">
-              {/* Services Dropdown */}
-              <button className="hover:text-gray-300">
-                <Link
-                  to="/services"
-                  className="hover:text-gray-300"
-                  onClick={handleLinkClick}
-                >
-                  E-Commerce Services
-                </Link>
-              </button>
-              <ul className="absolute hidden group-hover:block bg-logo-medium-blue-1 text-white mt-2 p-2 rounded-xl shadow-lg shadow-theme-white z-10 w-[250px]">
-                <li className="py-2">
-                  <Link
-                    to="/amazon-services"
-                    className="hover:text-gray-300"
-                    onClick={handleLinkClick}
-                  >
-                    Shopify  Services
-                  </Link>
-                </li>
-                <li className="py-2">
-                  <Link
-                    to="/logo-branding-services"
-                    className="hover:text-gray-300"
-                    onClick={handleLinkClick}
-                  >
-                    Etsy Seller Services
-                  </Link>
-                </li>
-                <li className="py-2">
-                  <Link
-                    to="/web-development-services"
-                    className="hover:text-gray-300"
-                    onClick={handleLinkClick}
-                  >
-                    eBay Seller Services
-                  </Link>
-                </li>
-                <li className="py-2">
-                  <Link
-                    to="/seo-services"
-                    className="hover:text-gray-300"
-                    onClick={handleLinkClick}
-                  >
-                    Amazon Seller Services
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="relative group">
-              {/* Services Dropdown */}
-              <button className="hover:text-gray-300">
-                <Link
-                  to="/services"
-                  className="hover:text-gray-300"
-                  onClick={handleLinkClick}
-                >
-                  Digital Marketing Services 
-                </Link>
-              </button>
-              <ul className="absolute hidden group-hover:block bg-logo-medium-blue-1 text-white mt-2 p-2 rounded-xl shadow-lg shadow-theme-white z-10 w-[250px]">
-                <li className="py-2">
-                  <Link
-                    to="/amazon-services"
-                    className="hover:text-gray-300"
-                    onClick={handleLinkClick}
-                  >
-                    Platform Advertising
-                  </Link>
-                </li>
-                <li className="py-2">
-                  <Link
-                    to="/logo-branding-services"
-                    className="hover:text-gray-300"
-                    onClick={handleLinkClick}
-                  >
-                    Social Media Marketing for E-Commerce
-                  </Link>
-                </li>
-                <li className="py-2">
-                  <Link
-                    to="/web-development-services"
-                    className="hover:text-gray-300"
-                    onClick={handleLinkClick}
-                  >
-                    Email Marketing for E-Commerce
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            {/* <li className="py-2 lg:py-0">
-              <Link
-                to="/portfolio"
-                className="hover:text-gray-300"
-                onClick={handleLinkClick}
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li className="py-2 lg:py-0">
-              <Link
-                to="/packages"
-                className="hover:text-gray-300"
-                onClick={handleLinkClick}
-              >
-                Packages
-              </Link>
-            </li> */}
             <li className="py-2 lg:py-0">
               <Link
                 to="/blogs"
                 className="hover:text-gray-300"
                 onClick={handleLinkClick}
               >
-                Blogs
+                Blog
               </Link>
             </li>
             <li className="py-2 lg:py-0">
               <Link
-                to="/contact"
+                to="/about-us"
                 className="hover:text-gray-300"
                 onClick={handleLinkClick}
               >
-                Contact
+                About Us
+              </Link>
+            </li>
+            <li className="py-2 lg:py-0">
+              <Link
+                to="/contact-us"
+                className="hover:text-gray-300"
+                onClick={handleLinkClick}
+              >
+                Contact Us
               </Link>
             </li>
           </ul>

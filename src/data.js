@@ -50,13 +50,46 @@ export const logos = [
 ];
 
 export const trustComp = {
-  title: "Values",
-  heading: "Building Trust, Delivering Excellence",
-  description: "What defines us are the values that drive our operations",
+  title: "Why Choose SAT AMERICANA?",
+  heading: "Your Partner in Digital Growth and Success",
+  description: "With SAT AMERICANA, your brand doesn’t just compete—it thrives. We combine innovation, strategy, and execution to deliver results that matter.",
   insights: [
-    { id: 1, image:Trust1, title: "Collaboration", description: "At SAT Americana, collaboration is a fundamental value that drives our success as a digital marketing agency"},
-    { id: 2, image:Trust3, title: "Transparency", description: "We believe in maintaining open and honest communication with our clients, ensuring they are informed and involved at every process stage" },
-    { id: 3, image:Trust2, title: "Innovation", description: "Innovation is at the heart of everything we do. As a digital agency in the USA,  we continuously strive to push the boundaries that keep our clients ahead of the curve" },
+    { 
+      id: 1, 
+      image:Trust1, 
+      title: "Tailored Strategies", 
+      description: "We don’t believe in one-size-fits-all solutions. Our team crafts personalized strategies that align with your unique goals, ensuring maximum impact and delivering results that are specific to your brand."
+    },
+    { 
+      id: 2, 
+      image:Trust3, 
+      title: "Multiple Platforms", 
+      description: "Whether it’s Shopify, Amazon, eBay, or other digital platforms, we have the expertise to optimize your presence and enhance your sales, providing seamless and effective strategies across the board." 
+    },
+    { 
+      id: 3, 
+      image:Trust2, 
+      title: "Expert Marketing", 
+      description: "As a comprehensive digital marketing company, we offer everything from SEO and PPC to social media and content creation. We ensure all aspects of your online presence work in perfect harmony." 
+    },
+    { 
+      id: 4, 
+      image:Trust2, 
+      title: "Data-Driven Decision", 
+      description: "We base every campaign on solid data, continuously analyzing performance to tweak and optimize strategies. This ensures that we are always on track to meet your business objectives effectively." 
+    },
+    { 
+      id: 5, 
+      image:Trust2, 
+      title: "Proven B2B Expertise", 
+      description: "As a leading B2B digital marketing agency, we specialize in understanding the complexities of business-to-business marketing. Our strategies are designed to help you connect with other businesses and achieve long-term growth" 
+    },
+    { 
+      id: 5, 
+      image:Trust2, 
+      title: "Cutting-Edge Technology", 
+      description: "We leverage the latest tools and technologies to create campaigns that are both innovative and effective. As a top digital marketing advertising agency, we bring you strategies that lead the way in the industry." 
+    },
   ]
 }
 
@@ -1325,4 +1358,270 @@ export const services = [
     content: "We specialize in JavaScript development, creating dynamic, interactive websites and applications that provide seamless user experiences. With cutting-edge technologies, we ensure your platform performs flawlessly and keeps users engaged.",
     url: "/services/e-commerce-solutions",
   },
+];
+
+export const tabsData = [
+  {
+    id: 1,
+    title: "ABC Corp",
+    content: "ABC Corp wanted to expand their digital presence and increase user engagement on their ",
+    subcontent: "Shortly after launch, we achieved",
+    ctas: [
+      {
+        heading: "28%",
+        description: "increase in conversion rates",
+        link: "/services/frontend-development",
+      },
+      {
+        heading: "20%",
+        description: "boost in online sales",
+        link: "/services/backend-development",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "XYZ Enterprises",
+    content: "needed a fresh approach to digital marketing and social media engagement to enhance their brand presence.",
+    subcontent: "Shortly after launch, we achieved",
+    ctas: [
+      {
+        heading: "35%",
+        description: "increase in social media interactions",
+        link: "/services/user-research",
+      },
+      {
+        heading: "22%",
+        description: "growth in lead generation",
+        link: "/services/prototyping",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "MXN Innovations",
+    content: "aimed to optimize their website and enhance SEO performance for greater visibility in competitive markets.",
+    subcontent: "Shortly after launch, we achieved",
+    ctas: [
+      {
+        heading: "40%",
+        description: "reduction in page load times",
+        link: "/services/seo-optimization",
+      },
+      {
+        heading: "18%",
+        description: "growth in organic search traffic",
+        link: "/services/social-media-ads",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "abcTech Innovations",
+    content: "was looking to revamp their website and enhance their user experience to increase customer retention.",
+    subcontent: "Shortly after launch, we achieved",
+    ctas: [
+      {
+        heading: "33%",
+        description: "increase in returning visitors",
+        link: "/services/seo-optimization",
+      },
+      {
+        heading: "21%",
+        description: "boost in time spent on site",
+        link: "/services/social-media-ads",
+      },
+    ],
+  },
+];
+
+export const testimonialNew = [
+  {
+    id: 1,
+    name: "John Doe",
+    corp: "ABC Corp – eCommerce Platform Development",
+    position: "CEO",
+    testimonial: "Working with SAT AMERICANA was a game-changer for our business. They completely transformed our website, increasing our conversion rates and online sales. Their team’s dedication and expertise helped us achieve measurable results in a short amount of time",
+    rating: 5,
+    reviews: 20
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    corp: "XYZ Enterprises – Digital Marketing Agency",
+    position: "Marketing Director",
+    testimonial: "SAT AMERICANA's innovative approach to social media marketing has been fantastic. Since working with them, we've seen a noticeable increase in our engagement and lead generation. Their team truly understands the digital space and knows how to deliver results.",
+    rating: 4.5,
+    reviews: 35
+  },
+  {
+    id: 3,
+    name: "David Lee",
+    corp: "MXN Innovations – Technology Solutions Provider",
+    position: "CTO",
+    testimonial: "The team at SAT AMERICANA was exceptional in optimizing our website and improving our SEO. Their efforts led to increased organic traffic and better performance across the board. We're extremely happy with the results and look forward to continued success together.",
+    rating: 4.5,
+    reviews: 35
+  },
+  {
+    id: 4,
+    name: "Laura Green",
+    corp: "Digital Solutions Inc. – Web Development and Design",
+    position: "Head of Web Design",
+    testimonial: "SAT AMERICANA's team worked seamlessly with ours to enhance our website’s mobile user experience. The traffic boost and reduced bounce rates have been incredible. We highly recommend their expertise in web optimization",
+    rating: 4.5,
+    reviews: 35
+  },
+  {
+    id: 5,
+    name: "Mark Johnson",
+    corp: "GreenTech Innovations – Sustainable Technology Provider",
+    position: "Marketing Manager",
+    testimonial: "SAT AMERICANA helped us revamp our website and improve user experience, resulting in more returning visitors and increased customer engagement. Their team’s attention to detail and dedication to success made a significant difference in our digital strategy",
+    rating: 4.5,
+    reviews: 35
+  },
+  {
+    id: 6,
+    name: "Emily Clark",
+    corp: "Creative Labs – Digital Product Design",
+    position: "Chief Strategy Officer",
+    testimonial: "Our brand visibility has skyrocketed thanks to SAT AMERICANA's custom marketing solutions. Their team is skilled, knowledgeable, and highly responsive. The SEO strategies they implemented helped us reach new customers and grow our online presence",
+    rating: 4.5,
+    reviews: 35
+  },
+  {
+    id: 7,
+    name: "Michael Harris",
+    corp: "TechFlow Solutions – IT and Software Solutions",
+    position: "VP of Sales",
+    testimonial: "SAT AMERICANA has been instrumental in driving our digital marketing efforts. Their expertise in SEO and paid ads has significantly increased our online traffic and generated high-quality leads. Their strategies are proven to work, and we continue to see great results",
+    rating: 4.5,
+    reviews: 35
+  },
+  {
+    id: 8,
+    name: "Sophie Turner",
+    corp: "MarketReach Agency – Digital Strategy and Branding",
+    position: "Founder",
+    testimonial: "The team at SAT AMERICANA provided exceptional services for our rebranding project. Their strategic digital marketing approach led to a higher engagement rate and improved visibility. We couldn't be more pleased with the outcome of our collaboration.",
+    rating: 4.5,
+    reviews: 35
+  }
+];
+
+export const timelineData = [
+  {
+    id: 1,
+    icon: "📅", // You can replace this with an actual icon component
+    heading: "planning & information architecture",
+    year: "2021",
+  },
+  {
+    id: 2,
+    icon: "🎨",
+    heading: "Step 1: Initial Consultation",
+    year: "We start by understanding your goals and challenges.",
+  },
+  {
+    id: 3,
+    icon: "🧪",
+    heading: "testing & quality assurance",
+    year: "2023",
+  },
+  {
+    id: 4,
+    icon: "🚀",
+    heading: "launch & post-launch support",
+    year: "2024",
+  },
+  {
+    id: 5,
+    icon: "🚀",
+    heading: "launch & post-launch support",
+    year: "2024",
+  },
+  {
+    id: 6,
+    icon: "🚀",
+    heading: "launch & post-launch support",
+    year: "2024",
+  },
+  {
+    id: 7,
+    icon: "🚀",
+    heading: "launch & post-launch support",
+    year: "2024",
+  },
+  {
+    id: 8,
+    icon: "🚀",
+    heading: "launch & post-launch support",
+    year: "2024",
+  },
+];
+
+// data.js
+export const faqData = [
+  {
+    id: 1,
+    title: "Q: Why should I choose SAT Americana for my e-commerce needs?",
+    content: "At SAT Americana, we specialize in platform-specific solutions to help your business grow. Whether you need Shopify store customization, Etsy shop optimization, or Amazon PPC management, we tailor strategies to maximize engagement and conversions for your online store",
+  },
+  {
+    id: 2,
+    title: "Q:  What services do you provide for Shopify?",
+    content: "Our Shopify services include store setup, theme customization, SEO, marketing strategies, and app integrations. We also assist with Shopify store migration to ensure seamless transitions and enhanced store performance.",
+  },
+  {
+    id: 3,
+    title: "Q: How can you help me with Etsy?",
+    content: "Our Etsy seller services include shop creation, listing SEO (titles, tags, descriptions), ad campaign management, and product branding. We help sellers attract the right audience and grow their business on Etsy.",
+  },
+  {
+    id: 4,
+    title: "Q: What does your eBay service include?",
+    content: "Our eBay seller services cover everything from store setup and listing optimization to promotions and performance analytics. We help scale your eBay store with targeted strategies.",
+  },
+  {
+    id: 5,
+    title: "Q: Can you manage my Amazon account?",
+    content: "Yes! We provide complete Amazon seller services, including account setup, product listing optimization, Amazon PPC campaign management, inventory management, and FBA support to boost your brand visibility and sales.",
+  },
+  {
+    id: 6,
+    title: "Q: How can SAT Americana help with e-commerce marketing?",
+    content: "We combine digital marketing services with e-commerce expertise to drive traffic and conversions. Our solutions include platform advertising, email campaigns, and social media marketing tailored to Shopify, Amazon, Etsy, and eBay.",
+  },
+  {
+    id: 7,
+    title: "Q: What types of advertising do you provide for e-commerce platforms?",
+    content: "Our platform advertising services include Amazon Ads, Etsy Ads, eBay Ads, and campaigns for Shopify on Google and Facebook. We craft targeted campaigns to ensure maximum ROI",
+  },
+  {
+    id: 8,
+    title: "Q: What is your approach to email marketing?",
+    content: "Our email marketing for e-commerce services include abandoned cart recovery campaigns and targeted email campaigns to increase customer retention and boost sales.",
+  },
+  {
+    id: 9,
+    title: "Q: Why is SEO important for my e-commerce business?",
+    content: "SEO ensures your online store ranks higher in search results, making it easier for customers to find your products. At SAT Americana, we offer SEO services for e-commerce platforms, optimizing keywords, meta tags, and content to improve visibility",
+  },
+  {
+    id: 10,
+    title: "Q: What platforms do you specialize in for SEO?",
+    content: "We provide tailored SEO services for platforms like Shopify, Amazon, Etsy, and eBay, ensuring each platform’s unique algorithms are met for maximum performance.",
+  },
+  {
+    id: 11,
+    title: "Q: What web development services does SAT Americana provide?",
+    content: "We specialize in e-commerce platform development, including Shopify, WordPress, and JavaScript (JS). Our team delivers scalable, user-friendly solutions tailored to your business needs.",
+  },
+  {
+    id: 12,
+    title: "Q: Do you provide WordPress development for e-commerce?",
+    content: "Absolutely! We build high-performance WordPress websites with seamless integrations for e-commerce, offering robust features to drive traffic and engagement.",
+  },
+  
 ];

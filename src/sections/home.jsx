@@ -13,6 +13,9 @@ import Cards from '../components/home/cardsSlider.jsx';
 import Trust from '../components/home/trust.jsx';
 import { projectsData, contactInfo, socialMediaLinks } from '../data.js';
 import Services from '../components/home/services.jsx';
+import TabsData from '../components/home/verticalTabs.jsx';
+import Timeline from '../components/home/timeline.jsx';
+import FAQ from '../components/home/faq.jsx';
 
 
 const Home = () => {
@@ -30,9 +33,13 @@ const Home = () => {
       <Tabs categories={categories} projects={projects} />
       <Services/>
       <Trust/>
+      <TabsData/>
       {/* <LogoCarousel/> */}
       {/* <CaseStudy/> */}
       <Testimonial/>
+      <FAQ/>
+      <Timeline/>
+      
        <CTAForm contactInfo={contactInfo} socialMediaLinks={socialMediaLinks} />  
     </>
   );

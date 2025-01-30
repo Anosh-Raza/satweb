@@ -30,7 +30,7 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4">Services</h4>
           <ul className="space-y-2 flex flex-col">
-          <Link to="/" className="hover:text-gray-300">Amazon Store Services</Link>
+          <Link to="/" className="hover:text-gray-300">Amazon Selling Services</Link>
           <Link to="/" className="hover:text-gray-300">Web Development</Link>
           <Link to="/" className="hover:text-gray-300">Digital Marketing</Link>
           <Link to="/" className="hover:text-gray-300">Mobile App Development</Link>
@@ -44,7 +44,6 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
           <p>Washington DC, USA</p>
           <p>+1 (800) 886-9095</p>
-          <p>+1 (571) 361-1158</p>
           <p>info@satamericana.com</p>
           <div className="flex space-x-4 mt-4">
             <ul className=" space-x-5 ">
