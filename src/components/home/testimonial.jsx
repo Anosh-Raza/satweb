@@ -41,17 +41,8 @@ const VerticalTestimonialSlider = () => {
   return (
     <div className="bg-[#0A0F24]">
       <div className="flex flex-col md:flex-row text-white py-12 rounded-lg shadow-lg container mx-auto">
-        {/* Vertical Selector */}
+        {/* Vertical Selector (Left) */}
         <div className="md:w-1/3 flex flex-col items-center space-y-4 relative">
-          {testimonialNew.length > 5 && (
-            <button
-              className="absolute -top-8 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg z-10"
-              onClick={handleSliderPrev}
-              disabled={sliderOffset === 0}
-            >
-              ▲
-            </button>
-          )}
           <div className="overflow-hidden h-[300px] w-full">
             <div
               className="transition-transform duration-300"
@@ -74,18 +65,29 @@ const VerticalTestimonialSlider = () => {
               ))}
             </div>
           </div>
-          {testimonialNew.length > 5 && (
+        </div>
+
+        {/* Slider Buttons (Center) */}
+        {testimonialNew.length > 5 && (
+          <div className="flex flex-col justify-center items-center space-y-4 mx-4">
             <button
-              className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg z-10"
+              className="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg"
+              onClick={handleSliderPrev}
+              disabled={sliderOffset === 0}
+            >
+              ▲
+            </button>
+            <button
+              className="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg"
               onClick={handleSliderNext}
               disabled={sliderOffset === testimonialNew.length - 5}
             >
               ▼
             </button>
-          )}
-        </div>
+          </div>
+        )}
 
-        {/* Testimonial Content */}
+        {/* Testimonial Content (Right) */}
         <div className="md:w-2/3 flex flex-col justify-center p-6 min-h-[200px]">
           <h3 className="text-xl font-semibold text-blue-400 uppercase">
             What Our Clients Love About Our Work
@@ -104,9 +106,7 @@ const VerticalTestimonialSlider = () => {
             <p>
               {testimonialNew[activeIndex]?.reviews || 0} Reviews on DesignRush
             </p>
-            <a href="#" className="text-blue-400 hover:underline">
-              View Client Reviews
-            </a>
+            
           </div>
 
           {/* Navigation Buttons */}

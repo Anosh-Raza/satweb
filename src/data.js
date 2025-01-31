@@ -338,20 +338,91 @@ export const socialMediaLinks = [
 
 
 export const aboutData = {
-  heading: "About Us",
-  subheading: "Who We Are",
+  subheading: "Stay Ahead With the Latest Digital Trends",
+  heading: "Your Trusted Team for E-Commerce Excellence",
+  ctaBtnAbt: "Speak With Our Experts Today – Let’s discuss how we can elevate your business.", // ✅ Button text
+  abtcta: [
+    {
+      abtcta1Heading: "Expert-Led",
+      abtcta1Description: "Strategies",
+    },
+    {
+      abtcta1Heading: "A Team of 50+",
+      abtcta1Description: "Professionals",
+    },
+    {
+      abtcta1Heading: "Results-Driven",
+      abtcta1Description: "Approach",
+    }
+  ],
   content: [
     "SAT Americana is a full-service digital solution agency focusing on branding, marketing, web design, and development with clients ranging from start-ups to enterprises.",
     "Our mission is to provide innovative solutions that empower businesses to reach their full potential.",
     "With years of experience, our team delivers top-notch services tailored to meet your specific needs."
   ],
-  teamMembers: [
-    { name: "John Doe", role: "CEO", image: "/assets/team/john.jpg" },
-    { name: "Jane Smith", role: "CTO", image: "/assets/team/jane.jpg" },
-    { name: "Mark Johnson", role: "Lead Developer", image: "/assets/team/mark.jpg" },
-  ],
-  contactCTA: "Ready to work with us? Let's create something amazing together!",
 };
+
+export const teamMembers = [
+  {
+    name: "John Doe",
+    designation: "Lead Designer",
+    image: "https://via.placeholder.com/400",
+  },
+  {
+    name: "Jane Smith",
+    designation: "Project Manager",
+    image: "https://via.placeholder.com/400",
+  },
+  {
+    name: "David Brown",
+    designation: "Senior Developer",
+    image: "https://via.placeholder.com/400",
+  },
+];
+
+// data.js
+export const blogData = [
+  {
+    id: 1,
+    title: "The Power Of Emotion-Driven Brand Strategies",
+    description:
+      "Discover how emotional branding can transform your business and connect with your audience on a deeper level.",
+    image: "https://via.placeholder.com/400x300", // Replace with actual image URL
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Latest NYC Web Design Trends",
+    description:
+      "Explore the top web design trends for NYC brands in 2025 and how they can shape your digital strategy.",
+    image: "https://via.placeholder.com/400x300", // Replace with actual image URL
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Top 40 Branding Statistics For 2025",
+    description:
+      "Learn about the key branding statistics that will shape your strategy in 2025 and beyond.",
+    image: "https://via.placeholder.com/400x300", // Replace with actual image URL
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "Emotion-Driven Marketing Strategies",
+    description:
+      "Learn how to create marketing campaigns that resonate emotionally with your audience.",
+    image: "https://via.placeholder.com/400x300", // Replace with actual image URL
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "Future of Web Development",
+    description:
+      "Discover the latest trends in web development and how they will impact your business.",
+    image: "https://via.placeholder.com/400x300", // Replace with actual image URL
+    link: "#",
+  },
+];
 
 // data.js
 export const servicesData = [

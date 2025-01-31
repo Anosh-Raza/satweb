@@ -4,6 +4,7 @@ import { services } from "../../data";
 const ServicesLayout = () => {
   return (
     <>
+    <section id="servicesSec" className="bg-logo-medium-blue-1 py-12">
     <div className="container mx-auto flex flex-col lg:flex-row p-6 gap-6 my-6">
       {/* Sticky First Column */}
       
@@ -19,24 +20,25 @@ const ServicesLayout = () => {
       </div>
 
       {/* Scrollable Second Column */}
-      <div className="lg:w-2/3 overflow-y-auto space-y-6 h-[calc(100vh-48px)]">
+      <div className="lg:w-2/3 overflow-y-auto space-y-6 h-[calc(100vh-48px)] servicesSec">
         {services.map((service) => (
           <div
             key={service.id}
-            className="bg-white p-6 rounded-xl shadow-md flex flex-col gap-4"
+            className=" bg-gradient-to-t from-logo-purple to-logo-dark-blue p-6 rounded-xl shadow-md flex flex-col gap-4"
           >
-            <h2 className="text-xl font-bold">{service.heading}</h2>
-            <p>{service.content}</p>
-            <a
+            <h2 className="text-xl font-bold text-theme-white">{service.heading}</h2>
+            <p className="text-theme-white">{service.content}</p>
+            {/* <a
               href={service.url}
               className="mt-auto bg-logo-medium-blue-2 text-theme-white px-4 py-2 rounded-md hover:bg-blue-600 transition self-start"
             >
               {service.buttonText ? "Learn More" : "Contact Us"}
-            </a>
+            </a> */}
           </div>
         ))}
       </div>
     </div>
+    </section>
     </>
   );
 };

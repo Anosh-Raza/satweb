@@ -17,12 +17,12 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4">Main Menu</h4>
           <ul className="space-y-2 flex flex-col">
-          <Link to="/" className="hover:text-gray-300">Home</Link>
-          <Link to="/" className="hover:text-gray-300">About Us</Link>
-          <Link to="/" className="hover:text-gray-300">Services</Link>
-          <Link to="/" className="hover:text-gray-300">Portfolio</Link>
-          <Link to="/" className="hover:text-gray-300">Blogs</Link>
-          <Link to="/" className="hover:text-gray-300">Contact</Link>
+            <Link to="/" className="hover:text-gray-300">Home</Link>
+            <Link to="/" className="hover:text-gray-300">Blogs</Link>
+            <Link to="/" className="hover:text-gray-300">Contact</Link>
+            <Link to="/" className="hover:text-gray-300">About Us</Link>
+            <Link to="/" className="hover:text-gray-300">Services</Link>
+            <Link to="/" className="hover:text-gray-300">Portfolio</Link>
           </ul>
         </div>
 

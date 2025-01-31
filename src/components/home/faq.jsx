@@ -15,41 +15,44 @@ const CollapsibleFAQ = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-gray-800 mb-8">Frequently Asked Questions (FAQs) for SAT Americana</h1>
+    <section className="bg-logo-purple">
+      <div className="max-w-4xl mx-auto px-4 py-8 container">
+        <h1 className="text-3xl font-bold mb-8 text-white">
+          Frequently Asked Questions (FAQs) for SAT Americana
+        </h1>
 
-      <div className="space-y-4">
-        {faqData.map((section) => (
-          <div
-            key={section.id}
-            className="bg-white rounded-lg shadow-sm transition-all"
-          >
-            {/* Clickable Header */}
-            <button
-              onClick={() => toggleSection(section.id)}
-              className="w-full p-6 text-left flex justify-between items-center bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors"
-              aria-expanded={openSections[section.id]}
+        <div className="space-y-4">
+          {faqData.map((section) => (
+            <div
+              key={section.id}
+              className="bg-white rounded-lg shadow-sm transition-all"
             >
-              <h2 className="text-xl font-semibold text-blue-600">
-                {section.title}
-              </h2>
-              <span
-                className={`transform transition-transform duration-300 ${
-                  openSections[section.id] ? "rotate-180" : ""
+              {/* Clickable Header */}
+              <button
+                onClick={() => toggleSection(section.id)}
+                className="w-full p-6 text-left flex justify-between items-center bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors"
+                aria-expanded={openSections[section.id]}
+              >
+                <h2 className="text-xl font-semibold text-blue-600">
+                  {section.title}
+                </h2>
+                <span
+                  className={`transform transition-transform duration-300 ${
+                    openSections[section.id] ? "rotate-180" : ""
+                  }`}
+                >
+                  ▼
+                </span>
+              </button>
+
+              {/* Collapsible Content */}
+              <div
+                className={`overflow-hidden transition-all duration-300 m-3 ${
+                  openSections[section.id] ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                ▼
-              </span>
-            </button>
-
-            {/* Collapsible Content */}
-            <div
-              className={`overflow-hidden transition-all duration-300 m-3 ${
-                openSections[section.id] ? "max-h-[1000px]" : "max-h-0"
-              }`}
-            >
                 {section.content}
-              {/* {section.items.length > 0 && (
+                {/* {section.items.length > 0 && (
                 <div className="p-6 space-y-4">
                   {section.items.map((item, index) => (
                     <div
@@ -66,11 +69,12 @@ const CollapsibleFAQ = () => {
                   ))}
                 </div>
               )} */}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

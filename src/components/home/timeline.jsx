@@ -91,8 +91,9 @@ const HorizontalTimeline = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-center mb-8">
+    <section className="bg-gradient-to-t from-logo-purple to-logo-dark-blue">
+        <div className="container mx-auto px-4 py-12">
+      <h1 className="text-3xl font-bold text-center mb-8 text-theme-white">
         Website Design Process
       </h1>
 
@@ -113,7 +114,7 @@ const HorizontalTimeline = () => {
             id={`node-${item.id}`}
             className={`inline-flex flex-col items-center text-center p-4 rounded-lg transition-all duration-300 ${
               index === activeIndex
-                ? "bg-blue-500 text-white scale-110 shadow-lg"
+                ? "bg-logo-dark-blue text-white scale-110 shadow-lg"
                 : "bg-gray-100 text-gray-700"
             }`}
             style={{
@@ -131,6 +132,7 @@ const HorizontalTimeline = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 
