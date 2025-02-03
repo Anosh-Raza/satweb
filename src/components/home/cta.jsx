@@ -41,18 +41,18 @@ const CTAForm = ({ contactInfo, socialMediaLinks }) => {
 
           {/* Social Media Links */}
           <div className="flex gap-4 mt-4">
-            {socialMediaLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-gray-300"
-              >
-                {link.icon}
-              </a>
-            ))}
-          </div>
+  {socialMediaLinks.map((link, index) => (
+    <a
+      key={index}
+      href={link.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white hover:text-gray-300"
+    >
+      {link.icon}
+    </a>
+  ))}
+</div>
         </div>
 
         {/* Right Section - Form */}

@@ -91,16 +91,16 @@ const HorizontalTimeline = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-t from-logo-purple to-logo-dark-blue">
+    <section className="bg-theme-white">
         <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-center mb-8 text-theme-white">
+      <h1 className="text-3xl font-bold text-center mb-8 text-logo-purple">
         Website Design Process
       </h1>
 
       {/* Horizontal Timeline Container */}
       <div
         ref={timelineRef}
-        className="overflow-x-auto scroll-smooth whitespace-nowrap flex items-center py-4 space-x-8"
+        className="overflow-x-auto scroll-smooth flex items-center py-4 space-x-8"
         style={{
           scrollSnapType: "x mandatory",
           scrollbarWidth: "none", // Firefox
@@ -115,7 +115,7 @@ const HorizontalTimeline = () => {
             className={`inline-flex flex-col items-center text-center p-4 rounded-lg transition-all duration-300 ${
               index === activeIndex
                 ? "bg-logo-dark-blue text-white scale-110 shadow-lg"
-                : "bg-gray-100 text-gray-700"
+                : "bg-logo-purple text-theme-white"
             }`}
             style={{
               minWidth: "200px",

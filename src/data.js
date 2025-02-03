@@ -1,3 +1,5 @@
+import { FaFacebook, FaYelp, FaInstagram, FaLinkedin } from 'react-icons/fa';
+
 import AG from './assets/images/clients/AG.webp';
 import Bubble from './assets/images/clients/Bubble-BUB.webp';
 import Redbia from './assets/images/clients/RedBia.webp';
@@ -324,15 +326,16 @@ export const contactInfo = {
   subheading: "Get In Touch",
   mainHeading: "Contact Us Today",
   catchyText: "We are here to help you grow your business.",
-  locations: ["123 Main Street, New York, NY", "456 Elm Street, Los Angeles, CA"],
-  phones: ["+1 800 123 4567", "+1 800 987 6543"],
-  emails: ["info@example.com", "support@example.com"],
+  locations: ["Washington DC, USA"],
+  phones: ["+1 (800) 886-9095"],
+  emails: ["info@satamericana.com"],
 };
 
 export const socialMediaLinks = [
-  { url: "https://facebook.com", icon: "🌐 Facebook" },
-  { url: "https://twitter.com", icon: "🌐 Twitter" },
-  { url: "https://linkedin.com", icon: "🌐 LinkedIn" },
+  { url: "https://www.facebook.com/Satamericana/", icon: <FaFacebook /> },
+  { url: "https://www.instagram.com/satamericana?igsh=MXV4aW0xMmhya2R2MA%3D%3D&utm_source=qr", icon: <FaInstagram /> },
+  { url: "https://www.yelp.com/biz/sat-americana-washington", icon: <FaYelp /> },
+  { url: "https://www.linkedin.com/company/satamericana/", icon: <FaLinkedin /> },
 ];
 
 
@@ -380,7 +383,15 @@ export const teamMembers = [
   },
 ];
 
-// data.js
+export const aboutFeature = [
+  {
+    subheading: "Got Talent?",
+    content1: "Join Our Team",
+    content2: "Join Our Team",
+    mainHeading: "We're Hiring!",
+  }
+]
+
 export const blogData = [
   {
     id: 1,
@@ -1592,7 +1603,7 @@ export const timelineData = [
     id: 2,
     icon: "🎨",
     heading: "Step 1: Initial Consultation",
-    year: "We start by understanding your goals and challenges.",
+    year: "2022",
   },
   {
     id: 3,

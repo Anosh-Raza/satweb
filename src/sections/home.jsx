@@ -9,7 +9,7 @@ import Tabs from '../components/home/tabs';
 import Testimonial from '../components/home/testimonial.jsx';
 import CTAForm from '../components/home/cta.jsx';
 import Amazon from '../components/home/amazon.jsx';
-import Cards from '../components/home/cardsSlider.jsx';
+// import Cards from '../components/home/cardsSlider.jsx';
 import Trust from '../components/home/trust.jsx';
 import { projectsData, contactInfo, socialMediaLinks } from '../data.js';
 import Services from '../components/home/services.jsx';
@@ -28,7 +28,7 @@ const Home = () => {
       {/* <LogoMarquee/> */}
       <About/>
       <Amazon/>
-      <Cards/>
+      {/* <Cards/> */}
       <Feature/>
       <Tabs categories={categories} projects={projects} />
       <Services/>
@@ -36,8 +36,8 @@ const Home = () => {
       <TabsData/>
       {/* <LogoCarousel/> */}
       {/* <CaseStudy/> */}
-      <Testimonial/>
       <FAQ/>
+      <Testimonial/>
       <Timeline/>
       
        <CTAForm contactInfo={contactInfo} socialMediaLinks={socialMediaLinks} />  

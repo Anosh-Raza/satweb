@@ -14,36 +14,31 @@ const VerticalTestimonialSlider = () => {
     );
   }
 
-  // Navigation handlers for testimonial content
-  const handlePrev = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? testimonialNew.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === testimonialNew.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
   // Slider navigation handlers
   const handleSliderPrev = () => {
     setSliderOffset((prevOffset) => Math.max(prevOffset - 1, 0));
   };
 
   const handleSliderNext = () => {
-    // Calculate the maximum possible offset
     const maxOffset = testimonialNew.length - 5;
     setSliderOffset((prevOffset) => Math.min(prevOffset + 1, maxOffset));
   };
 
+  // Sync the left side with the right side (scroll to active item)
+  const handleItemClick = (index) => {
+    setActiveIndex(index);
+
+    // Calculate the offset needed to make the clicked item visible
+    const offset = Math.floor(index / 5) * 5;
+    setSliderOffset(offset);
+  };
+
   return (
-    <div className="bg-[#0A0F24]">
-      <div className="flex flex-col md:flex-row text-white py-12 rounded-lg shadow-lg container mx-auto">
+    <div className="bg-[#0A0F24] ">
+      <div className="flex flex-col md:flex-row text-white py-12 rounded-lg shadow-lg container mx-auto p-6 md:px-0 h-1/5">
         {/* Vertical Selector (Left) */}
         <div className="md:w-1/3 flex flex-col items-center space-y-4 relative">
-          <div className="overflow-hidden h-[300px] w-full">
+          <div className="overflow-y-auto h-[300px] w-full testimonial">
             <div
               className="transition-transform duration-300"
               style={{ transform: `translateY(-${sliderOffset * 80}px)` }}
@@ -51,12 +46,12 @@ const VerticalTestimonialSlider = () => {
               {testimonialNew.map((testimonial, index) => (
                 <button
                   key={testimonial.id}
-                  className={`w-full p-3 text-left rounded-lg transition ${
+                  className={`w-full p-3 text-left rounded-lg transition my-2 ${
                     index === activeIndex
                       ? "bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold"
                       : "bg-gray-700 text-gray-300 hover:bg-gray-600"
                   }`}
-                  onClick={() => setActiveIndex(index)}
+                  onClick={() => handleItemClick(index)}
                 >
                   <p className="text-lg uppercase">{testimonial.name}</p>
                   <p className="text-sm italic font-bold">"{testimonial.corp}"</p>
@@ -71,14 +66,14 @@ const VerticalTestimonialSlider = () => {
         {testimonialNew.length > 5 && (
           <div className="flex flex-col justify-center items-center space-y-4 mx-4">
             <button
-              className="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg"
+              className="px-4 py-2 hover:bg-gray-600 rounded-lg"
               onClick={handleSliderPrev}
               disabled={sliderOffset === 0}
             >
               ▲
             </button>
             <button
-              className="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg"
+              className="px-4 py-2 hover:bg-gray-600 rounded-lg"
               onClick={handleSliderNext}
               disabled={sliderOffset === testimonialNew.length - 5}
             >
@@ -93,7 +88,7 @@ const VerticalTestimonialSlider = () => {
             What Our Clients Love About Our Work
           </h3>
 
-          <p className="text-white text-lg italic my-4 visible opacity-100">
+          <p className="text-white text-3xl italic my-4 visible opacity-100">
             {testimonialNew[activeIndex]?.testimonial ||
               "No testimonial available"}
           </p>
@@ -106,23 +101,6 @@ const VerticalTestimonialSlider = () => {
             <p>
               {testimonialNew[activeIndex]?.reviews || 0} Reviews on DesignRush
             </p>
-            
-          </div>
-
-          {/* Navigation Buttons */}
-          <div className="flex justify-between mt-6">
-            <button
-              className="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg"
-              onClick={handlePrev}
-            >
-              ▲
-            </button>
-            <button
-              className="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg"
-              onClick={handleNext}
-            >
-              ▼
-            </button>
           </div>
         </div>
       </div>

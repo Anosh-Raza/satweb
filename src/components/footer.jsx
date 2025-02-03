@@ -18,11 +18,10 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-4">Main Menu</h4>
           <ul className="space-y-2 flex flex-col">
             <Link to="/" className="hover:text-gray-300">Home</Link>
-            <Link to="/" className="hover:text-gray-300">Blogs</Link>
-            <Link to="/" className="hover:text-gray-300">Contact</Link>
-            <Link to="/" className="hover:text-gray-300">About Us</Link>
             <Link to="/" className="hover:text-gray-300">Services</Link>
-            <Link to="/" className="hover:text-gray-300">Portfolio</Link>
+            <Link to="/" className="hover:text-gray-300">Blog</Link>
+            <Link to="/" className="hover:text-gray-300">About Us</Link>
+            <Link to="/" className="hover:text-gray-300">Contact Us</Link>
           </ul>
         </div>
 
@@ -30,12 +29,10 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4">Services</h4>
           <ul className="space-y-2 flex flex-col">
-          <Link to="/" className="hover:text-gray-300">Amazon Selling Services</Link>
-          <Link to="/" className="hover:text-gray-300">Web Development</Link>
+          <Link to="/" className="hover:text-gray-300">Ecommerce</Link>
+          <Link to="/" className="hover:text-gray-300">SEO</Link>
           <Link to="/" className="hover:text-gray-300">Digital Marketing</Link>
-          <Link to="/" className="hover:text-gray-300">Mobile App Development</Link>
-          <Link to="/" className="hover:text-gray-300">Content Writing</Link>
-          <Link to="/" className="hover:text-gray-300">Logo & Branding</Link>
+          <Link to="/" className="hover:text-gray-300">Web Development</Link>
           </ul>
         </div>
 
