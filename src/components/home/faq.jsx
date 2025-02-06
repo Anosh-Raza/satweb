@@ -33,7 +33,7 @@ const CollapsibleFAQ = () => {
                 className="w-full p-6 text-left flex justify-between items-center bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors"
                 aria-expanded={openSections[section.id]}
               >
-                <h2 className="text-xl font-semibold text-blue-600">
+                <h2 className="sm:text-xl text-base font-semibold text-blue-600">
                   {section.title}
                 </h2>
                 <span
