@@ -20,9 +20,9 @@ function Navbar() {
     setIsServicesOpen(false);
   };
 
-  const handleServicesToggle = () => {
-    setIsServicesOpen((prev) => !prev);
-  };
+  // const handleServicesToggle = () => {
+  //   setIsServicesOpen((prev) => !prev);
+  // };
 
   return (
     <nav className="text-white bg-gradient-logo border-b border-opacity-20 border-white relative z-50">
