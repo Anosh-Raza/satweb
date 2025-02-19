@@ -34,15 +34,15 @@ const BlogComponent = () => {
           <div className="flex space-x-4">
             <button
               onClick={handlePrev}
-              className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-200 transition-colors"
+              className="bg-neon-blue p-2 rounded-full hover:bg-gray-200 transition-colors h-12 w-12"
             >
-              ◀️
+              ◀
             </button>
             <button
               onClick={handleNext}
-              className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-200 transition-colors"
+              className="bg-neon-blue p-2 rounded-full hover:bg-gray-200 transition-colors h-12 w-12"
             >
-              ▶️
+              ▶
             </button>
           </div>
         </div>
@@ -58,7 +58,7 @@ const BlogComponent = () => {
             {blogData.map((blog) => (
               <div
                 key={blog.id}
-                className="w-full md:w-1/3 flex-shrink-0 p-4" // 1 blog on mobile, 3 on desktop
+                className="w-full md:w-1/3 flex-shrink-0 p-2" // 1 blog on mobile, 3 on desktop
               >
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <img

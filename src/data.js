@@ -41,6 +41,7 @@ import Slider3 from './assets/sliders/graphic-design.png';
 import Slider4 from './assets/sliders/red-car-vector.webp';
 import Slider6 from './assets/sliders/smartphone.png';
 import Slider7 from './assets/sliders/3d-pen.png';
+import WebDevPage from './assets/images/webdev-hero.webp'
 
 export const wordData = {
   words: ["Creative Strategies", "Real Results", "No Fluff"],
@@ -1706,4 +1707,171 @@ export const faqData = [
     content: "Absolutely! We build high-performance WordPress websites with seamless integrations for e-commerce, offering robust features to drive traffic and engagement.",
   },
   
+];
+
+
+export const heroData = {
+  breadcrumb: [
+    { name: "Home", link: "/" },
+    { name: "Development Services", link: "/development" },
+    { name: "Custom Web Development", link: "/custom-web" },
+  ],
+  title: "Custom Web Development Company",
+  image: WebDevPage,
+  description:
+    "Partner with a top-rated custom web development company to build a high-performance website. From engaging corporate sites to complex animations, create a digital experience that drives results.",
+  features: [
+    "Custom UX & UI Design",
+    "Search & Conversion Optimization",
+    "End-To-End Development",
+  ],
+  requestQuoteLink: "/contact",
+  awards: [
+    {
+      title: "5 Star DesignRush Reviews",
+      stars: 5,
+    },
+    {
+      title: "Latest Web Design Award",
+      image: "/assets/css-award.png",
+    },
+  ],
+  video: {
+    link: "/video-demo",
+    text: "SEE OUR WORK",
+    subText: "IN ACTION",
+    duration: "1 MINUTE",
+  },
+};
+
+export const twoColumnSectionData = {
+  leftColumn: {
+    subHeading: "Why Choose Us",
+    mainHeading: "Our Services Benefits",
+    content:
+      "We provide top-notch services tailored to meet your needs. Discover the advantages of working with our experienced team.",
+    collapsibles: [
+      { title: "High Quality", description: "We ensure top-quality deliverables for every project." },
+      { title: "Timely Delivery", description: "Projects are completed within the stipulated deadlines." },
+      { title: "Expert Team", description: "Our team consists of seasoned professionals." },
+      { title: "Customer Support", description: "We provide round-the-clock assistance." },
+    ],
+  },
+  rightColumn: {
+    mainHeading: "Get In Touch",
+    content: "Fill out the form to request a quote or ask any questions.",
+    formFields: [
+      { label: "Name", placeholder: "Enter your name", type: "text" },
+      { label: "Email", placeholder: "Enter your email", type: "email" },
+      { label: "Message", placeholder: "Enter your message", type: "textarea" },
+    ],
+  },
+};
+
+export const caseStudiesData = {
+  subheading: "Our Custom Web Development Portfolio",
+  mainHeading: "700+ Completed Projects",
+  content:
+    "From innovative B2C platforms to robust B2B solutions and feature-rich eCommerce websites, our custom web development services are designed to drive traffic, boost engagement, and maximize conversions. Each project reflects our commitment to quality, scalability, and results-driven design.",
+  tabs: [
+    {
+      id: "featured",
+      label: "Featured",
+      studies: [
+        {
+          id: 1,
+          image: "https://via.placeholder.com/400x300.png?text=Featured+Image",
+          title: "Creative Agency Website",
+          content:
+            "A creative agency website that boosts brand presence and drives conversions.",
+          cta: "Learn More",
+          ctaLink: "/case-studies/creative-agency",
+        },
+      ],
+    },
+    {
+      id: "b2b",
+      label: "B2B",
+      studies: [
+        {
+          id: 2,
+          image: "https://via.placeholder.com/400x300.png?text=B2B+Image",
+          title: "Corporate Portal",
+          content:
+            "An enterprise-level corporate portal that streamlines operations.",
+          cta: "View Details",
+          ctaLink: "/case-studies/corporate-portal",
+        },
+      ],
+    },
+    {
+      id: "ecommerce",
+      label: "eCommerce",
+      studies: [
+        {
+          id: 3,
+          image: "https://via.placeholder.com/400x300.png?text=eCommerce+Image",
+          title: "Online Store Redesign",
+          content:
+            "A redesigned online store that improves user engagement and sales.",
+          cta: "Discover More",
+          ctaLink: "/case-studies/online-store",
+        },
+      ],
+    },
+    {
+      id: "b2c",
+      label: "B2C",
+      studies: [
+        {
+          id: 4,
+          image: "https://via.placeholder.com/400x300.png?text=B2C+Image",
+          title: "Consumer Mobile App",
+          content:
+            "A mobile app for consumers that enhances engagement and retention.",
+          cta: "See App",
+          ctaLink: "/case-studies/mobile-app",
+        },
+      ],
+    },
+  ],
+};
+
+export const timelineComp = [
+  {
+    id: 1,
+    icon: "https://via.placeholder.com/50?text=A",
+    heading: "Web Strategy",
+    content: "Building a powerful online presence starts with strategy. We use in-depth research and analysis to create a roadmap that drives your brand's growth and enhances your digital visibility",
+  },
+  {
+    id: 2,
+    icon: "https://via.placeholder.com/50?text=B",
+    heading: "Planning & Information Architecture",
+    content: "A well-structured website is key to an engaging user experience. Using proven techniques, we create a site map and information architecture that guides users seamlessly to conversion points",
+  },
+  {
+    id: 3,
+    icon: "https://via.placeholder.com/50?text=C",
+    heading: "Creative Design",
+    content: "In this phase, your website transforms from a concept into a visually stunning reality. Our award-winning designers infuse your brand identity into every element, ensuring your website stands out.",
+  },
+  {
+    id: 4,
+    icon: "https://via.placeholder.com/50?text=D",
+    heading: "Responsive Development",
+    content: "A website must perform flawlessly on every device. Our custom web development services include building responsive websites that deliver seamless navigation and fast performance across all screen sizes.",
+  },
+  {
+    id: 5,
+    icon: "https://via.placeholder.com/50?text=E",
+    heading: "Quality Assurance (QA)",
+    content: "We pride ourselves on delivering flawless results. Through rigorous quality assurance, we ensure your website performs at the highest standard.",
+  },
+  {
+    id: 6,
+    icon: "https://via.placeholder.com/50?text=E",
+    heading: "Launch & Optimization",
+    content: "We don’t just build websites—we make sure they thrive. From launch to ongoing optimization, we monitor and refine your site for peak performance.",
+  },
 ];

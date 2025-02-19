@@ -3,6 +3,8 @@ import { servicesData } from '../data';
 
 const Services = () => {
   return (
+    <>
+    {/* <Banner /> */}
     <div className="bg-theme-white py-12">
       <div className="container mx-auto text-center">
         <h2 className="text-logo-dark-blue text-4xl font-bold mb-8">
@@ -27,6 +29,7 @@ const Services = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

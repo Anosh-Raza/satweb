@@ -1,9 +1,17 @@
 import React from "react";
 import { WebDev } from "../../data";
+import HeroSection from "../../components/heroSection";
+import TwoColumns from "../../components/twoColumns"
+import CaseStudy from "../../components/caseStudies"
+import TimeLine from "../../components/timeLine"
 
 const WebDeve = () => {
   return (
     <div className="font-sans">
+      <HeroSection heading="Web Development" description="We build fast, scalable, and secure web" />
+      <TwoColumns />
+      <CaseStudy/>
+      <TimeLine/>
       {/* Header Section */}
       <header className="text-center py-12 bg-blue-100">
         <h1 className="text-4xl font-bold text-blue-900">{WebDev.header.title}</h1>

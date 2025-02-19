@@ -52,12 +52,11 @@ function Navbar() {
                 <Link to="/">Home</Link>
               </li>
               <li className="relative">
-                <button
-                  onClick={handleServicesToggle}
-                  className="flex justify-between w-full"
-                >
-                  Services <i className="bi bi-chevron-down ml-2"></i>
-                </button>
+                <Link href="/services" passHref>
+                  <button className="flex justify-between w-full">
+                    Services <i className="bi bi-chevron-down ml-2"></i>
+                  </button>
+                </Link>
                 {isServicesOpen && (
                   <div className="mt-2 p-2 bg-logo-medium-blue-1 rounded-lg shadow-md w-full">
                     <h3 className="font-bold mb-2">Ecommerce Services</h3>
@@ -78,17 +77,26 @@ function Navbar() {
                     <h3 className="font-bold mb-2">Digital Marketing</h3>
                     <ul>
                       <li>
-                        <Link to="/platform-advertising">Platform Advertising</Link>
+                        <Link to="/platform-advertising">
+                          Platform Advertising
+                        </Link>
                       </li>
                       <li>
                         <Link to="/social-media-services">Social Media</Link>
                       </li>
                       <li>
-                        <Link to="/email-marketing-services">Email Marketing</Link>
+                        <Link to="/email-marketing-services">
+                          Email Marketing
+                        </Link>
                       </li>
                     </ul>
-                    <h3 className="font-bold mb-2"><a href="/seo-services">SEO</a></h3>
-                    <h3 className="font-bold mb-2">Web Development</h3>
+                    <h3 className="font-bold mb-2">
+                      <a href="/seo-services">SEO</a>
+                    </h3>
+                    <Link to="/web-development-services">
+                      <h3 className="font-bold mb-2">Web Development</h3>
+                    </Link>
+
                     <ul>
                       <li>
                         <Link
@@ -131,7 +139,9 @@ function Navbar() {
             </li>
             <li className="relative group">
               <button className="hover:text-gray-300">
-                Services <i className="bi bi-chevron-down ml-2"></i>
+                <Link to="/services">
+                  Services <i className="bi bi-chevron-down ml-2"></i>
+                </Link>
               </button>
               <div className="absolute left-0 bg-logo-medium-blue-1 text-white mt-1 p-4 rounded-xl shadow-lg w-[600px] z-50 hidden group-hover:block">
                 <div className="grid grid-cols-2 gap-4">
@@ -205,7 +215,9 @@ function Navbar() {
                     <h3 className="font-bold mb-2">SEO</h3>
                   </div>
                   <div>
-                    <h3 className="font-bold mb-2">Web Development</h3>
+                  <Link to="/web-development-services">
+                      <h3 className="font-bold mb-2">Web Development</h3>
+                    </Link>
                     <ul>
                       <li>
                         <Link

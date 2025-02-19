@@ -12,6 +12,10 @@ module.exports = {
         'logo-medium-blue-2': '#0D2074',
         'theme-white': '#f2f2f2',
         'light-theme': '#f6fbff',
+        'neon-blue': '#00e8ff',
+        'dark-blue': '#00031f',
+        'light-blue': '#3b82f6',
+        'light-blue-ver2': '#1e3075',
       },
       textShadow: {
         sm: '0 1px 2px white',
