@@ -20,15 +20,21 @@ function Navbar() {
     setIsServicesOpen(false);
   };
 
-  // const handleServicesToggle = () => {
-  //   setIsServicesOpen((prev) => !prev);
-  // };
+  const handleServicesToggle = () => {
+    setIsServicesOpen((prev) => !prev);
+  };
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+    setIsServicesOpen(false);
+  };
 
   return (
     <nav className="text-white bg-gradient-logo border-b border-opacity-20 border-white relative z-50">
       <div className="container mx-auto px-5 flex justify-between items-center py-2">
+        {/* Logo */}
         <div className="logo flex items-center">
-          <Link to="/">
+          <Link to="/" onClick={handleLinkClick}>
             {imageAvailable ? (
               <img
                 src={logo}
@@ -41,67 +47,96 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu Toggle Button */}
         <div className="lg:hidden cursor-pointer" onClick={handleMenuToggle}>
           <i className={`bi ${isOpen ? "bi-x" : "bi-list"} text-2xl`}></i>
         </div>
+
+        {/* Mobile Menu */}
         {isOpen && (
           <div className="absolute top-16 left-0 w-full bg-logo-dark-blue text-white z-50 p-5 rounded-lg shadow-lg">
             <ul className="flex flex-col text-left space-y-2">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={handleLinkClick}>
+                  Home
+                </Link>
               </li>
               <li className="relative">
-                <Link href="/services" passHref>
-                  <button className="flex justify-between w-full">
-                    Services <i className="bi bi-chevron-down ml-2"></i>
-                  </button>
-                </Link>
+                <button
+                  onClick={handleServicesToggle}
+                  className="flex justify-between w-full"
+                >
+                  Services <i className="bi bi-chevron-down ml-2"></i>
+                </button>
                 {isServicesOpen && (
                   <div className="mt-2 p-2 bg-logo-medium-blue-1 rounded-lg shadow-md w-full">
                     <h3 className="font-bold mb-2">Ecommerce Services</h3>
                     <ul>
                       <li>
-                        <Link to="/shopify-services">Shopify Services</Link>
+                        <Link to="/shopify-services" onClick={handleLinkClick}>
+                          Shopify Services
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/etsy-services">Etsy</Link>
+                        <Link to="/etsy-services" onClick={handleLinkClick}>
+                          Etsy
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/ebay-services">Ebay</Link>
+                        <Link to="/ebay-services" onClick={handleLinkClick}>
+                          Ebay
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/amazon-services">Amazon</Link>
+                        <Link to="/amazon-services" onClick={handleLinkClick}>
+                          Amazon
+                        </Link>
                       </li>
                     </ul>
                     <h3 className="font-bold mb-2">Digital Marketing</h3>
                     <ul>
                       <li>
-                        <Link to="/platform-advertising">
+                        <Link
+                          to="/platform-advertising"
+                          onClick={handleLinkClick}
+                        >
                           Platform Advertising
                         </Link>
                       </li>
                       <li>
-                        <Link to="/social-media-services">Social Media</Link>
+                        <Link
+                          to="/social-media-services"
+                          onClick={handleLinkClick}
+                        >
+                          Social Media
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/email-marketing-services">
+                        <Link
+                          to="/email-marketing-services"
+                          onClick={handleLinkClick}
+                        >
                           Email Marketing
                         </Link>
                       </li>
                     </ul>
                     <h3 className="font-bold mb-2">
-                      <a href="/seo-services">SEO</a>
+                      <a href="/seo-services" onClick={handleLinkClick}>
+                        SEO
+                      </a>
                     </h3>
-                    <Link to="/web-development-services">
+                    <Link
+                      to="/web-development-services"
+                      onClick={handleLinkClick}
+                    >
                       <h3 className="font-bold mb-2">Web Development</h3>
                     </Link>
-
                     <ul>
                       <li>
                         <Link
                           to="/platform-adv"
                           className="hover:text-gray-300"
+                          onClick={handleLinkClick}
                         >
                           Wordpress
                         </Link>
@@ -110,6 +145,7 @@ function Navbar() {
                         <Link
                           to="/social-media"
                           className="hover:text-gray-300"
+                          onClick={handleLinkClick}
                         >
                           SEO
                         </Link>
@@ -119,13 +155,29 @@ function Navbar() {
                 )}
               </li>
               <li>
-                <Link to="/blogs">Blog</Link>
+                <Link to="/blogs" onClick={handleLinkClick}>
+                  Blog
+                </Link>
               </li>
               <li>
-                <Link to="/about-us">About Us</Link>
+                <Link to="/about-us" onClick={handleLinkClick}>
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link to="/contact-us">Contact Us</Link>
+                <Link to="/contact-us" onClick={handleLinkClick}>
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/login"
+                  className="text-logo-purple font-bold flex items-center"
+                  onClick={handleLinkClick}
+                >
+                  Login to customer portal{" "}
+                  <i className="bi bi-box-arrow-in-right ml-2"></i>
+                </Link>
               </li>
             </ul>
           </div>
@@ -133,13 +185,15 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center">
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-4 text-xl">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" className="hover:text-gray-300">
+                Home
+              </Link>
             </li>
             <li className="relative group">
               <button className="hover:text-gray-300">
-                <Link to="/services">
+                <Link to="/services" className="hover:text-gray-300">
                   Services <i className="bi bi-chevron-down ml-2"></i>
                 </Link>
               </button>
@@ -149,34 +203,22 @@ function Navbar() {
                     <h3 className="font-bold mb-2">Ecommerce Services</h3>
                     <ul>
                       <li>
-                        <Link
-                          to="/shopify-services"
-                          className="hover:text-gray-300"
-                        >
+                        <Link to="/shopify-services" className="hover:text-gray-300">
                           Shopify Services
                         </Link>
                       </li>
                       <li>
-                        <Link
-                          to="/etsy-services"
-                          className="hover:text-gray-300"
-                        >
+                        <Link to="/etsy-services" className="hover:text-gray-300">
                           Etsy
                         </Link>
                       </li>
                       <li>
-                        <Link
-                          to="/ebay-services"
-                          className="hover:text-gray-300"
-                        >
+                        <Link to="/ebay-services" className="hover:text-gray-300">
                           Ebay
                         </Link>
                       </li>
                       <li>
-                        <Link
-                          to="/amazon-services"
-                          className="hover:text-gray-300"
-                        >
+                        <Link to="/amazon-services" className="hover:text-gray-300">
                           Amazon
                         </Link>
                       </li>
@@ -186,26 +228,17 @@ function Navbar() {
                     <h3 className="font-bold mb-2">Digital Marketing</h3>
                     <ul>
                       <li>
-                        <Link
-                          to="/platform-adv"
-                          className="hover:text-gray-300"
-                        >
+                        <Link to="/platform-advertising" className="hover:text-gray-300">
                           Platform Advertising
                         </Link>
                       </li>
                       <li>
-                        <Link
-                          to="/social-media"
-                          className="hover:text-gray-300"
-                        >
+                        <Link to="/social-media" className="hover:text-gray-300">
                           Social Media
                         </Link>
                       </li>
                       <li>
-                        <Link
-                          to="/email-marketing"
-                          className="hover:text-gray-300"
-                        >
+                        <Link to="/email-marketing" className="hover:text-gray-300">
                           Email Marketing
                         </Link>
                       </li>
@@ -215,23 +248,17 @@ function Navbar() {
                     <h3 className="font-bold mb-2">SEO</h3>
                   </div>
                   <div>
-                  <Link to="/web-development-services">
+                    <Link to="/web-development-services" className="hover:text-gray-300">
                       <h3 className="font-bold mb-2">Web Development</h3>
                     </Link>
-                    <ul>
+                    <ul className="ml-4">
                       <li>
-                        <Link
-                          to="/platform-adv"
-                          className="hover:text-gray-300"
-                        >
+                        <Link to="/platform-adv" className="hover:text-gray-300">
                           Wordpress
                         </Link>
                       </li>
                       <li>
-                        <Link
-                          to="/social-media"
-                          className="hover:text-gray-300"
-                        >
+                        <Link to="/social-media" className="hover:text-gray-300">
                           SEO
                         </Link>
                       </li>
@@ -241,13 +268,19 @@ function Navbar() {
               </div>
             </li>
             <li>
-              <Link to="/blogs">Blog</Link>
+              <Link to="/blogs" className="hover:text-gray-300">
+                Blog
+              </Link>
             </li>
             <li>
-              <Link to="/about-us">About Us</Link>
+              <Link to="/about-us" className="hover:text-gray-300">
+                About Us
+              </Link>
             </li>
             <li>
-              <Link to="/contact-us">Contact Us</Link>
+              <Link to="/contact-us" className="hover:text-gray-300">
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>

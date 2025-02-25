@@ -16,6 +16,7 @@ module.exports = {
         'dark-blue': '#00031f',
         'light-blue': '#3b82f6',
         'light-blue-ver2': '#1e3075',
+        'logo-light-blue-white': '#F1F5FE',
       },
       textShadow: {
         sm: '0 1px 2px white',

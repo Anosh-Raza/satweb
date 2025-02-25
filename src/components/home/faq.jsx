@@ -18,7 +18,7 @@ const CollapsibleFAQ = () => {
     <section className="bg-logo-purple">
       <div className="max-w-4xl mx-auto px-4 py-8 container">
         <h1 className="text-3xl font-bold mb-8 text-white">
-          Frequently Asked Questions (FAQs) for SAT Americana
+        FAQs About Custom Web Development Services
         </h1>
 
         <div className="space-y-4">
