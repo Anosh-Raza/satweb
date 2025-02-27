@@ -70,7 +70,13 @@ function Navbar() {
                 </button>
                 {isServicesOpen && (
                   <div className="mt-2 p-2 bg-logo-medium-blue-1 rounded-lg shadow-md w-full">
-                    <h3 className="font-bold mb-2">Ecommerce Services</h3>
+                    <h3 className="font-bold mb-2">
+                      <Link
+                        to="/ecommerce-services"
+                        onClick={handleLinkClick}
+                      >Ecommerce Services
+                      </Link>
+                    </h3>
                     <ul>
                       <li>
                         <Link to="/shopify-services" onClick={handleLinkClick}>
@@ -121,9 +127,12 @@ function Navbar() {
                       </li>
                     </ul>
                     <h3 className="font-bold mb-2">
-                      <a href="/seo-services" onClick={handleLinkClick}>
-                        SEO
-                      </a>
+                      <Link
+                        to="/search-engine-optimization"
+                        onClick={handleLinkClick}
+                      >
+                        <h3 className="font-bold mb-2">SEO</h3>
+                      </Link>
                     </h3>
                     <Link
                       to="/web-development-services"
@@ -143,7 +152,7 @@ function Navbar() {
                       </li>
                       <li>
                         <Link
-                          to="/social-media"
+                          to="/search-engine-optimization"
                           className="hover:text-gray-300"
                           onClick={handleLinkClick}
                         >
@@ -185,7 +194,7 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center">
-          <ul className="flex space-x-4 text-xl">
+          <ul className="flex space-x-4 text-base">
             <li>
               <Link to="/" className="hover:text-gray-300">
                 Home
@@ -200,25 +209,43 @@ function Navbar() {
               <div className="absolute left-0 bg-logo-medium-blue-1 text-white mt-1 p-4 rounded-xl shadow-lg w-[600px] z-50 hidden group-hover:block">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <h3 className="font-bold mb-2">Ecommerce Services</h3>
+                  <h3 className="font-bold mb-2">
+                      <Link
+                        to="/ecommerce-services"
+                        onClick={handleLinkClick}
+                      >Ecommerce Services
+                      </Link>
+                    </h3>
                     <ul>
                       <li>
-                        <Link to="/shopify-services" className="hover:text-gray-300">
+                        <Link
+                          to="/shopify-services"
+                          className="hover:text-gray-300"
+                        >
                           Shopify Services
                         </Link>
                       </li>
                       <li>
-                        <Link to="/etsy-services" className="hover:text-gray-300">
+                        <Link
+                          to="/etsy-services"
+                          className="hover:text-gray-300"
+                        >
                           Etsy
                         </Link>
                       </li>
                       <li>
-                        <Link to="/ebay-services" className="hover:text-gray-300">
+                        <Link
+                          to="/ebay-services"
+                          className="hover:text-gray-300"
+                        >
                           Ebay
                         </Link>
                       </li>
                       <li>
-                        <Link to="/amazon-services" className="hover:text-gray-300">
+                        <Link
+                          to="/amazon-services"
+                          className="hover:text-gray-300"
+                        >
                           Amazon
                         </Link>
                       </li>
@@ -228,37 +255,60 @@ function Navbar() {
                     <h3 className="font-bold mb-2">Digital Marketing</h3>
                     <ul>
                       <li>
-                        <Link to="/platform-advertising" className="hover:text-gray-300">
+                        <Link
+                          to="/platform-advertising"
+                          className="hover:text-gray-300"
+                        >
                           Platform Advertising
                         </Link>
                       </li>
                       <li>
-                        <Link to="/social-media" className="hover:text-gray-300">
+                        <Link
+                          to="/social-media"
+                          className="hover:text-gray-300"
+                        >
                           Social Media
                         </Link>
                       </li>
                       <li>
-                        <Link to="/email-marketing" className="hover:text-gray-300">
+                        <Link
+                          to="/email-marketing"
+                          className="hover:text-gray-300"
+                        >
                           Email Marketing
                         </Link>
                       </li>
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-bold mb-2">SEO</h3>
+                  <Link
+                      to="/search-engine-optimization"
+                      onClick={handleLinkClick}
+                    >
+                      <h3 className="font-bold mb-2">SEO</h3>
+                    </Link>
                   </div>
                   <div>
-                    <Link to="/web-development-services" className="hover:text-gray-300">
+                    <Link
+                      to="/web-development-services"
+                      className="hover:text-gray-300"
+                    >
                       <h3 className="font-bold mb-2">Web Development</h3>
                     </Link>
-                    <ul className="ml-4">
+                    <ul>
                       <li>
-                        <Link to="/platform-adv" className="hover:text-gray-300">
+                        <Link
+                          to="/platform-adv"
+                          className="hover:text-gray-300"
+                        >
                           Wordpress
                         </Link>
                       </li>
                       <li>
-                        <Link to="/social-media" className="hover:text-gray-300">
+                        <Link
+                          to="/search-engine-optimization"
+                          className="hover:text-gray-300"
+                        >
                           SEO
                         </Link>
                       </li>

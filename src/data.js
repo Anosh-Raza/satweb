@@ -2050,6 +2050,7 @@ export const heroData = {
     "Search & Conversion Optimization",
     "End-To-End Development",
   ],
+  button: "REQUEST A QUOTE",
   requestQuoteLink: "/contact",
   awards: [
     {
@@ -2174,50 +2175,57 @@ export const caseStudiesData = {
   ],
 };
 
-export const timelineComp = [
-  {
-    id: 1,
-    icon: "https://via.placeholder.com/50?text=A",
-    heading: "Web Strategy",
-    content:
-      "Building a powerful online presence starts with strategy. We use in-depth research and analysis to create a roadmap that drives your brand's growth and enhances your digital visibility",
-  },
-  {
-    id: 2,
-    icon: "https://via.placeholder.com/50?text=B",
-    heading: "Planning & Information Architecture",
-    content:
-      "A well-structured website is key to an engaging user experience. Using proven techniques, we create a site map and information architecture that guides users seamlessly to conversion points",
-  },
-  {
-    id: 3,
-    icon: "https://via.placeholder.com/50?text=C",
-    heading: "Creative Design",
-    content:
-      "In this phase, your website transforms from a concept into a visually stunning reality. Our award-winning designers infuse your brand identity into every element, ensuring your website stands out.",
-  },
-  {
-    id: 4,
-    icon: "https://via.placeholder.com/50?text=D",
-    heading: "Responsive Development",
-    content:
-      "A website must perform flawlessly on every device. Our custom web development services include building responsive websites that deliver seamless navigation and fast performance across all screen sizes.",
-  },
-  {
-    id: 5,
-    icon: "https://via.placeholder.com/50?text=E",
-    heading: "Quality Assurance (QA)",
-    content:
-      "We pride ourselves on delivering flawless results. Through rigorous quality assurance, we ensure your website performs at the highest standard.",
-  },
-  {
-    id: 6,
-    icon: "https://via.placeholder.com/50?text=E",
-    heading: "Launch & Optimization",
-    content:
-      "We don’t just build websites—we make sure they thrive. From launch to ongoing optimization, we monitor and refine your site for peak performance.",
-  },
-];
+
+
+export const timelineComp = {
+  heading: "Our eCommerce Development Process",
+  text: "At Sat Americana, we offer custom eCommerce development services that help businesses create high-performing online stores tailored for growth.",
+  items: [
+    {
+      id: 1,
+      icon: "https://via.placeholder.com/50?text=A",
+      heading: "Web Strategy",
+      content:
+        "Building a powerful online presence starts with strategy. We use in-depth research and analysis to create a roadmap that drives your brand's growth and enhances your digital visibility.",
+    },
+    {
+      id: 2,
+      icon: "https://via.placeholder.com/50?text=B",
+      heading: "Planning & Information Architecture",
+      content:
+        "A well-structured website is key to an engaging user experience. Using proven techniques, we create a site map and information architecture that guides users seamlessly to conversion points.",
+    },
+    {
+      id: 3,
+      icon: "https://via.placeholder.com/50?text=C",
+      heading: "Creative Design",
+      content:
+        "In this phase, your website transforms from a concept into a visually stunning reality. Our award-winning designers infuse your brand identity into every element, ensuring your website stands out.",
+    },
+    {
+      id: 4,
+      icon: "https://via.placeholder.com/50?text=D",
+      heading: "Responsive Development",
+      content:
+        "A website must perform flawlessly on every device. Our custom web development services include building responsive websites that deliver seamless navigation and fast performance across all screen sizes.",
+    },
+    {
+      id: 5,
+      icon: "https://via.placeholder.com/50?text=E",
+      heading: "Quality Assurance (QA)",
+      content:
+        "We pride ourselves on delivering flawless results. Through rigorous quality assurance, we ensure your website performs at the highest standard.",
+    },
+    {
+      id: 6,
+      icon: "https://via.placeholder.com/50?text=F",
+      heading: "Launch & Optimization",
+      content:
+        "We don’t just build websites—we make sure they thrive. From launch to ongoing optimization, we monitor and refine your site for peak performance.",
+    },
+  ],
+};
+
 
 export const edgeData = {
   mainHeading: "How Custom Web Development Services Can Help Your Business",
@@ -2332,6 +2340,15 @@ export const whyBrandsData = {
 export const versesData = {
   heading:
     "Custom Web Design vs. Website Templates: Which is Right for Your Business?",
+  webHead: "Custom Web Design",
+  webTempHead: "Website Templates",
+  featureHead: "",
+  features: [
+    {
+      id: 1,
+      heading: "",
+    },
+  ],
   webDesign: [
     {
       id: 1,
@@ -2391,7 +2408,8 @@ export const versesData = {
 export const faqsData = [
   {
     id: "01",
-    question: "What is the difference between custom web development and using a template",
+    question:
+      "What is the difference between custom web development and using a template",
     answer:
       "Custom web development offers a tailored approach, creating a unique website that aligns with your brand identity and business goals. Templates, on the other hand, are pre-designed and may limit customization, functionality, and scalability. A custom site ensures flexibility, enhanced performance, and a seamless user experience tailored to your audience.",
   },
@@ -2421,8 +2439,746 @@ export const faqsData = [
   },
   {
     id: "06",
-    question: "What kind of support do you offer after the website is launched?",
+    question:
+      "What kind of support do you offer after the website is launched?",
     answer:
       "We provide comprehensive post-launch support, including maintenance, updates, and optimization. Our team monitors your website’s performance, resolves any issues, and offers additional services like digital marketing to ensure your website stays competitive and continues to drive results.",
   },
 ];
+
+export const seoheroData = {
+  breadcrumb: [
+    { name: "Home", link: "/" },
+    { name: "Development Services", link: "/development" },
+    { name: "Custom Web Development", link: "/custom-web" },
+  ],
+  title: "Results-Driven SEO Services",
+  image: WebDevPage,
+  description:
+    "At Sat Americana, we specialize in boosting your search engine rankings and driving organic traffic to your website. Our custom SEO strategies include on-page optimization, technical SEO, and high-quality link building to help you dominate Google search results and stay ahead of the competition.",
+  features: [
+    "Create A Unique Digital Experience",
+    "Drive Higher Conversions",
+    "Attract Qualified Traffic",
+  ],
+  button: "REQUEST A QUOTE",
+  requestQuoteLink: "/contact",
+  awards: [
+    {
+      title: "5 Star DesignRush Reviews",
+      stars: 5,
+    },
+    {
+      title: "Latest Web Design Award",
+      image: "/assets/css-award.png",
+    },
+  ],
+  video: {
+    link: "/video-demo",
+    text: "SEE OUR WORK",
+    subText: "IN ACTION",
+    duration: "1 MINUTE",
+  },
+};
+
+export const seotwoColumnSectionData = {
+  leftColumn: {
+    subHeading: "Why Choose Us",
+    mainHeading: "Top-Rated SEO Company for Higher Rankings",
+    content:
+      "With the ever-changing Google algorithms, businesses need an SEO company that delivers real, measurable results. At Sat Americana, we go beyond basic SEO to provide comprehensive optimization strategies tailored to your industry. Our approach includes in-depth keyword research, on-page SEO, technical SEO audits, and high-authority link-building to improve your website’s visibility. By optimizing site speed, mobile responsiveness, and structured data, we ensure that your website ranks higher and attracts organic traffic that converts. Whether you’re looking to dominate local search results or compete on a national level, our SEO services help your business stay ahead of the competition.",
+    collapsibles: [
+      {
+        title: "Local SEO Services to Dominate Your Market",
+        description:
+          "Struggling to appear in local search results? If your business isn’t optimized for local SEO, you’re missing out on potential customers searching for services near them. Our local SEO services focus on improving your presence in Google Maps, increasing visibility through Google Business Profile optimization, and ensuring NAP consistency (Name, Address, Phone Number) across all directories. We also build high-quality local citations and optimize your website for geo-targeted keywords to help you rank in local searches. Whether you own a restaurant, a law firm, or a home service business, our local SEO strategies attract nearby customers who are ready to convert.",
+      },
+      {
+        title: "Ecommerce SEO for Maximum Conversions",
+        description:
+          "If your online store isn’t ranking, you’re losing out on potential sales. Unlike traditional websites, eCommerce SEO requires a strategic approach tailored to product pages, category pages, and site structure. Our eCommerce SEO services optimize meta titles, descriptions, and product descriptions to improve rankings on Google Shopping and search engine results. We also implement schema markup, improve page load speed, and enhance internal linking to ensure a seamless shopping experience. Whether you run a store on Shopify, WooCommerce, Magento, or BigCommerce, our SEO experts help increase organic traffic and boost your conversion rates.",
+      },
+    ],
+  },
+  rightColumn: {
+    mainHeading: "Get In Touch",
+    content: "Fill out the form to request a quote or ask any questions.",
+    formFields: [
+      { label: "Name", placeholder: "Enter your name", type: "text" },
+      { label: "Email", placeholder: "Enter your email", type: "email" },
+      { label: "Message", placeholder: "Enter your message", type: "textarea" },
+    ],
+  },
+};
+
+export const seoCaseStudiesData = {
+  subheading: "Our Proven SEO Success Stories",
+  mainHeading: "500+ Optimized Websites",
+  content:
+    "Our SEO strategies have helped businesses across industries achieve higher search rankings, increased organic traffic, and better conversion rates. From local businesses to global enterprises, we implement on-page, off-page, and technical SEO techniques that ensure long-term success. Every project showcases our dedication to data-driven results and sustainable growth.",
+  tabs: [
+    {
+      id: "featured",
+      label: "Featured",
+      studies: [
+        {
+          id: 1,
+          image: "https://via.placeholder.com/400x300.png?text=Featured+Image",
+          title: "Creative Agency Website",
+          content:
+            "A creative agency website that boosts brand presence and drives conversions.",
+          cta: "Learn More",
+          ctaLink: "/case-studies/creative-agency",
+        },
+      ],
+    },
+    {
+      id: "b2b",
+      label: "B2B",
+      studies: [
+        {
+          id: 2,
+          image: "https://via.placeholder.com/400x300.png?text=B2B+Image",
+          title: "Corporate Portal",
+          content:
+            "An enterprise-level corporate portal that streamlines operations.",
+          cta: "View Details",
+          ctaLink: "/case-studies/corporate-portal",
+        },
+      ],
+    },
+    {
+      id: "ecommerce",
+      label: "eCommerce",
+      studies: [
+        {
+          id: 3,
+          image: "https://via.placeholder.com/400x300.png?text=eCommerce+Image",
+          title: "Online Store Redesign",
+          content:
+            "A redesigned online store that improves user engagement and sales.",
+          cta: "Discover More",
+          ctaLink: "/case-studies/online-store",
+        },
+      ],
+    },
+    {
+      id: "b2c",
+      label: "B2C",
+      studies: [
+        {
+          id: 4,
+          image: "https://via.placeholder.com/400x300.png?text=B2C+Image",
+          title: "Consumer Mobile App",
+          content:
+            "A mobile app for consumers that enhances engagement and retention.",
+          cta: "See App",
+          ctaLink: "/case-studies/mobile-app",
+        },
+      ],
+    },
+  ],
+};
+
+export const seoEdgeData = {
+  mainHeading: "Enhance Your Website’s Search Performance",
+  cards: [
+    {
+      id: 1,
+      heading: "Establish a Strong Online Presence",
+      content:
+        "A well-optimized website is the foundation of any successful SEO strategy. Custom web development allows businesses to create a unique digital presence that aligns with their brand identity while incorporating SEO best practices. Elements such as structured data, mobile responsiveness, and fast loading times contribute to higher search rankings and better user engagement.",
+      content2:
+        "As an experienced SEO-focused web development company, we ensure that every aspect of your website—from meta tags to internal linking—enhances its discoverability on search engines. By leveraging tailored solutions, we help businesses improve organic traffic, establish authority, and outperform competitors in search results.",
+    },
+    {
+      id: 2,
+      heading: "Improve Website Speed and Performance",
+      content:
+        "Page speed is a critical ranking factor for SEO. A slow-loading website can drive users away and negatively impact search rankings. Custom web development ensures optimized code, image compression, and efficient caching techniques to enhance performance.",
+      content2:
+        "Our team prioritizes high-performance websites that load quickly and provide seamless browsing experiences. This leads to reduced bounce rates, increased session durations, and improved rankings on Google and other search engines. A well-optimized website not only improves visibility but also enhances user satisfaction.",
+    },
+    {
+      id: 3,
+      heading: "Optimize for Mobile and Voice Search",
+      content:
+        "With the rise of mobile and voice searches, having a responsive website is no longer optional. Custom web development ensures that your site is fully optimized for mobile users while also incorporating schema markup to improve voice search visibility",
+      content2:
+        "By utilizing a mobile-first approach and AI-powered search optimizations, we help businesses gain an edge in SERPs. A well-structured website increases crawlability, making it easier for search engines to index and rank content effectively.",
+    },
+    {
+      id: 4,
+      heading: "Enhance SEO with Custom Features",
+      content:
+        "SEO is more than just keywords—it’s about user experience, site architecture, and structured content. We develop custom SEO-friendly features such as intuitive navigation, fast-loading landing pages, and tailored CTA placements that encourage conversions.",
+      content2:
+        "Our development process focuses on scalability, ensuring that your website can grow alongside your business. Whether it’s implementing technical SEO improvements, optimizing UX/UI design, or enhancing site security, we provide long-term solutions that drive sustainable organic traffic and revenue growth.",
+    },
+  ],
+};
+
+export const seoWhyBrandsData = {
+  subheading: "WHY BRANDS CHOOSE US",
+  mainHeading: "Our Unique Value as an SEO Services Company",
+  text: "Ownership. Transparency. Results.",
+  buttons: [{ text: "SCHEDULE A CONSULTATION", link: "#" }],
+  cards: [
+    {
+      id: 1,
+      heading: "Expertise in SEO Services",
+      text1:
+        "As a leading SEO services company, our expert team delivers customized strategies that drive sustainable growth.",
+      text2:
+        "With decades of experience optimizing websites for businesses across industries, we are trusted to improve search rankings, increase traffic, and generate leads.",
+      text3:
+        "From on-page SEO and technical optimization to content marketing and backlink strategies, our professional SEO services follow a data-driven process tailored to businesses of all sizes and locations.",
+    },
+    {
+      id: 2,
+      heading: "Proven Results with Five-Star Reviews",
+      text1:
+        "Our team is recognized for delivering award-winning SEO campaigns. Choosing us means partnering with industry leaders",
+      text2:
+        "Our client reviews on trusted platforms such as Clutch and DesignRush highlight our commitment to excellence:",
+      text3:
+        "If you're looking for expert SEO services, Digital Silk delivers. Their global team of specialists boosted our rankings, increased organic traffic, and helped us generate more leads. Thanks to their expertise, our brand visibility has grown exponentially – Patrick Brown, CEO at Unity",
+    },
+    {
+      id: 3,
+      heading: "Ownership of Your Project",
+      text1:
+        "From keyword research to performance tracking and beyond, we take full responsibility for your SEO success.",
+      text2:
+        "Each SEO strategy we implement is tailored to your business, treating your success as our own.By partnering with us, you gain a dedicated team of SEO specialists who involve you in every step of the decision-making process while leveraging cutting-edge tactics to achieve superior results.",
+      text3: "",
+    },
+    {
+      id: 4,
+      heading: "Driving Brand Growth with Professional SEO Services",
+      text1:
+        "At Digital Silk, we help brands dominate search engines and increase organic reach. Our full-service capabilities include technical SEO, local SEO, content optimization, and digital marketing, all under one roof.",
+      text2:
+        "With research-backed strategies, advanced SEO techniques, and data-driven insights, we ensure measurable growth for your business.",
+      text3: "",
+    },
+  ],
+};
+
+export const seoVersesData = {
+  heading:
+    "Custom Web Design vs. Website Templates: Which is Right for Your Business?",
+  webHead: "Custom SEO Strategy",
+  webTempHead: "Automated SEO Tools",
+  featureHead: "Feature",
+  features: [
+    {
+      id: 1,
+      heading: "Strategy Personalization",
+    },
+    {
+      id: 2,
+      heading: "Keyword Research & Targeting",
+    },
+    {
+      id: 3,
+      heading: "Technical SEO & Optimization",
+    },
+    {
+      id: 4,
+      heading: "Content Strategy",
+    },
+    {
+      id: 5,
+      heading: "Competitive Edge",
+    },
+  ],
+  webDesign: [
+    {
+      id: 1,
+      heading: "Tailored to Your Brand",
+      text: "Custom web design services provide a unique and personalized digital experience that reflects your brand identity. From colors and typography to advanced features, every element is tailored to your business goals",
+    },
+    {
+      id: 2,
+      heading: "Scalability for Growth",
+      text: "Custom websites are built to scale with your business. Whether you’re expanding services or need advanced eCommerce solutions, custom web design ensures flexibility and long-term growth",
+    },
+    {
+      id: 3,
+      heading: "Optimized for SEO and Performance",
+      text: "Custom web design integrates SEO strategies from the ground up, improving your website's ranking and visibility. Additionally, developers ensure faster load times and better responsiveness across devices",
+    },
+    {
+      id: 4,
+      heading: "Advanced Features and Integrations",
+      text: "Using platforms like Magento 2, custom web design allows for complex features such as omni-channel solutions, tailored sales funnels, and interactive elements to support customer engagement",
+    },
+    {
+      id: 5,
+      heading: "Unique and Standout Design",
+      text: "With custom web design, your business stands out from competitors. The one-of-a-kind design captures attention, enhances credibility, and strengthens your brand image",
+    },
+  ],
+  webTemp: [
+    {
+      id: 1,
+      heading: "Pre-Built Framework",
+      text: "Website templates offer a ready-made structure, making it easier to create a simple website quickly. They are best for businesses on a tight budget or those looking for a basic online presence.",
+    },
+    {
+      id: 2,
+      heading: "Limited Customization",
+      text: " Templates come with predefined layouts and features, limiting your ability to fully customize your website to reflect your unique selling points (USPs).",
+    },
+    {
+      id: 3,
+      heading: "Basic SEO Features:",
+      text: "While some templates offer SEO plugins, they lack the in-depth optimization and technical finesse provided by custom web design, which may affect traffic and conversions in the long run.",
+    },
+    {
+      id: 4,
+      heading: "Basic Functionality",
+      text: "Templates are ideal for simple websites without the need for advanced integrations or complex functionalities. They work well for small businesses or personal projects.",
+    },
+    {
+      id: 5,
+      heading: "Mass-Used Designs",
+      text: "Templates are used by many businesses, which can make your website look generic and less memorable to visitors.",
+    },
+  ],
+};
+
+export const seoFaqsData = [
+  {
+    id: "01",
+    question: "What is the difference between on-page SEO and off-page SEO?",
+    answer:
+      "On-page SEO focuses on optimizing website content, meta tags, and internal links, while off-page SEO includes backlink building, social media signals, and brand mentions to improve search rankings.",
+  },
+  {
+    id: "02",
+    question: "How long does it take to see results from SEO?",
+    answer:
+      "SEO is a long-term strategy, and it typically takes 3-6 months to see noticeable improvements in organic traffic and keyword rankings, depending on competition and industry.",
+  },
+  {
+    id: "03",
+    question: "Why is keyword research important for SEO?",
+    answer:
+      "Keyword research helps identify high-ranking search terms that potential customers use, ensuring content is optimized for relevant queries and search intent.",
+  },
+  {
+    id: "04",
+    question: "How does technical SEO impact website rankings?",
+    answer:
+      "Technical SEO improves site speed, mobile responsiveness, structured data, and crawlability, which enhances user experience and helps search engines index pages more effectively",
+  },
+  {
+    id: "05",
+    question: "What are the benefits of local SEO for businesses?",
+    answer:
+      "Local SEO helps businesses rank in Google Maps, local search results, and 'near me' searches, driving more foot traffic and local leads to physical stores",
+  },
+  {
+    id: "06",
+    question: "How do backlinks improve SEO performance?",
+    answer:
+      "High-quality backlinks from authoritative sites boost domain authority, increase credibility, and improve rankings for competitive keywords.",
+  },
+];
+
+export const ecoHeroData = {
+  breadcrumb: [
+    { name: "Home", link: "/" },
+    { name: "Development Services", link: "/development" },
+    { name: "Custom Web Development", link: "/custom-web" },
+  ],
+  title: "Custom eCommerce Development Services",
+  image: WebDevPage,
+  description:
+    "Take your online store to the next level with our eCommerce web development services. We build fast, secure, and user-friendly eCommerce websites optimized for SEO, mobile responsiveness, and high conversion rates. Whether you need a WooCommerce, Shopify, or custom eCommerce platform, we’ve got you covered.",
+  features: [
+    "End-to-End eCommerce Design",
+    "Frontend & Backend Development",
+    "eCommerce Marketing",
+  ],
+  button: "REQUEST A QUOTE",
+  requestQuoteLink: "/contact",
+  awards: [
+    {
+      title: "5 Star DesignRush Reviews",
+      stars: 5,
+    },
+    {
+      title: "Latest Web Design Award",
+      image: "/assets/css-award.png",
+    },
+  ],
+  video: {
+    link: "/video-demo",
+    text: "SEE OUR WORK",
+    subText: "IN ACTION",
+    duration: "1 MINUTE",
+  },
+};
+
+export const ecoTwoColumnSectionData = {
+  leftColumn: {
+    subHeading: "Why Choose Us",
+    mainHeading: "Ecommerce Website Development for High Sales",
+    content:
+      "Your eCommerce website is your most important sales tool. At Sat Americana, we specialize in designing and developing fast, scalable, and conversion-focused online stores. Our eCommerce web development services ensure that your website has a seamless UX/UI design, is mobile-responsive, and integrates secure payment gateways. We also focus on SEO optimization, ensuring that your store ranks high in search results. Whether you need a custom-built solution or a platform-based store on Shopify, WooCommerce, Magento, or BigCommerce, we create an eCommerce website that drives sales and enhances user experience.",
+    collapsibles: [
+      {
+        title: "Shopify Development Services for High-Performance Stores",
+        description:
+          "A well-optimized Shopify store is key to eCommerce success. Our Shopify development services provide a tailored approach to creating a seamless, scalable, and conversion-focused online store. Whether you need Shopify website development services from scratch, Shopify theme development services to enhance your store’s design, or Shopify eCommerce development services for better functionality, we’ve got you covered. We also offer Shopify store management services, including regular updates, inventory handling, and customer experience enhancements. With our Shopify maintenance services and Shopify management services, your store remains fast, secure, and ready for growth.",
+      },
+      {
+        title: "Etsy Marketing Services to Maximize Sales",
+        description:
+          "Selling on Etsy requires more than just listing products—you need a strong marketing strategy. Our Etsy marketing services help you stand out in the competitive marketplace by optimizing your store, improving product listings, and running targeted ads. As an Etsy marketing agency, we specialize in Etsy Shop Optimization Services, ensuring your product descriptions, images, and SEO align with customer search behavior. Whether you need an Etsy consultant for expert guidance or an Etsy agency to manage your Etsy ads services, we help boost traffic, conversions, and brand visibility on the platform.",
+      },
+      {
+        title: "eBay Marketing and Sales Services for Sellers",
+        description:
+          "Selling on eBay is highly competitive, and without the right strategy, your listings may get lost in search results. Our eBay services provide expert guidance on increasing sales, optimizing listings, and running effective ad campaigns. As an eBay advertising agency, we offer eBay marketing services that include eBay online services, such as store optimization, keyword-rich product descriptions, and pricing strategies. Whether you need an eBay ads expert to manage paid promotions or eBay account management services to handle day-to-day operations, our team ensures your store thrives.",
+      },
+      {
+        title: "Amazon PPC and Listing Optimization Services",
+        description:
+          "Amazon’s marketplace is competitive, and a successful strategy requires expert PPC management and listing optimization. Our Amazon PPC services and Amazon PPC management services help maximize visibility while keeping ad spend efficient. As a leading Amazon PPC agency, we create data-driven campaigns that increase your ROI. Need expert guidance? Our Amazon PPC consultant provides strategic insights to improve your ad performance. We also specialize in Amazon listing optimization service and Amazon product listing optimization services, ensuring your product titles, descriptions, and backend keywords drive conversions. Looking for the best Amazon PPC agency? Our team is here to help you scale your Amazon business profitably.",
+      },
+    ],
+  },
+  rightColumn: {
+    mainHeading: "Get In Touch",
+    content: "Fill out the form to request a quote or ask any questions.",
+    formFields: [
+      { label: "Name", placeholder: "Enter your name", type: "text" },
+      { label: "Email", placeholder: "Enter your email", type: "email" },
+      { label: "Message", placeholder: "Enter your message", type: "textarea" },
+    ],
+  },
+};
+
+export const ecoCaseStudiesData = {
+  subheading: "Transforming Online Retail with eCommerce Development",
+  mainHeading: "600+ High-Performing Stores Built",
+  content:
+    "From custom Shopify stores to enterprise-level WooCommerce and Magento solutions, we’ve empowered businesses with scalable eCommerce platforms that drive sales. Our expertise in eCommerce website development, UX design, and conversion optimization ensures that every store we build delivers an exceptional shopping experience and measurable results.",
+  tabs: [
+    {
+      id: "featured",
+      label: "Featured",
+      studies: [
+        {
+          id: 1,
+          image: "https://via.placeholder.com/400x300.png?text=Featured+Image",
+          title: "Creative Agency Website",
+          content:
+            "A creative agency website that boosts brand presence and drives conversions.",
+          cta: "Learn More",
+          ctaLink: "/case-studies/creative-agency",
+        },
+      ],
+    },
+    {
+      id: "b2b",
+      label: "B2B",
+      studies: [
+        {
+          id: 2,
+          image: "https://via.placeholder.com/400x300.png?text=B2B+Image",
+          title: "Corporate Portal",
+          content:
+            "An enterprise-level corporate portal that streamlines operations.",
+          cta: "View Details",
+          ctaLink: "/case-studies/corporate-portal",
+        },
+      ],
+    },
+    {
+      id: "ecommerce",
+      label: "eCommerce",
+      studies: [
+        {
+          id: 3,
+          image: "https://via.placeholder.com/400x300.png?text=eCommerce+Image",
+          title: "Online Store Redesign",
+          content:
+            "A redesigned online store that improves user engagement and sales.",
+          cta: "Discover More",
+          ctaLink: "/case-studies/online-store",
+        },
+      ],
+    },
+    {
+      id: "b2c",
+      label: "B2C",
+      studies: [
+        {
+          id: 4,
+          image: "https://via.placeholder.com/400x300.png?text=B2C+Image",
+          title: "Consumer Mobile App",
+          content:
+            "A mobile app for consumers that enhances engagement and retention.",
+          cta: "See App",
+          ctaLink: "/case-studies/mobile-app",
+        },
+      ],
+    },
+  ],
+};
+
+export const ecoEdgeData = {
+  mainHeading: "E-Commerce: Elevate Your Online Store",
+  cards: [
+    {
+      id: 1,
+      heading: "Create a Unique and Scalable Online Store",
+      content:
+        "A one-size-fits-all e-commerce solution doesn’t work for every business. Custom web development enables businesses to build a tailored online store that aligns with their brand, target audience, and sales objectives.",
+      content2:
+        "We develop feature-rich e-commerce websites with custom functionalities such as advanced product filtering, personalized recommendations, and secure payment gateways. Our solutions ensure that your online store is not only visually appealing but also optimized for conversions.",
+    },
+    {
+      id: 2,
+      heading: "Enhance Shopping Experiences with UX-Optimized Design",
+      content:
+        "A seamless shopping experience is crucial for customer satisfaction. Custom web development ensures that your site offers intuitive navigation, clear product categorization, and frictionless checkout processes.",
+      content2:
+        "We optimize e-commerce sites for speed, accessibility, and mobile-friendliness, ensuring customers can browse and purchase effortlessly. A well-designed store encourages repeat purchases and enhances brand loyalty.",
+    },
+    {
+      id: 3,
+      heading: "Maximize Sales with Custom CTAs and Promotions",
+      content:
+        "Strategic placement of CTAs and promotional offers can significantly impact sales. Custom web development allows businesses to implement dynamic pricing, discount strategies, and time-sensitive offers that drive urgency.",
+      content2:
+        "We design e-commerce websites that feature personalized product recommendations, abandoned cart recovery tools, and seamless upselling opportunities. These strategies help boost conversion rates and increase average order value.",
+    },
+    {
+      id: 4,
+      heading: "Ensure Security and Compliance",
+      content:
+        "Trust is vital in e-commerce. Our custom-built solutions prioritize security by implementing SSL encryption, secure payment gateways, and compliance with PCI DSS standards.",
+      content2:
+        "By ensuring data protection and user privacy, we help businesses build trust with their customers. A secure website not only improves customer confidence but also contributes to long-term success in the competitive e-commerce landscape.",
+    },
+  ],
+};
+
+export const ecoWhyBrandsData = {
+  subheading: "WHY BRANDS CHOOSE US",
+  mainHeading: "Our Unique Value as an E-Commerce Development Company",
+  text: "Ownership. Transparency. Results.",
+  buttons: [{ text: "SCHEDULE A CONSULTATION", link: "#" }],
+  cards: [
+    {
+      id: 1,
+      heading: "Expertise in E-Commerce Development Services",
+      text1:
+        "As a top e-commerce development company, we build high-performance online stores that maximize sales and customer engagement.",
+      text2:
+        "With years of experience in custom e-commerce development, UI/UX design, and platform integration, we help brands create seamless shopping experiences.",
+      text3:
+        "From initial strategy and development to long-term optimization, our e-commerce solutions are designed for businesses of all sizes and industries.",
+    },
+    {
+      id: 2,
+      heading: "Proven Results with Five-Star Reviews",
+      text1:
+        "Our team is recognized for delivering award-winning e-commerce development services. Choosing us means working with industry leaders",
+      text2:
+        "Our client reviews on Clutch and DesignRush highlight our expertise:",
+      text3:
+        "f you need a high-converting e-commerce website, Digital Silk is the company to trust. Their team developed a custom online store for us that improved user experience, increased sales, and streamlined our operations. Thanks to their expertise, our e-commerce business is thriving – Patrick Brown, CEO at Unity",
+    },
+    {
+      id: 3,
+      heading: "Ownership of Your E-Commerce Project",
+      text1:
+        "From discovery to launch and beyond, we take full responsibility for your e-commerce success.Every custom e-commerce solution we create is designed with your goals in mind, treating your business as our own.",
+      text2:
+        "By partnering with us, you gain a dedicated team of e-commerce experts who prioritize user experience, security, and performance to drive superior results.",
+      text3: "",
+    },
+    {
+      id: 4,
+      heading: "Driving Brand Growth with Professional E-Commerce Development Services",
+      text1:
+        "At Digital Silk, we help brands succeed in the competitive e-commerce space. Our full-service solutions include custom website development, online store optimization, digital marketing, and branding.",
+      text2:
+        "With innovative strategies, data-driven insights, and conversion-focused development, we ensure your e-commerce business achieves measurable growth.",
+      text3: "",
+    },
+  ],
+};
+
+export const ecoVersesData = {
+  heading:
+    "E-Commerce: Custom E-Commerce Development vs. SaaS E-Commerce Platforms",
+  webHead: "Custom Ecommerce Strategy",
+  webTempHead: "SaaS E-Commerce Platforms (e.g., Shopify, Wix, WooCommerce)",
+  featureHead: "Feature",
+  features: [
+    {
+      id: 1,
+      heading: "Customization & Flexibility",
+    },
+    {
+      id: 2,
+      heading: "Scalability & Growth",
+    },
+    {
+      id: 3,
+      heading: "SEO & Performance Optimization",
+    },
+    {
+      id: 4,
+      heading: "Advanced Integrations",
+    },
+    {
+      id: 5,
+      heading: "Unique Brand Identity",
+    },
+  ],
+  webDesign: [
+    {
+      id: 1,
+      heading: "",
+      text: "Fully tailored design, UX, and features based on business needs",
+    },
+    {
+      id: 2,
+      heading: "",
+      text: "Easily integrates advanced features like AI-driven recommendations and multi-store setups",
+    },
+    {
+      id: 3,
+      heading: "",
+      text: "Built with speed, mobile responsiveness, and SEO best practices from the ground up",
+    },
+    {
+      id: 4,
+      heading: "",
+      text: "Seamlessly connects with CRM, ERP, inventory management, and analytics tools.",
+    },
+    {
+      id: 5,
+      heading: "",
+      text: "Provides a one-of-a-kind storefront that differentiates from competitors",
+    },
+  ],
+  webTemp: [
+    {
+      id: 1,
+      heading: "",
+      text: "Offers pre-set themes and layouts with limited customization",
+    },
+    {
+      id: 2,
+      heading: "",
+      text: "Scaling is restricted by platform limitations and third-party app dependencies.",
+    },
+    {
+      id: 3,
+      heading: "",
+      text: "Relies on built-in SEO features but lacks deep technical customization",
+    },
+    {
+      id: 4,
+      heading: "",
+      text: "Limited integrations, often requiring paid apps or plugins",
+    },
+    {
+      id: 5,
+      heading: "",
+      text: "Uses widely available templates, making it harder to stand out.",
+    },
+  ],
+};
+
+export const ecoFaqsData = [
+  {
+    id: "01",
+    question: "Which eCommerce platform is best for my business: Amazon, Etsy, eBay, or Shopify?",
+    answer:
+      "It depends on your goals—Amazon is best for mass-market products, Etsy for handmade & niche items, eBay for auctions, and Shopify for a custom brand experience.",
+  },
+  {
+    id: "02",
+    question: "How do I optimize my eCommerce store for SEO?",
+    answer:
+      "Use keyword-rich product titles, optimized descriptions, high-quality images, and structured data to improve visibility on Google, Amazon, and Etsy search results",
+  },
+  {
+    id: "03",
+    question: "What are the best marketing strategies for selling on Amazon and eBay?",
+    answer:
+      "Utilize Amazon PPC, eBay promoted listings, email marketing, and influencer collaborations to boost sales and increase visibility.",
+  },
+  {
+    id: "04",
+    question: "How does Shopify compare to other eCommerce platforms?",
+    answer:
+      "Shopify offers full customization, integrated payment gateways, and powerful marketing tools, making it ideal for scaling a brand independently compared to Amazon or Etsy.",
+  },
+  {
+    id: "05",
+    question: "What are the key factors to increase eCommerce sales?",
+    answer:
+      "Focus on high-quality product descriptions, mobile-friendly design, social proof (reviews), and a seamless checkout process to increase conversions.",
+  },
+  {
+    id: "06",
+    question: "How can I drive traffic to my eCommerce store?",
+    answer:
+      "Implement SEO, social media marketing, Google Ads, email campaigns, and influencer partnerships to drive targeted traffic to your Shopify, Amazon, or Etsy store.",
+  },
+  
+];
+
+export const ecoTimelineComp = {
+  heading: "Our eCommerce Development Process",
+  text: "At Sat Americana, we offer custom eCommerce development services that help businesses create high-performing online stores tailored for growth.",
+  items: [
+    {
+      id: 1,
+      icon: "https://via.placeholder.com/50?text=A",
+      heading: "eCommerce Strategy & Planning",
+      content:
+        "A successful eCommerce store begins with a solid strategy. We analyze market trends and customer behaviors to build a roadmap for success.",
+    },
+    {
+      id: 2,
+      icon: "https://via.placeholder.com/50?text=B",
+      heading: "Custom Store Design & Development",
+      content:
+        "User experience (UX) is crucial for conversions. We design and develop eCommerce websites that provide a seamless shopping experience.",
+    },
+    {
+      id: 3,
+      icon: "https://via.placeholder.com/50?text=C",
+      heading: "eCommerce SEO & Product Optimization",
+      content:
+        "To succeed online, your store needs to rank high in search engines. We implement SEO best practices to boost visibility and sales",
+    },
+    {
+      id: 4,
+      icon: "https://via.placeholder.com/50?text=D",
+      heading: "eCommerce Marketing & Conversion Optimization",
+      content:
+        "Driving traffic is just the first step—we focus on turning visitors into customers through data-driven marketing strategies.",
+    },
+    {
+      id: 5,
+      icon: "https://via.placeholder.com/50?text=E",
+      heading: "Store Maintenance & Performance Optimization",
+      content:
+        "An eCommerce store requires continuous optimization to ensure smooth operation and long-term growth.",
+    },
+  ],
+};

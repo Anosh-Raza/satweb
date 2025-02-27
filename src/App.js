@@ -19,6 +19,7 @@ import SMM from './pages/services/smm';
 import Content from './pages/services/contentWriting';
 import PPC from './pages/services/ppc';
 import MobileApp from './pages/services/mobileApp';
+import Ecommerce from './pages/services/ecommerce';
 
 
 function App() {
@@ -33,14 +34,15 @@ function App() {
       <Route path='/packages' element={<Packages/>} />
       <Route path='/blogs' element={<Blogs/>} />
       <Route path='/contact' element={<Contact  />} />
-      <Route path="/amazon-services/" element={<Amazon />} />
+      <Route path="/amazon-services" element={<Amazon />} />
       <Route path="/logo-branding-services" element={<LogoBranding />} />
       <Route path="/web-development-services" element={<WebDevs />} />
-      <Route path="/search-engine-optimization/" element={<SEO />} />
-      <Route path="/social-media-marketing-services/" element={<SMM />} />
-      <Route path="/content-writing-services/" element={<Content />} />
-      <Route path="/pay-per-click/" element={<PPC />} />
-      <Route path="/mobile-app-development-services/" element={<MobileApp />} />
+      <Route path="/search-engine-optimization" element={<SEO />} />
+      <Route path="/social-media-marketing-services" element={<SMM />} />
+      <Route path="/content-writing-services" element={<Content />} />
+      <Route path="/pay-per-click" element={<PPC />} />
+      <Route path="/mobile-app-development-services" element={<MobileApp />} />
+      <Route path="/ecommerce-services" element={<Ecommerce />} />
     </Routes>
     <Footer/>
     </>
