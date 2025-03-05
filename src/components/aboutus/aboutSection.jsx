@@ -6,7 +6,7 @@ const AboutSection = ({ heading, subheading }) => {
 
   return (
     <section 
-      className="relative py-12 bg-cover bg-center bg-no-repeat" 
+      className="relative py-12 bg-cover bg-center bg-no-repeat pt-24" 
       style={{ backgroundImage: "url('https://cdn.britannica.com/02/152302-050-1A984FCB/African-savanna-elephant.jpg')" }} 
     >
       {/* ✅ Gradient Overlay */}
@@ -18,10 +18,10 @@ const AboutSection = ({ heading, subheading }) => {
         <h1 className="text-6xl font-bold my-8">{heading}</h1>
 
         {abtcta && (
-          <div className="flex flex-wrap justify-around gap-6 p-6">
+          <div className="flex flex-wrap justify-around gap-2 p-6">
             {abtcta.map((item, index) => (
               <div key={index} className="p-4 rounded-xl text-center">
-                <h3 className="text-4xl text-[#00eaff] mb-2">{item.abtcta1Heading}</h3>
+                <h3 className="text-4xl text-[#00eaff] mb-2 shadowTxt">{item.abtcta1Heading}</h3>
                 <p className="text-lg text-theme-white uppercase">{item.abtcta1Description}</p>
               </div>
             ))}

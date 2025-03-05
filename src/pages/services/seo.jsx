@@ -13,10 +13,18 @@ import { seoEdgeData } from "../../data";
 import { seoWhyBrandsData } from "../../data";
 import { seoVersesData } from "../../data";
 import { seoFaqsData } from "../../data";
+import { Helmet } from "react-helmet-async";
 
 const SEOservice = () => {
   return (
     <div>
+      <Helmet>
+              <title>Top SEO Services | Boost Rankings & Drive Organic Traffic</title>
+              <meta
+                name="description"
+                content="Increase visibility with expert SEO services! We offer on-page, off-page, and technical SEO to improve rankings, drive organic traffic, and maximize conversions. Let’s grow your brand online!"
+              />
+            </Helmet>
       <HeroSection data={seoheroData} />   
       <TwoColumns data={seotwoColumnSectionData}/>   
       <CaseStudy data={seoCaseStudiesData}/>

@@ -1,3 +1,4 @@
+import { HelmetProvider } from "react-helmet-async";
 import Home from './sections/home';
 import Header from './components/header';
 import Footer from './components/footer';
@@ -25,6 +26,7 @@ import Ecommerce from './pages/services/ecommerce';
 function App() {
   return (
     <>
+     <HelmetProvider>
     <Header/>
     <Routes>
       <Route path='/' element={<Home/>} />
@@ -45,6 +47,7 @@ function App() {
       <Route path="/ecommerce-services" element={<Ecommerce />} />
     </Routes>
     <Footer/>
+    </HelmetProvider>
     </>
   );
 }

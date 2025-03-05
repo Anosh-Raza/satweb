@@ -48,3 +48,123 @@ h1, h2, h3, h4, h5, h6, p, a, span, div, input, button {
     transform: rotate(360deg);
   }
 }
+
+.shadowTxt {
+  text-shadow: 5px 1px 20px;
+}
+
+section#verticalTabs {
+  background-image: url(https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_1920,q_auto/images/panoramic/getty_677807410_372454.jpg);
+  background-color: rgb(93 65 202);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+.ci_tabs {
+  box-shadow: 1px 1px 20px 0 #ffffff;
+}
+
+.ci_border-atv {
+  border-bottom: 2px solid #04e4ff;
+}
+.ci_border-iatv {
+  border-bottom: 2px solid white;
+}
+
+h2.wi_ctaHeading {
+  background: linear-gradient(#5d41ca, rgb(4 228 255));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wi_verticalH::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(45deg, #04e4ff, #5158d2);
+  position: absolute;
+  top: 15px;
+  right: 0;
+  z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  .wi_verticalH::after {
+    left: 0;
+    top: 38px;
+  }
+}
+
+.wi_testi-atv::after {
+  content: "";
+  background-color: #7869f7;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  border-radius: 50%;
+  filter: blur(50px);
+  z-index: -1;
+}
+
+.wi_timeline{
+  background-color:hsla(234,100%,6%,1);
+  background-image:
+  radial-gradient(at 100% 49%, hsla(186,100%,50%,0.21) 0px, transparent 50%),
+  radial-gradient(at 3% 42%, hsla(224,54%,23%,1) 0px, transparent 50%);
+}
+
+.wi_time-atv::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background: rgb(8 204 255);
+  position: absolute;
+  top: 80px;
+  border-radius: 50%;
+  left: 14px;
+  box-shadow: 1px 1px 20px 10px #08ccff;
+  filter: blur(10px);
+}
+
+.wi_timelineHR {
+  height: 2px;
+  width: 100%;
+  background-color: #00BCD4;
+  box-shadow: 1px 1px 10px 2px #00BCD4;
+  margin: 20px 0;
+}
+
+.wi_processNo {
+  -webkit-text-fill-color: #00bcd400;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #00e2fa;
+  opacity: 0.3;
+}
+
+.wi_video {
+  background: linear-gradient(45deg, #5d41ca, transparent);
+  height: 100px;
+  width: 90%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.wi_video-box{
+  height: 100px;
+  width: 200px;
+  background: url("https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_1920,q_auto/images/panoramic/getty_677807410_372454.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.wi_yelp {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}

@@ -16,7 +16,7 @@ import Services from '../components/home/services.jsx';
 import TabsData from '../components/home/verticalTabs.jsx';
 import Timeline from '../components/home/timeline.jsx';
 import FAQ from '../components/home/faq.jsx';
-
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const { categories, projects } = projectsData;
@@ -24,6 +24,13 @@ const Home = () => {
   
   return (
     <>
+    <Helmet>
+        <title>Leading Digital Marketing Agency in USA</title>
+        <meta
+          name="description"
+          content="The leading digital marketing agency in the United States. We offer experienced SEO, social media marketing, PPC, web development, and other services to help your business succeed."
+        />
+      </Helmet>
       <HomeBanner/>
       {/* <LogoMarquee/> */}
       <About/>

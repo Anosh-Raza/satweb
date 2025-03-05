@@ -91,47 +91,64 @@ const HorizontalTimeline = () => {
   }, []);
 
   return (
-    <section className="bg-theme-white">
-        <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-center mb-8 text-logo-purple">
-        Website Design Process
-      </h1>
-
-      {/* Horizontal Timeline Container */}
-      <div
-        ref={timelineRef}
-        className="overflow-x-auto scroll-smooth flex items-center py-4 space-x-8"
-        style={{
-          scrollSnapType: "x mandatory",
-          scrollbarWidth: "none", // Firefox
-          msOverflowStyle: "none", // IE/Edge
-        }}
-      >
-        {/* Timeline Nodes */}
-        {timelineData.map((item, index) => (
-          <div
-            key={item.id}
-            id={`node-${item.id}`}
-            className={`inline-flex flex-col items-center text-center p-4 rounded-lg transition-all duration-300 ${
-              index === activeIndex
-                ? "bg-logo-dark-blue text-white scale-110 shadow-lg"
-                : "bg-logo-purple text-theme-white"
-            }`}
-            style={{
-              minWidth: "200px",
-              scrollSnapAlign: "center", // Ensures smooth snapping to center
-            }}
-          >
-            {/* Icon */}
-            <span className="text-2xl mb-2">{item.icon}</span>
-            {/* Heading */}
-            <p className="text-sm uppercase">{item.heading}</p>
-            {/* Year */}
-            <p className="text-lg font-bold">{item.year}</p>
-          </div>
-        ))}
+    <section className="wi_timeline" aria-label="Website Design Process Timeline">
+      <div className="px-4 pt-12 container mx-auto">  
+        <h1 className="text-3xl font-bold text-center mb-8 text-theme-white">
+          Website Design Process
+        </h1>
+        <p className="text-theme-white text-center px-4 md:px-28 text-xl">
+          Take a peek behind the curtain and explore the custom web design process our team follows.
+          We build custom sites for brands of all sizes that deliver measurable results.
+        </p>
+        {/* Horizontal Timeline Container */}
+        <div
+          ref={timelineRef}
+          className="overflow-x-auto scroll-smooth flex pt-8 space-x-8"
+          style={{
+            scrollSnapType: "x mandatory",
+            scrollbarWidth: "none", // Firefox
+            msOverflowStyle: "none", // IE/Edge
+          }}
+          role="region"
+          aria-label="Timeline"
+        >
+          {/* Timeline Nodes */}
+          {timelineData.map((item, index) => (
+            <div
+              key={item.id}
+              id={`node-${item.id}`}
+              className={`inline-flex flex-col p-4 rounded-lg transition-all duration-300 ${
+                index === activeIndex
+                  ? "text-white scale-110 shadow-lg wi_time-atv"
+                  : "text-theme-white"
+              }`}
+              style={{
+                minWidth: "350px", // Adjusted for better mobile responsiveness
+                scrollSnapAlign: "center", // Ensures smooth snapping to center
+                justifyContent: "space-between"
+              }}
+              role="article"
+              aria-label={`Step ${index + 1}: ${item.heading}`}
+            >
+              <span className="text-2xl mb-2" role="img" aria-label="Icon">
+                {item.icon}
+              </span>
+              <span className="wi_timelineHR"></span>
+              <span className="wi_dot"></span>
+              <p className="text-xl text-left capitalize text-neon-blue my-5">{item.heading}</p>
+              <p className="text-base">{item.content}</p>
+              <ul className="list-disc pl-5 my-3">
+                {item.bullet.map((bullet) => (
+                  <li key={bullet.id} className="text-sm space-y-4">
+                    {bullet.point}
+                  </li>
+                ))}
+              </ul>
+                <p className="text-9xl font-bold wi_processNo text-transparent">{item.processNo}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };

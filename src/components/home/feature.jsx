@@ -9,7 +9,7 @@ const FeatureHeading = () => {
         heading="Our Work"
         description="Highlighting Our Proud Achievements"
         highlightedText=""
-        bgClass="bg-gradient-logo"
+        bgClass="bg-[#00042a]"
         textColor="text-white"
       />
     </>

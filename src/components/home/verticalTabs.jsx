@@ -13,11 +13,11 @@ const VerticalTabs = () => {
           {tabsData.map((tab) => (
             <li
               key={tab.id}
-              className={`p-3 rounded-lg cursor-pointer text-center md:text-left py-8 ${
+              className={`p-3 cursor-pointer text-center md:text-left py-4 text-2xl font-semibold uppercase ${
                 activeTab === tab.id
-                  ? "bg-logo-purple text-white"
-                  : "bg-gray-200 text-gray-700"
-              } hover:bg-logo-medium-blue-2 hover:text-white transition`}
+                  ? "text-[#04e4ff] ci_border-atv"
+                  : "text-theme-white ci_border-iatv"
+              } hover:text-[#04e4ff] transition`}
               onClick={() => setActiveTab(tab.id)}
             >
               {tab.title}
@@ -27,27 +27,27 @@ const VerticalTabs = () => {
       </div>
 
       {/* Tab Content */}
-      <div className="md:w-3/4 bg-[#00153a] p-6 rounded-lg shadow-lg">
+      <div className="md:w-3/4 bg-theme-white p-6 rounded-lg shadow-lg">
         {tabsData.map(
           (tab) =>
             activeTab === tab.id && (
-              <div key={tab.id}>
+              <div key={tab.id} className="relative">
                 {/* Main Heading */}
-                <h1 className="text-2xl font-bold mb-4 text-theme-white">{tab.title}</h1>
-                <p className="mb-6 text-theme-white">{tab.content}</p>
-                <p className="mb-6 text-theme-white">{tab.subcontent}</p>
+                <h1 className="text-4xl font-bold mb-4 text-logo-dark-blue uppercase wi_verticalH">{tab.title}</h1>
+                <p className="mb-6 text-logo-dark-blue">{tab.content}</p>
+                <p className="mb-6 text-logo-dark-blue">{tab.subcontent}</p>
                 {/* CTA Buttons */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {tab.ctas.map((cta, index) => (
                     <div
                       key={index}
-                      className="bg-white p-4 rounded-lg shadow-md flex flex-col gap-2"
+                      className="bg-theme-white p-4 rounded-lg shadow-md flex flex-col gap-2"
                     >
-                      <h2 className="text-xl font-semibold">{cta.heading}</h2>
-                      <p className="text-gray-600">{cta.description}</p>
+                      <h2 className="text-8xl font-extrabold wi_ctaHeading">{cta.heading}</h2>
+                      <p className="text-gray-600 capitalize font-semibold">{cta.description}</p>
                       <a
                         href={cta.link}
-                        className="mt-auto bg-logo-dark-blue text-white px-4 py-2 rounded-md hover:bg-blue-600 transition"
+                        className="mt-auto bg-logo-dark-blue text-white px-4 py-2 rounded-md hover:bg-blue-600 transition capitalize font-bold -tracking-tighter"
                       >
                         Learn More
                       </a>

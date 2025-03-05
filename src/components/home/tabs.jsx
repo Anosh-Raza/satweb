@@ -12,8 +12,8 @@ const Tabs = ({ categories, projects }) => {
   );
 
   return (
-    <div className="bg-gradient-logo">
-      <div className="py-12 container mx-auto">
+    <div className="bg-[#00042a]">
+      <div className="pb-12 container mx-auto">
         {/* Tabs */}
         <div className="flex space-x-4 border-b justify-center">
           {categories.map((category) => (

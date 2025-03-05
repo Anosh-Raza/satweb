@@ -5,13 +5,15 @@ import { trustComp } from "../../data";
 const Trust = () => {
   return (
     <>
-      <div className="bg-logo-purple relative py-12">
+      <div className="relative py-12" style={{
+  background: "linear-gradient(180deg, rgb(65 181 255 / 37%) 0%, rgba(65, 181, 255, 0) 68.46%), #FFF",
+}}>
         <Feature
           title={trustComp.title}
           heading={trustComp.heading}
           description={trustComp.description}
           bgClass=""
-          textColor="text-white"
+          textColor="text-logo-dark-blue"
         />
 
         {/* Horizontal Scrollable Container */}

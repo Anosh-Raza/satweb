@@ -18,7 +18,7 @@ const HomeBanner = () => {
 
   return (
     <>
-      <div className="relative bg-home-gradient bg-cover bg-center text-center">
+      <div className="relative bg-home-gradient bg-cover bg-center text-center pt-24">
   {/* Background image with overlay */}
   <div
     className="absolute inset-0"

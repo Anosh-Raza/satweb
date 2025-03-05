@@ -1910,51 +1910,153 @@ export const testimonialNew = [
 export const timelineData = [
   {
     id: 1,
-    icon: "📅", // You can replace this with an actual icon component
-    heading: "planning & information architecture",
-    year: "2021",
+    icon: "📅",
+    heading: "Step 1: Initial Consultation",
+    content: "We start by understanding your goals and challenges.",
+    processNo: "01",
+    bullet: [
+      {
+        id: 1,
+        point: "Conduct a comprehensive needs assessment.",
+      },
+      {
+        id: 2,
+        point: "Discuss your e-commerce platform preferences.",
+      },
+      {
+        id: 3,
+        point: "Identify target audiences and business objectives.",
+      },
+      {
+        id: 4,
+        point: "Offer initial recommendations tailored to your needs.",
+      },
+    ],
   },
   {
     id: 2,
-    icon: "🎨",
-    heading: "Step 1: Initial Consultation",
-    year: "2022",
+    icon: "📝",
+    heading: "Step 2: Planning & Strategy",
+    content: "We create a detailed plan to achieve your goals.",
+    processNo: "02",
+    bullet: [
+      {
+        id: 1,
+        point: "Define project scope and deliverables.",
+      },
+      {
+        id: 2,
+        point: "Develop a timeline and milestones.",
+      },
+      {
+        id: 3,
+        point: "Allocate resources and assign responsibilities.",
+      },
+      {
+        id: 4,
+        point: "Align strategies with your specific e-commerce platform.",
+      },
+    ],
   },
   {
     id: 3,
-    icon: "🧪",
-    heading: "testing & quality assurance",
-    year: "2023",
+    icon: "📝",
+    heading: "Step 3: Onboarding & Setup",
+    content: "We ensure a smooth transition to start the project effectively.",
+    processNo: "03",
+    bullet: [
+      {
+        id: 1,
+        point: "Gather necessary information and account access.",
+      },
+      {
+        id: 2,
+        point: "Integrate tools and platforms for seamless workflows",
+      },
+      {
+        id: 3,
+        point: "Assign a dedicated project manager to your account.",
+      },
+      {
+        id: 4,
+        point: "Set clear communication channels for updates and feedback",
+      },
+    ],
   },
   {
     id: 4,
-    icon: "🚀",
-    heading: "launch & post-launch support",
-    year: "2024",
+    icon: "📝",
+    heading: "Step 4: Implementation & Execution",
+    content: "Our experts bring strategies to life with precision.",
+    processNo: "04",
+    bullet: [
+      {
+        id: 1,
+        point: "Optimize your e-commerce store for better performance.",
+      },
+      {
+        id: 2,
+        point: "Launch targeted ad campaigns for your chosen platform",
+      },
+      {
+        id: 3,
+        point: "Execute SEO strategies to enhance visibility.",
+      },
+      {
+        id: 4,
+        point: "Develop custom web solutions if required.",
+      },
+    ],
   },
   {
     id: 5,
-    icon: "🚀",
-    heading: "launch & post-launch support",
-    year: "2024",
+    icon: "📝",
+    heading: "Step 5: Performance Monitoring",
+    content: "We track results to ensure everything is on track.",
+    processNo: "05",
+    bullet: [
+      {
+        id: 1,
+        point: "Use analytics tools to monitor campaign performance.",
+      },
+      {
+        id: 2,
+        point: "Provide regular reports on KPIs and progress.",
+      },
+      {
+        id: 3,
+        point: "Adjust strategies based on real-time data insights.",
+      },
+      {
+        id: 4,
+        point: "Ensure consistent communication with you about updates",
+      },
+    ],
   },
   {
     id: 6,
-    icon: "🚀",
-    heading: "launch & post-launch support",
-    year: "2024",
-  },
-  {
-    id: 7,
-    icon: "🚀",
-    heading: "launch & post-launch support",
-    year: "2024",
-  },
-  {
-    id: 8,
-    icon: "🚀",
-    heading: "launch & post-launch support",
-    year: "2024",
+    icon: "📝",
+    heading: "Step 6: Continuous Optimization",
+    content: "We refine and improve strategies to achieve long-term success.",
+    processNo: "06",
+    bullet: [
+      {
+        id: 1,
+        point: "Implement advanced tactics based on performance reviews.",
+      },
+      {
+        id: 2,
+        point: "Scale campaigns for increased ROI.",
+      },
+      {
+        id: 3,
+        point: "Offer ongoing support and maintenance for your platforms",
+      },
+      {
+        id: 4,
+        point: "Share recommendations for future growth opportunities.",
+      },
+    ],
   },
 ];
 

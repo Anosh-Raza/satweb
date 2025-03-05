@@ -74,7 +74,8 @@ function Navbar() {
                       <Link
                         to="/ecommerce-services"
                         onClick={handleLinkClick}
-                      >Ecommerce Services
+                      >
+                        Ecommerce Services
                       </Link>
                     </h3>
                     <ul>
@@ -131,7 +132,7 @@ function Navbar() {
                         to="/search-engine-optimization"
                         onClick={handleLinkClick}
                       >
-                        <h3 className="font-bold mb-2">SEO</h3>
+                        SEO
                       </Link>
                     </h3>
                     <Link
@@ -179,14 +180,15 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/login"
+                <a
+                  href="/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-logo-purple font-bold flex items-center"
-                  onClick={handleLinkClick}
                 >
                   Login to customer portal{" "}
                   <i className="bi bi-box-arrow-in-right ml-2"></i>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -196,7 +198,7 @@ function Navbar() {
         <div className="hidden lg:flex items-center">
           <ul className="flex space-x-4 text-base">
             <li>
-              <Link to="/" className="hover:text-gray-300">
+              <Link to="/" className="hover:text-gray-300" onClick={handleLinkClick}>
                 Home
               </Link>
             </li>
@@ -209,11 +211,12 @@ function Navbar() {
               <div className="absolute left-0 bg-logo-medium-blue-1 text-white mt-1 p-4 rounded-xl shadow-lg w-[600px] z-50 hidden group-hover:block">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                  <h3 className="font-bold mb-2">
+                    <h3 className="font-bold mb-2">
                       <Link
                         to="/ecommerce-services"
                         onClick={handleLinkClick}
-                      >Ecommerce Services
+                      >
+                        Ecommerce Services
                       </Link>
                     </h3>
                     <ul>
@@ -221,6 +224,7 @@ function Navbar() {
                         <Link
                           to="/shopify-services"
                           className="hover:text-gray-300"
+                          onClick={handleLinkClick}
                         >
                           Shopify Services
                         </Link>
@@ -229,6 +233,7 @@ function Navbar() {
                         <Link
                           to="/etsy-services"
                           className="hover:text-gray-300"
+                          onClick={handleLinkClick}
                         >
                           Etsy
                         </Link>
@@ -237,6 +242,7 @@ function Navbar() {
                         <Link
                           to="/ebay-services"
                           className="hover:text-gray-300"
+                          onClick={handleLinkClick}
                         >
                           Ebay
                         </Link>
@@ -245,6 +251,7 @@ function Navbar() {
                         <Link
                           to="/amazon-services"
                           className="hover:text-gray-300"
+                          onClick={handleLinkClick}
                         >
                           Amazon
                         </Link>
@@ -258,6 +265,7 @@ function Navbar() {
                         <Link
                           to="/platform-advertising"
                           className="hover:text-gray-300"
+                          onClick={handleLinkClick}
                         >
                           Platform Advertising
                         </Link>
@@ -266,6 +274,7 @@ function Navbar() {
                         <Link
                           to="/social-media"
                           className="hover:text-gray-300"
+                          onClick={handleLinkClick}
                         >
                           Social Media
                         </Link>
@@ -274,6 +283,7 @@ function Navbar() {
                         <Link
                           to="/email-marketing"
                           className="hover:text-gray-300"
+                          onClick={handleLinkClick}
                         >
                           Email Marketing
                         </Link>
@@ -281,7 +291,7 @@ function Navbar() {
                     </ul>
                   </div>
                   <div>
-                  <Link
+                    <Link
                       to="/search-engine-optimization"
                       onClick={handleLinkClick}
                     >
@@ -292,6 +302,7 @@ function Navbar() {
                     <Link
                       to="/web-development-services"
                       className="hover:text-gray-300"
+                      onClick={handleLinkClick}
                     >
                       <h3 className="font-bold mb-2">Web Development</h3>
                     </Link>
@@ -300,6 +311,7 @@ function Navbar() {
                         <Link
                           to="/platform-adv"
                           className="hover:text-gray-300"
+                          onClick={handleLinkClick}
                         >
                           Wordpress
                         </Link>
@@ -308,6 +320,7 @@ function Navbar() {
                         <Link
                           to="/search-engine-optimization"
                           className="hover:text-gray-300"
+                          onClick={handleLinkClick}
                         >
                           SEO
                         </Link>
@@ -318,17 +331,17 @@ function Navbar() {
               </div>
             </li>
             <li>
-              <Link to="/blogs" className="hover:text-gray-300">
+              <Link to="/blogs" className="hover:text-gray-300" onClick={handleLinkClick}>
                 Blog
               </Link>
             </li>
             <li>
-              <Link to="/about-us" className="hover:text-gray-300">
+              <Link to="/about-us" className="hover:text-gray-300" onClick={handleLinkClick}>
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/contact-us" className="hover:text-gray-300">
+              <Link to="/contact-us" className="hover:text-gray-300" onClick={handleLinkClick}>
                 Contact Us
               </Link>
             </li>
