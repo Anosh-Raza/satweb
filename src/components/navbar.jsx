@@ -180,15 +180,14 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="/login"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/login"
                   className="text-logo-purple font-bold flex items-center"
+                  onClick={handleLinkClick}
                 >
                   Login to customer portal{" "}
                   <i className="bi bi-box-arrow-in-right ml-2"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

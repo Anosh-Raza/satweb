@@ -101,12 +101,12 @@ const About = () => {
         </div>
       </div>
       <div className="container mx-auto mt-52">
-        <div className="wi_yelp">
+        <div className="wi_yelp px-4">
           <div className="wi_yelp-icon">
             <img src={Yelp} alt="Yelp" width={50}/>
           </div>
           <div className="wi_yelp-content">
-            <h4 className="text-theme-white">Reviews on Yelp</h4>
+            <h4 className="text-white text-base">Reviews on Yelp</h4>
           <img src={Stars} alt="Yelp" width={120}/>
           </div>
         </div>

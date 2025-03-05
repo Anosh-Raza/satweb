@@ -155,6 +155,13 @@ h2.wi_ctaHeading {
   gap: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .wi_video {
+    width: 95%;
+  }
+  
+}
+
 .wi_video-box{
   height: 100px;
   width: 200px;
@@ -166,5 +173,5 @@ h2.wi_ctaHeading {
 .wi_yelp {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 10px;
 }
