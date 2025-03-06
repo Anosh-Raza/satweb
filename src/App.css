@@ -175,3 +175,38 @@ h2.wi_ctaHeading {
   align-items: center;
   gap: 10px;
 }
+
+div#hs-form-virality-container {
+  display: none;
+}
+
+.wi_ulborder {
+  border-left: 1px solid #ffffff30;
+  padding-left: 1em;
+}
+
+.wi_ctaMain {
+  text-shadow: 1px 1px 15px #00BCD4;
+}
+
+.wi_follow::after {
+  content: "";
+  background: linear-gradient(45deg, #00e8ff, transparent);
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+}
+
+.wi_social {
+  border-radius: 50%;
+  padding: 0.5em;
+  box-shadow: 1px 1px 20px 0 #00e8ff;
+  transition: 1s;
+}
+
+.wi_social:hover {
+ transform: scale(1.5);
+ transition: 1s;
+}

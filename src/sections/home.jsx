@@ -46,7 +46,6 @@ const Home = () => {
       <FAQ/>
       <Testimonial/>
       <Timeline/>
-      
        <CTAForm contactInfo={contactInfo} socialMediaLinks={socialMediaLinks} />  
     </>
   );

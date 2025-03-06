@@ -6,7 +6,6 @@ import Edge from "../../components/edge"
 import WhyBrands from "../../components/whyBrands"
 import Verses from "../../components/verses";
 import FaqTemp from "../../components/faqTemp";
-import TimeLine from "../../components/timeLine"
 import { heroData } from "../../data";
 import { twoColumnSectionData } from "../../data";
 import { caseStudiesData } from "../../data";
@@ -33,7 +32,6 @@ const WebDeve = () => {
       <WhyBrands data={whyBrandsData}/>
       <Verses data={versesData}/>
       <FaqTemp data={faqsData}/>
-      <TimeLine/>
     </div>
   );
 };

@@ -5,6 +5,9 @@ const AmazonComponent = () => {
   return (
     <section
       className="bg-light-theme py-24 relative"
+      style={{
+        background: "linear-gradient(180deg, rgb(65 181 255 / 37%) 0%, rgba(65, 181, 255, 0) 68.46%), #FFF",
+      }}
     >
       {/* Background Heading */}
       <div className="absolute inset-0 flex justify-center items-center z-0">

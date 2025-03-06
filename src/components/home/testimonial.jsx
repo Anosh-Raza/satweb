@@ -29,7 +29,8 @@ const VerticalTestimonialSlider = () => {
   };
 
   return (
-    <div className="bg-[#0A0F24] w-full">
+    <div className="bg-[#0A0F24] w-full"
+    >
       <div className="flex flex-col md:flex-row text-white py-12 shadow-lg container mx-auto px-4 md:px-0 md:h-[500px]">
         
         {/* Left: Testimonials List */}
