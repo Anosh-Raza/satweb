@@ -3930,3 +3930,394 @@ export const etsyFaqsData = [
       "Success is measured through key performance indicators (KPIs) such as traffic, conversion rate, average order value (AOV), customer retention, and ROI.",
   },
 ];
+
+export const ebayheroData = {
+  breadcrumb: [
+    { name: "Home", link: "/" },
+    { name: "Development Services", link: "/development" },
+    { name: "Custom Web Development", link: "/custom-web" },
+  ],
+  title: "Expert eBay Growth Solutions",
+  image: WebDevPage,
+  description:
+    "Take your online business to new heights with our eBay marketing services, crafted for seamless buyer experiences. Whether you need eBay account management services, targeted advertising, or expert store optimization, our data-driven strategies improve visibility, enhance engagement, and maximize sales for long-term success on eBay.",
+  features: [
+    
+  ],
+  button: "REQUEST A QUOTE",
+  requestQuoteLink: "/contact",
+  awards: [
+    {
+      title: "5 Star DesignRush Reviews",
+      stars: 5,
+    },
+    {
+      title: "Latest Web Design Award",
+      image: "/assets/css-award.png",
+    },
+  ],
+  video: {
+    link: "/video-demo",
+    text: "SEE OUR WORK",
+    subText: "IN ACTION",
+    duration: "1 MINUTE",
+  },
+};
+
+export const ebaytwoColumnSectionData = {
+  leftColumn: {
+    subHeading: "Why Choose Us",
+    mainHeading: "Best eBay Marketing Solutions",
+    content:
+      "A well-optimized eBay store is key to increasing sales and visibility. At Sat Americana, our eBay marketing services ensure every element of your store is fine-tuned for performance. From advanced keyword research to customer insights, we leverage AI-powered tools and data analytics to create effective marketing campaigns that drive conversions.",
+    collapsibles: [
+      {
+        title: "eBay Store Optimization Services",
+        description:
+          "Your eBay store's layout and presentation directly impact customer engagement. Our eBay online services include listing enhancements, SEO-driven descriptions, and branding strategies. We make sure your storefront is visually appealing, keyword-optimized, and designed to convert.",
+      },
+      {
+        title: "eBay Account Management & Maintenance",
+        description:
+          "Ensure your eBay store runs smoothly with our eBay account management services. From inventory updates to compliance monitoring, we handle all operational aspects so you can focus on growing your business. Our team actively manages listings, pricing, and ad placements to keep your store competitive.",
+      },
+    ],
+  },
+  rightColumn: {
+    mainHeading: "Get In Touch",
+    content: "Fill out the form to request a quote or ask any questions.",
+    formFields: [
+      { label: "Name", placeholder: "Enter your name", type: "text" },
+      { label: "Email", placeholder: "Enter your email", type: "email" },
+      { label: "Message", placeholder: "Enter your message", type: "textarea" },
+    ],
+  },
+};
+
+export const ebayCaseStudiesData = {
+  subheading: "Scaling Brands with Proven eBay Strategies",
+  mainHeading: "1,000+ Successful eBay Sellers",
+  content:
+    "Our expertise in eBay online services has helped countless businesses expand their digital footprint. From eBay sales services to conversion-driven strategies, we ensure your store gains traction, attracts customers, and achieves sustainable success.",
+  tabs: [
+    {
+      id: "featured",
+      label: "Featured",
+      studies: [
+        {
+          id: 1,
+          image: "https://via.placeholder.com/400x300.png?text=Featured+Image",
+          title: "Creative Agency Website",
+          content:
+            "A creative agency website that boosts brand presence and drives conversions.",
+          cta: "Learn More",
+          ctaLink: "/case-studies/creative-agency",
+        },
+      ],
+    },
+    {
+      id: "b2b",
+      label: "B2B",
+      studies: [
+        {
+          id: 2,
+          image: "https://via.placeholder.com/400x300.png?text=B2B+Image",
+          title: "Corporate Portal",
+          content:
+            "An enterprise-level corporate portal that streamlines operations.",
+          cta: "View Details",
+          ctaLink: "/case-studies/corporate-portal",
+        },
+      ],
+    },
+    {
+      id: "ecommerce",
+      label: "eCommerce",
+      studies: [
+        {
+          id: 3,
+          image: "https://via.placeholder.com/400x300.png?text=eCommerce+Image",
+          title: "Online Store Redesign",
+          content:
+            "A redesigned online store that improves user engagement and sales.",
+          cta: "Discover More",
+          ctaLink: "/case-studies/online-store",
+        },
+      ],
+    },
+    {
+      id: "b2c",
+      label: "B2C",
+      studies: [
+        {
+          id: 4,
+          image: "https://via.placeholder.com/400x300.png?text=B2C+Image",
+          title: "Consumer Mobile App",
+          content:
+            "A mobile app for consumers that enhances engagement and retention.",
+          cta: "See App",
+          ctaLink: "/case-studies/mobile-app",
+        },
+      ],
+    },
+  ],
+};
+
+export const ebayWhat = {
+  title: "What is eBay?",
+  description:
+    "eBay is one of the largest online marketplaces, offering a platform for businesses and individuals to buy and sell products globally. Its extensive reach, seller tools, and marketing features make it a go-to platform for eCommerce entrepreneurs.",
+  benefits: [
+    {
+      title: "Scalability",
+      description: "Easily expand and grow your business",
+    },
+    {
+      title: "Secure Transactions",
+      description: "Buyer and seller protection policies",
+    },
+    {
+      title: "Advanced Analytics",
+      description: "Monitor sales, trends, and performance",
+    },
+    {
+      title: "Built-in Marketing Tools",
+      description: "Access advertising and SEO features",
+    },
+  ],
+};
+
+export const ebayEdgeData = {
+  mainHeading: "Drive Sales with eBay Marketing Services",
+  cards: [
+    {
+      id: 1,
+      heading: "Establish a Strong Online Presence",
+      content:
+        "A well-optimized eBay store is the foundation of a successful eCommerce business. The right layout, navigation, and branding significantly impact customer trust and engagement.",
+      content2:
+        "As a top eBay advertising agency, we specialize in creating high-performing storefronts that align with your brand vision. With eBay sales services, we integrate eCommerce tools such as analytics, email marketing, and social media to strengthen your competitive edge.",
+    },
+    {
+      id: 2,
+      heading: "Enhance User Experience for Maximum Engagement",
+      content:
+        "User experience (UX) is crucial for increasing conversions. A cluttered or slow-loading eBay store can deter potential buyers, while a streamlined, well-organized storefront encourages purchases.",
+      content2:
+        "Through our eBay marketing services, we optimize navigation, refine product listings, and implement features like AI-driven recommendations and customer support tools. These enhancements ensure a seamless shopping experience that drives customer retention.",
+    },
+    {
+      id: 3,
+      heading: "Maximize Sales with High-Converting CTAs",
+      content:
+        "Successful online businesses rely on well-placed calls-to-action (CTAs) to boost conversions. Our eBay ads expert team implements A/B testing, heatmap analysis, and conversion tracking to optimize CTAs for maximum impact.",
+      content2:
+        "We craft compelling product descriptions and persuasive landing pages to generate leads and sales. By leveraging data-driven marketing techniques, we help turn browsers into buyers.",
+    },
+    {
+      id: 4,
+      heading: "Leverage Omnichannel Marketing for eBay Success",
+      content:
+        "An optimized eBay store works best when integrated with multiple marketing channels, including social media, paid ads, and email campaigns.",
+      content2:
+        "Our eBay online services ensure your store aligns with a powerful omnichannel strategy, allowing you to connect with buyers at every stage of their purchasing journey. With our eBay advertising agency, we maximize ad reach and boost brand visibility.",
+    },
+    {
+      id: 5,
+      heading: "Maximize Sales with eBay Services",
+      content:
+        "A successful eCommerce strategy starts with an optimized marketplace presence. Our eBay marketing services ensure your store is fully optimized, visually appealing, and structured for maximum engagement.",
+      content2:
+        "",
+    },
+    {
+      id: 6,
+      heading: "Elevate User Experience for Higher Conversions",
+      content:
+        "User experience (UX) is a game-changer in eCommerce success. A complicated and cluttered store drives customers away, while a seamless, well-designed layout enhances engagement and conversions. Our eBay online services focus on optimizing store navigation, refining product descriptions, and integrating AI-powered recommendations to improve customer interactions.",
+      content2:
+        "",
+    },
+    {
+      id: 7,
+      heading: "High-Performing CTAs to Drive Sales",
+      content:
+        "Effective eBay sales services rely on strategic calls-to-action (CTAs) that convert casual visitors into loyal buyers. Our team performs A/B testing, heatmap analysis, and conversion tracking to create compelling CTAs that encourage action. With data-backed marketing techniques, we optimize landing pages and product descriptions to enhance conversions.",
+      content2:
+        "",
+    },
+    {
+      id: 8,
+      heading: "Omnichannel Strategy for Maximum Reach",
+      content:
+        "A successful eBay advertising agency knows the importance of integrating multiple marketing channels. Our omnichannel strategy ensures your store aligns with paid advertising, social media campaigns, and email marketing. Through our eBay ads expert solutions, we maximize your return on investment (ROI) while expanding brand visibility across different platforms.",
+      content2:
+        "",
+    },
+  ],
+};
+
+export const ebayWhyBrandsData = {
+  subheading: "WHY BRANDS CHOOSE US",
+  mainHeading: "Why Choose Our eBay Account Management Services?",
+  text: "",
+  buttons: [{ text: "SCHEDULE A CONSULTATION", link: "#" }],
+  cards: [
+    {
+      id: 1,
+      heading: "Expertise in eBay Marketing Services",
+      text1:
+        "As a leading eBay advertising agency, we have a proven track record of scaling online stores. Our team specializes in eBay account management services, ensuring your business gains more exposure, engagement, and revenue. Whether you need assistance with store setup, optimization, or ad management, our data-driven approach guarantees results.",
+      text2:
+        "",
+      text3:
+        "",
+    },
+    {
+      id: 2,
+      heading: "Client Success Stories",
+      text1:
+        "Our eBay sales services have helped numerous businesses improve their online presence and grow revenue. Here’s what our satisfied clients have to say:",
+      text2:
+      "Partnering with this team was the best decision for our eBay services. Their optimization strategies significantly boosted our visibility and sales! – Michael R., Online Retailer",
+      text3:
+        "",
+    },
+    {
+      id: 3,
+      heading: "Full Ownership of Your eBay Store’s Success",
+      text1:
+        "From the initial consultation to execution and ongoing management, we take full responsibility for optimizing your eCommerce success. Our tailored eBay marketing services include store branding, product listing optimization, ad campaign management, and continuous performance monitoring to ensure sustainable growth.",
+      text2:
+        "",
+      text3: "",
+    },
+    {
+      id: 4,
+      heading: "",
+      text1:
+        "",
+      text2:
+        "",
+      text3: "",
+    },
+  ],
+};
+
+export const ebayGlobalTimeline = [
+  {
+    id: 1,
+    icon: "📝",
+    heading: "Market Research & Strategy",
+    content: "A thriving eBay store starts with data-driven planning. We conduct in-depth research to build a tailored strategy.",
+    bullet: [
+      { id: 1, point: "Analyze target audience behaviors" },
+      { id: 2, point: "Study competitor strategies and industry trends" },
+      { id: 3, point: "Set measurable sales goals and KPIs" },
+      { id: 4, point: "Develop a customized eBay services roadmap" },
+    ],
+    processNo: "01",
+  },
+  {
+    id: 2,
+    icon: "📝",
+    heading: "eBay Store Optimization & Branding",
+    content: "A well-structured eBay store enhances user experience and sales. We implement high-converting strategies, including:",
+    bullet: [
+      { id: 1, point: "SEO-driven, compelling product listings" },
+      { id: 2, point: "Professional branding to establish credibility" },
+      { id: 3, point: "Enhanced product pages to improve engagement" },
+      { id: 4, point: "Mobile-friendly and seamless navigation" },
+    ],
+    processNo: "02",
+  },
+  {
+    id: 3,
+    icon: "📝",
+    heading: "eBay Ads Management & Optimization",
+    content: "Effective advertising is key to success on eBay. Our eBay advertising agency creates and optimizes high-performing campaigns.",
+    bullet: [
+      { id: 1, point: "Implement PPC campaigns for targeted reach" },
+      { id: 2, point: "Optimize ads for better cost-per-click (CPC) efficiency" },
+      { id: 3, point: "Conduct A/B testing for ad performance improvements" },
+      { id: 4, point: "Improve store usability to maximize conversions" },
+    ],
+    processNo: "03",
+  },
+  {
+    id: 4,
+    icon: "📝",
+    heading: "eBay Store Growth & Maintenance",
+    content: "Our eBay account management services help sellers streamline operations and increase sales",
+    bullet: [
+      { id: 1, point: "Manage listings, inventory, and pricing strategies" },
+      { id: 2, point: "Optimize checkout and sales funnels" },
+      { id: 3, point: "Implement growth-focused promotional campaigns" },
+      { id: 4, point: "Enhance customer engagement for higher retention" },
+    ],
+    processNo: "04",
+  },
+  {
+    id: 5,
+    icon: "📝",
+    heading: "Analytics, Reporting & Continuous Optimization",
+    content: "We use data to refine and improve your eBay store's performance. Our insights drive continuous success.",
+    bullet: [
+      { id: 1, point: "Track performance through analytics" },
+      { id: 2, point: "Adjust marketing strategies based on real-time data" },
+      { id: 3, point: "Provide detailed reports on sales and traffic trends" },
+      { id: 4, point: "Optimize listings and promotions for higher ROI" },
+    ],
+    processNo: "05",
+  },
+
+];
+
+export const ebayCTA = {
+  title: "Meet Our eBay Ads Expert Team",
+  description:
+    "Want expert guidance on scaling your eBay online services? Schedule a free consultation with our team and receive personalized recommendations tailored to your business goals.",
+  cta: {
+    text: "CONTACT US TODAY",
+    link: "/consultation",
+  },
+};
+
+export const ebayFaqsData = [
+  {
+    id: "01",
+    question: "What are eBay marketing services, and why do they matter?",
+    answer:
+      "eBay marketing services involve optimizing product listings, running ad campaigns, and improving store visibility to drive sales and customer engagement.",
+  },
+  {
+    id: "02",
+    question: "Can you manage my eBay store entirely? ",
+    answer:
+      "Yes! Our eBay account management services handle everything from listing optimization to ad management and performance tracking.",
+  },
+  {
+    id: "03",
+    question: "What kind of ads can I run on eBay? ",
+    answer:
+      "With our eBay advertising agency, you can launch promoted listings, display ads, and external campaigns to attract targeted buyers.",
+  },
+  {
+    id: "04",
+    question: "How do you measure success for eBay stores?",
+    answer:
+      "We track key performance indicators (KPIs) such as traffic, conversion rates, and ROI to refine and enhance your store’s performance over time.",
+  },
+  {
+    id: "05",
+    question: "How can eBay advertising agency services improve my store’s visibility?",
+    answer:
+      "An eBay advertising agency specializes in creating and managing targeted ad campaigns that boost product visibility and increase conversions. By leveraging eBay ads expert insights, PPC strategies, and data-driven ad optimizations, your listings can reach more potential buyers and drive higher sales.",
+  },
+  {
+    id: "06",
+    question: "What are the benefits of eBay account management services?",
+    answer:
+      "eBay account management services handle everything from listing optimization to inventory updates, order management, and customer service. These services ensure your store operates smoothly, maintains high seller ratings, and maximizes profitability without the stress of daily operations.",
+  },
+];
