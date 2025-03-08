@@ -348,14 +348,14 @@ function Navbar() {
         </div>
         <div className="hidden lg:block">
           <Button
-            placeholder="Request A Quote"
+            placeholder="Get A Quote"
             url="/signin"
             bgColor="bg-transparent"
             borderRadius="rounded"
-            extraClasses="hover:bg-gray-300 px-4 py-2"
+            extraClasses="hover:bg-gray-300 px-4 py-2 bg-gradient-to-tr from-logo-purple to-neon-blue"
             borderBtn="border-2"
             textColor="text-white"
-            textColorHover="text-logo-purple"
+            textColorHover="text-white"
             fontWeight="font-bold"
           />
         </div>

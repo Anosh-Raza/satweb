@@ -17,6 +17,11 @@ module.exports = {
         'light-blue': '#3b82f6',
         'light-blue-ver2': '#1e3075',
         'logo-light-blue-white': '#F1F5FE',
+        'primary': '#1E3A8A', // blue-900
+        'secondary': '#06B6D4', // cyan-500
+        'background': '#F3F4F6', // gray-100
+        'accent': '#6366F1', // indigo-500
+        'text': '#111827', // gray-900
       },
       textShadow: {
         sm: '0 1px 2px white',

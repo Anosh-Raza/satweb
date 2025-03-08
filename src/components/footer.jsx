@@ -1,23 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo-white.png";
+import { FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-light-blue text-white py-12">
+    <footer className="bg-light-blue text-white pb-12">
       <div
-        className=""
+        className=" lg:px-0 px-8 py-8"
         style={{
           backgroundColor: "hsla(235, 40%, 17%, 1)",
           backgroundImage:
-            "radial-gradient(at 99% 98%, hsla(203, 100%, 50%, 1) 0px, transparent 50%), radial-gradient(at 0% 30%, hsla(275, 100%, 36%, 1) 0px, transparent 50%)",
+            "radial-gradient(at 99% 98%, hsla(203, 100%, 50%, 0.2) 0px, transparent 50%), radial-gradient(at 0% 30%, hsla(275, 100%, 36%, 0.2) 0px, transparent 50%)",
         }}
       >
-        <h2>Sign Up To Get The Latest Digital Trends</h2>
-        <div></div>
+        <div className="container mx-auto py-8 grid md:grid-cols-2 gap-8 items-center">
+          <h2 className="text-3xl lg:w-1/2 w-full font-extrabold lg:text-left text-center">
+            Sign Up To Get The Latest Digital Trends
+          </h2>
+          <div>
+            <div className="flex items-center border border-[#ffffff40] focus-within:border-blue-500 pl-5">
+              <FaEnvelope className="mr-4 text-xl" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                className="flex-1 py-2 bg-transparent text-base outline-none placeholder-theme-white"
+                placeholder="Enter your email"
+              />
+              <button
+                style={{}}
+                type="submit"
+                className="w-1/2 flex justify-center py-4 px-8 text-sm font-medium text-white bg-gradient-to-tr from-logo-purple to-neon-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
+                SIGN UP
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="container mx-auto flex justify-between pb-12">
+      <div className="container mx-auto flex justify-between py-12">
         <div className="logoFooter">
           <img src={logo} alt={logo} width={80} />
         </div>
@@ -147,8 +171,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center text-sm mt-8 border-t border-blue-700 pt-4">
-        © 2024 Digital Silk. All rights reserved | Privacy Policy |
-        Accessibility
+        © 2024 SAT Americanc. All rights reserved
       </div>
     </footer>
   );

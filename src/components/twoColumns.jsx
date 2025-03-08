@@ -12,7 +12,7 @@ const CollapsibleItem = ({ title, description }) => {
       >
         {title}
       </button>
-      {isOpen && <p className="p-3 text-light-blue text-base">{description}</p>}
+      {isOpen && <p className="p-3 text-theme-white text-base">{description}</p>}
     </div>
   );
 };
@@ -72,7 +72,7 @@ const TwoColumnSection = ({ data }) => {
         </div>
 
         {/* Right Column */}
-        <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
+        <div className="bg-gray-50 p-6 rounded-lg shadow-lg w-full lg:w-1/2">
           <h2 className="text-5xl font-bold mb-2 text-dark-blue">
             {rightColumn.mainHeading}
           </h2>

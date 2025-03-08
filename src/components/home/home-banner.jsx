@@ -56,11 +56,11 @@ const HomeBanner = () => {
         url="/"
         bgColor="bg-logo-dark-blue"
         borderRadius="rounded-lg"
-        extraClasses="hover:bg-gray-300 px-8 py-2 m-5 buttonHover"
+        extraClasses="hover:bg-gray-300 px-8 py-2 m-5 buttonHover bg-gradient-to-tr from-logo-purple to-neon-blue"
         borderBtn="border-2"
         textColor="text-white"
         textColorHover="text-black"
-        fontWeight="font-bold"
+        fontWeight="font-normal"
       ></Button>
       <Button
         placeholder="CONTACT US"
@@ -71,7 +71,7 @@ const HomeBanner = () => {
         borderBtn="border-2"
         textColor="text-white"
         textColorHover="text-black"
-        fontWeight="font-bold"
+        fontWeight="font-normal"
       ></Button>
     </div>
   </div>

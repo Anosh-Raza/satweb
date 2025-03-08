@@ -3284,3 +3284,649 @@ export const ecoTimelineComp = {
     },
   ],
 };
+
+
+export const amzheroData = {
+  breadcrumb: [
+    { name: "Home", link: "/" },
+    { name: "Development Services", link: "/development" },
+    { name: "Custom Web Development", link: "/custom-web" },
+  ],
+  title: "Professional Amazon PPC Services",
+  image: WebDevPage,
+  description:
+    "Launch and grow your Amazon store with expert Amazon PPC services designed to deliver seamless customer experiences. From Amazon PPC management services to Amazon listing optimization services, we implement data-driven strategies that enhance visibility, maximize conversions, and drive long-term success.",
+  features: [
+    "Increase Product Visibility",
+    "Boost Sales & Conversions",
+    "Drive Targeted Traffic",
+  ],
+  button: "REQUEST A QUOTE",
+  requestQuoteLink: "/contact",
+  awards: [
+    {
+      title: "5 Star DesignRush Reviews",
+      stars: 5,
+    },
+    {
+      title: "Latest Web Design Award",
+      image: "/assets/css-award.png",
+    },
+  ],
+  video: {
+    link: "/video-demo",
+    text: "SEE OUR WORK",
+    subText: "IN ACTION",
+    duration: "1 MINUTE",
+  },
+};
+
+export const amztwoColumnSectionData = {
+  leftColumn: {
+    subHeading: "Why Choose Us",
+    mainHeading: "Professional Amazon PPC Management Services",
+    content:
+      "A well-optimized Amazon ad campaign is crucial for success. At Sat Americana, we take a data-driven approach to Amazon PPC services, ensuring every aspect of your campaign is optimized for visibility and conversions. From keyword research to performance tracking, we implement AI-powered tools to craft winning strategies. Whether you're launching new ads, optimizing existing campaigns, or scaling operations, our Amazon PPC consultant team delivers tailored solutions to maximize results",
+    collapsibles: [
+      {
+        title: "Amazon Listing Optimization Services",
+        description:
+          "Your product listings play a crucial role in attracting customers. Our Amazon listing optimization service includes keyword-rich titles, compelling product descriptions, and SEO-friendly strategies. We ensure your Amazon listings stand out with high-quality content, optimized for engagement and conversions. Whether you need Amazon product listing optimization services, branding enhancement, or UI/UX improvements, we create tailored solutions that generate results",
+      },
+      {
+        title: "Amazon Store Management & Maintenance",
+        description:
+          "Keep your store running smoothly with our Amazon PPC management services and expert consultant solutions. We handle everything from listing updates to ad performance optimization, ensuring seamless operations. Our proactive approach minimizes inefficiencies and maximizes efficiency. Whether it’s inventory updates, algorithm changes, or ad enhancements, our Amazon PPC agency ensures your store remains competitive and successful",
+      },
+    ],
+  },
+  rightColumn: {
+    mainHeading: "Get In Touch",
+    content: "Fill out the form to request a quote or ask any questions.",
+    formFields: [
+      { label: "Name", placeholder: "Enter your name", type: "text" },
+      { label: "Email", placeholder: "Enter your email", type: "email" },
+      { label: "Message", placeholder: "Enter your message", type: "textarea" },
+    ],
+  },
+};
+
+export const amzCaseStudiesData = {
+  subheading: "Helping Clients with Proven Amazon PPC Expertise",
+  mainHeading: "1,000+ Successful Amazon Ad Campaigns",
+  content:
+    "Our SEO strategies have helped businesses across industries achieve higher search rankings, increased organic traffic, and better conversion rates. From local businesses to global enterprises, we implement on-page, off-page, and technical SEO techniques that ensure long-term success. Every project showcases our dedication to data-driven results and sustainable growth.",
+  tabs: [
+    {
+      id: "featured",
+      label: "Featured",
+      studies: [
+        {
+          id: 1,
+          image: "https://via.placeholder.com/400x300.png?text=Featured+Image",
+          title: "Creative Agency Website",
+          content:
+            "A creative agency website that boosts brand presence and drives conversions.",
+          cta: "Learn More",
+          ctaLink: "/case-studies/creative-agency",
+        },
+      ],
+    },
+    {
+      id: "b2b",
+      label: "B2B",
+      studies: [
+        {
+          id: 2,
+          image: "https://via.placeholder.com/400x300.png?text=B2B+Image",
+          title: "Corporate Portal",
+          content:
+            "An enterprise-level corporate portal that streamlines operations.",
+          cta: "View Details",
+          ctaLink: "/case-studies/corporate-portal",
+        },
+      ],
+    },
+    {
+      id: "ecommerce",
+      label: "eCommerce",
+      studies: [
+        {
+          id: 3,
+          image: "https://via.placeholder.com/400x300.png?text=eCommerce+Image",
+          title: "Online Store Redesign",
+          content:
+            "A redesigned online store that improves user engagement and sales.",
+          cta: "Discover More",
+          ctaLink: "/case-studies/online-store",
+        },
+      ],
+    },
+    {
+      id: "b2c",
+      label: "B2C",
+      studies: [
+        {
+          id: 4,
+          image: "https://via.placeholder.com/400x300.png?text=B2C+Image",
+          title: "Consumer Mobile App",
+          content:
+            "A mobile app for consumers that enhances engagement and retention.",
+          cta: "See App",
+          ctaLink: "/case-studies/mobile-app",
+        },
+      ],
+    },
+  ],
+};
+
+export const amzGlobalTimeline = [
+  {
+    id: 1,
+    icon: "📝",
+    heading: "Market Research & Strategy",
+    content: "A high-performing Amazon PPC campaign starts with data-driven insights. We conduct in-depth research to craft a tailored advertising strategy",
+    bullet: [
+      { id: 1, point: "Analyze target audience behavior" },
+      { id: 2, point: "Research competitor PPC tactics and industry trends" },
+      { id: 3, point: "Define sales goals and KPIs for measurable success" },
+      { id: 4, point: "Develop a full-scale Amazon PPC strategy roadmap" },
+    ],
+    processNo: "01",
+  },
+  {
+    id: 2,
+    icon: "📝",
+    heading: "Amazon Product Listing Optimization",
+    content: "A well-optimized listing increases visibility and conversions. We implement proven Amazon listing optimization service techniques:",
+    bullet: [
+      { id: 1, point: "Create SEO-friendly, high-converting product descriptions" },
+      { id: 2, point: "Optimize product titles, bullet points, and backend keywords" },
+      { id: 3, point: "Improve images and A+ content for better engagement" },
+      { id: 4, point: "Ensure mobile-friendly and visually appealing listings" },
+    ],
+    processNo: "02",
+  },
+  {
+    id: 3,
+    icon: "📝",
+    heading: "Amazon PPC Campaign Optimization",
+    content: "Performance is key to success. Our Amazon PPC agency services maximize your store’s potential",
+    bullet: [
+      { id: 1, point: "Implement PPC advertising for targeted traffic" },
+      { id: 2, point: "Optimize ad campaigns for better ROI" },
+      { id: 3, point: "Conduct A/B testing for ad variations" },
+      { id: 4, point: "Enhance campaign structure for maximum efficiency" },
+    ],
+    processNo: "03",
+  },
+  {
+    id: 4,
+    icon: "📝",
+    heading: "Amazon Store Growth & Management",
+    content: "Our Amazon PPC management services provide ongoing support to maximize your sales potential:",
+    bullet: [
+      { id: 1, point: "Manage product listings and inventory updates" },
+      { id: 2, point: "Optimize pricing and promotional strategies" },
+      { id: 3, point: "Improve conversion funnels and checkout processes" },
+      { id: 4, point: "Implement growth-focused marketing campaigns" },
+    ],
+    processNo: "04",
+  },
+  {
+    id: 5,
+    icon: "📝",
+    heading: "Analytics, Reporting & Continuous Optimization",
+    content: "We monitor every aspect of your Amazon PPC campaigns to ensure data-driven success. Our insights help refine strategies for sustained growth:",
+    bullet: [
+      { id: 1, point: "Utilize advanced analytics and customer behavior tracking" },
+      { id: 2, point: "Adjust advertising and listing strategies based on real-time data" },
+      { id: 3, point: "Provide detailed monthly performance reports" },
+      { id: 4, point: "Continuously optimize campaigns for higher conversions" },
+    ],
+    processNo: "05",
+  },
+
+];
+
+export const amzWhat = {
+  title: "What Is Amazon PPC?",
+  description:
+    "Amazon PPC (Pay-Per-Click) is an advertising model where sellers bid on keywords to get their products displayed on Amazon search results. Amazon PPC services help businesses drive targeted traffic, increase product visibility, and maximize sales.",
+  benefits: [
+    {
+      title: "Scalability",
+      description: "Reach more customers and scale your business effortlessly.",
+    },
+    {
+      title: "Performance Tracking",
+      description: "Monitor campaign success through detailed analytics.",
+    },
+    {
+      title: "Cost-Effective Advertising",
+      description: "Pay only for clicks, ensuring efficient ad spend.",
+    },
+    {
+      title: "Improved Ranking",
+      description: "Boost your organic rankings with high-performing ads.",
+    },
+  ],
+};
+
+export const amzEdgeData = {
+  mainHeading: "Scale Your Business with Amazon PPC Services",
+  cards: [
+    {
+      id: 1,
+      heading: "Build a Strong Amazon Presence",
+      content:
+        "A well-optimized Amazon PPC campaign is essential for your eCommerce success. Your advertising strategy directly impacts brand visibility, traffic, and sales.",
+      content2:
+        "Our Amazon PPC consultant team specializes in creating high-performing campaigns aligned with your business objectives. With expert Amazon PPC services, we integrate automation tools, audience targeting, and A/B testing strategies to help you dominate the Amazon marketplace.",
+    },
+    {
+      id: 2,
+      heading: "Enhance Customer Experience for Higher Conversions",
+      content:
+        "User experience (UX) plays a crucial role in ad performance. A poorly structured campaign can waste ad spend, while a well-optimized PPC strategy drives higher engagement and conversions.",
+      content2:
+        "Through strategic Amazon PPC management services, we refine targeting, bid strategies, and ad placements to maximize return on investment. These enhancements ensure a seamless buying experience, improving conversion rates and customer retention.",
+    },
+    {
+      id: 3,
+      heading: "Maximize ROI with Data-Driven Strategies",
+      content:
+        "Successful Amazon sellers rely on expert Amazon PPC services to optimize ad spend and improve performance. Our PPC experts use in-depth analytics, A/B testing, and bid optimization techniques to refine your campaigns for maximum impact.",
+      content2:
+        "",
+    },
+    {
+      id: 4,
+      heading: "Optimize Omnichannel Advertising",
+      content:
+        "A fully optimized Amazon PPC campaign integrates seamlessly with multiple digital marketing channels, including social media, retargeting ads, and email marketing.",
+      content2:
+        "We ensure that your Amazon PPC agency strategy aligns with a powerful omnichannel approach, allowing you to reach customers at every stage of the buying journey. With a well-structured Amazon PPC management services plan, we maximize your ad ROI while enhancing brand visibility.",
+    },
+  ],
+};
+
+export const amzWhyBrandsData = {
+  subheading: "WHY BRANDS CHOOSE US",
+  mainHeading: "Why Businesses Choose Our Amazon PPC Services",
+  text: "Results-Driven Strategies. Expert Amazon PPC Management.",
+  buttons: [{ text: "SCHEDULE A CONSULTATION", link: "#" }],
+  cards: [
+    {
+      id: 1,
+      heading: "Our Expertise in Amazon Advertising",
+      text1:
+        "As a leading Amazon PPC agency, we specialize in developing high-performance campaigns that align with your business goals.",
+      text2:
+        "Our Amazon PPC consultant team leverages extensive experience in ad optimization, bid management, and keyword research to drive measurable results. From strategic planning to execution and ongoing optimization, our services cater to businesses of all sizes.",
+      text3:
+        "",
+    },
+    {
+      id: 2,
+      heading: "Proven Success with High ROI Campaigns",
+      text1:
+        "Our Amazon PPC management services are recognized for delivering outstanding results. Here’s what our clients say:",
+      text2:
+        "Sat Americana's Amazon PPC services helped us scale our business significantly. Their expertise in ad optimization and campaign management increased our sales while reducing ad costs – Sarah Johnson, CEO at eCom Masters",
+      text3:
+        "",
+    },
+    {
+      id: 3,
+      heading: "Take Control of Your Amazon Ad Success",
+      text1:
+        "From the initial consultation to campaign execution and continuous support, we take full responsibility for your advertising success.",
+      text2:
+        "Our Amazon PPC consultant team develops tailored advertising roadmaps, ensuring every strategy is backed by data and aligned with your business objectives. Whether you need Amazon PPC management services, Amazon listing optimization service, or conversion tracking, we provide full-service solutions for sustained growth.",
+      text3: "",
+    },
+    {
+      id: 4,
+      heading: "Unlock Your Amazon Sales Potential",
+      text1:
+        "Looking to boost your brand’s presence on Amazon? Our Amazon PPC services are designed to maximize visibility, drive sales, and optimize your ad spend. Whether you're a startup or an established brand, our team ensures your products get in front of the right customers at the right time.",
+      text2:
+        "",
+      text3: "",
+    },
+  ],
+};
+
+export const amzCTA = {
+  title: "Start Growing Your Amazon Sales Today!",
+  description:
+    "Don’t let inefficient ad spend hold your business back. Our Amazon PPC services help you scale effectively with targeted campaigns, optimized listings, and expert management.",
+  cta: {
+    text: "CONTACT US TODAY",
+    link: "/consultation",
+  },
+};
+
+export const amzFaqsData = [
+  {
+    id: "01",
+    question: "How can Amazon PPC services give my brand a competitive edge in a crowded marketplace?",
+    answer:
+      "Amazon’s marketplace is highly competitive, with thousands of sellers vying for customer attention. Our Amazon PPC management services strategically position your products in front of high-intent buyers through data-driven keyword targeting, bid optimization, and A/B testing. This ensures that your brand stands out, drives conversions, and maximizes profitability.",
+  },
+  {
+    id: "02",
+    question: "Is hiring an Amazon PPC agency really necessary, or can I manage my campaigns in-house?",
+    answer:
+      "While running Amazon PPC campaigns yourself is possible, it requires continuous monitoring, expertise in bid adjustments, and in-depth knowledge of Amazon’s evolving advertising algorithms. Our best Amazon PPC agency saves you time by handling campaign optimization, reducing wasted ad spend, and improving your ACoS (Advertising Cost of Sale) to maximize ROI",
+  },
+  {
+    id: "03",
+    question: "What makes SAT Americana different from other Amazon PPC agencies?",
+    answer:
+      "We take a customized, data-driven approach to Amazon PPC management services, ensuring that each campaign aligns with your business goals. Our expert team conducts thorough competitor analysis, audience research, and keyword optimization to create high-performing campaigns. Unlike many agencies, we prioritize transparency, providing real-time reporting and strategic insights to help you scale.",
+  },
+  {
+    id: "04",
+    question: "How do you ensure that my Amazon PPC campaigns remain profitable over time?",
+    answer:
+      "Amazon’s advertising landscape is dynamic, requiring constant adjustments to maintain profitability. As your Amazon PPC consultant, we use AI-powered analytics, bid automation, and negative keyword strategies to refine your campaigns continuously. We monitor key metrics like CTR (Click-Through Rate), CPC (Cost Per Click), and ACoS to ensure your ad spend is optimized for maximum returns.",
+  },
+  {
+    id: "05",
+    question: "Can Amazon PPC alone improve my product rankings, or do I need additional services?",
+    answer:
+      "While Amazon PPC services drive immediate traffic and sales, long-term success requires a well-optimized product listing. We offer Amazon listing optimization services, enhancing your product titles, bullet points, descriptions, and backend keywords to improve organic rankings. This holistic approach ensures that even when you reduce ad spend, your products continue to perform well.",
+  },
+  {
+    id: "06",
+    question: "How long does it take to see results from Amazon PPC campaigns?",
+    answer:
+      "With the right strategy, you can start seeing increased traffic and sales within the first few weeks. However, true campaign optimization and significant profitability improvements typically take 60-90 days. As a leading Amazon PPC agency, we continuously refine your campaigns, adjusting bids, testing ad creatives, and leveraging data insights to sustain long-term growth",
+  },
+];
+
+export const etsyheroData = {
+  breadcrumb: [
+    { name: "Home", link: "/" },
+    { name: "Development Services", link: "/development" },
+    { name: "Custom Web Development", link: "/custom-web" },
+  ],
+  title: "Expert Etsy Marketing Solutions",
+  image: WebDevPage,
+  description:
+    "Launch and grow your online store with expert Etsy marketing services tailored for seamless customer experiences. From Etsy shop optimization services to advertising strategies, Sat Americana delivers data-driven solutions that increase visibility, enhance engagement, and maximize conversions for long-term Etsy success.",
+  features: [
+    
+  ],
+  button: "REQUEST A QUOTE",
+  requestQuoteLink: "/contact",
+  awards: [
+    {
+      title: "5 Star DesignRush Reviews",
+      stars: 5,
+    },
+    {
+      title: "Latest Web Design Award",
+      image: "/assets/css-award.png",
+    },
+  ],
+  video: {
+    link: "/video-demo",
+    text: "SEE OUR WORK",
+    subText: "IN ACTION",
+    duration: "1 MINUTE",
+  },
+};
+
+export const etsytwoColumnSectionData = {
+  leftColumn: {
+    subHeading: "Why Choose Us",
+    mainHeading: "Professional Etsy Marketing Agency",
+    content:
+      "A well-optimized Etsy store is essential for growth. At Sat Americana, we take a data-driven approach to Etsy marketing services, ensuring every aspect of your shop is optimized for visibility and conversions. From keyword research to audience analysis, we implement AI-powered tools to develop strategies that drive traffic and sales. Whether you're launching a new Etsy shop, improving an existing one, or scaling operations, our comprehensive solutions are tailored to your needs.",
+    collapsibles: [
+      {
+        title: "Etsy Shop Optimization Services",
+        description:
+          "Your shop’s appearance and performance play a crucial role in attracting customers. Our Etsy shop optimization services include keyword-rich listings, enhanced product descriptions, and SEO-friendly strategies. We ensure your Etsy store stands out with visually appealing, high-performing listings that drive engagement and conversions. Whether you need listing optimization, branding enhancement, or UI/UX improvements, we create tailored Etsy marketing solutions that generate results",
+      },
+      {
+        title: "Etsy Store Management & Maintenance",
+        description:
+          "Keep your shop running efficiently with our Etsy store management and Etsy consultant services. We handle everything from listing updates to performance optimization, ensuring smooth operations. Our proactive approach minimizes issues and maximizes efficiency. Whether it's inventory updates, algorithm changes, or marketing enhancements, our team ensures your Etsy store remains competitive and successful.",
+      },
+    ],
+  },
+  rightColumn: {
+    mainHeading: "Get In Touch",
+    content: "Fill out the form to request a quote or ask any questions.",
+    formFields: [
+      { label: "Name", placeholder: "Enter your name", type: "text" },
+      { label: "Email", placeholder: "Enter your email", type: "email" },
+      { label: "Message", placeholder: "Enter your message", type: "textarea" },
+    ],
+  },
+};
+
+export const etsyCaseStudiesData = {
+  subheading: "Bringing Clients with Etsy Marketing Expertise",
+  mainHeading: "1,000+ Successful Etsy Shops",
+  content:
+    "We’ve helped brands scale their online presence with our proven Etsy marketing services. Whether it’s Etsy shop optimization services, targeted Etsy ads services, or conversion-focused strategies, our expertise ensures your store gains traction, engages customers, and achieves long-term success.",
+  tabs: [
+    {
+      id: "featured",
+      label: "Featured",
+      studies: [
+        {
+          id: 1,
+          image: "https://via.placeholder.com/400x300.png?text=Featured+Image",
+          title: "Creative Agency Website",
+          content:
+            "A creative agency website that boosts brand presence and drives conversions.",
+          cta: "Learn More",
+          ctaLink: "/case-studies/creative-agency",
+        },
+      ],
+    },
+    {
+      id: "b2b",
+      label: "B2B",
+      studies: [
+        {
+          id: 2,
+          image: "https://via.placeholder.com/400x300.png?text=B2B+Image",
+          title: "Corporate Portal",
+          content:
+            "An enterprise-level corporate portal that streamlines operations.",
+          cta: "View Details",
+          ctaLink: "/case-studies/corporate-portal",
+        },
+      ],
+    },
+    {
+      id: "ecommerce",
+      label: "eCommerce",
+      studies: [
+        {
+          id: 3,
+          image: "https://via.placeholder.com/400x300.png?text=eCommerce+Image",
+          title: "Online Store Redesign",
+          content:
+            "A redesigned online store that improves user engagement and sales.",
+          cta: "Discover More",
+          ctaLink: "/case-studies/online-store",
+        },
+      ],
+    },
+    {
+      id: "b2c",
+      label: "B2C",
+      studies: [
+        {
+          id: 4,
+          image: "https://via.placeholder.com/400x300.png?text=B2C+Image",
+          title: "Consumer Mobile App",
+          content:
+            "A mobile app for consumers that enhances engagement and retention.",
+          cta: "See App",
+          ctaLink: "/case-studies/mobile-app",
+        },
+      ],
+    },
+  ],
+};
+
+export const etsyWhat = {
+  title: "What Is Etsy?",
+  description:
+    "Etsy is a global online marketplace known for its handmade, vintage, and unique products. It offers a seller-friendly interface with built-in marketing tools, making it easy for entrepreneurs to launch and grow their online stores. Etsy shops provide seamless scalability to adapt to business growth and changing market trends, secure payment processing for safe transactions, detailed analytics to track performance, and integrated marketing features to enhance visibility and sales. One limitation of Etsy is its listing renewal fees—listings need to be refreshed every four months, which adds to operational costs. Additionally, Etsy takes transaction and payment processing fees, impacting overall profit margins. Navigating these challenges requires expertise. Partnering with a full-service Etsy marketing agency ensures your shop is optimized, competitive, and primed for growth. Whether it’s Etsy shop optimization services, Etsy consultant support, or advertising strategies, we provide tailored solutions for success.",
+  benefits: [
+    {
+      title: "Scalability",
+      description: "Reach more customers and scale your business effortlessly.",
+    },
+    {
+      title: "Performance Tracking",
+      description: "Monitor campaign success through detailed analytics.",
+    },
+    {
+      title: "Cost-Effective Advertising",
+      description: "Pay only for clicks, ensuring efficient ad spend.",
+    },
+    {
+      title: "Improved Ranking",
+      description: "Boost your organic rankings with high-performing ads.",
+    },
+  ],
+};
+
+export const etsyEdgeData = {
+  mainHeading: "Grow Your Business with Etsy Marketing Services",
+  cards: [
+    {
+      id: 1,
+      heading: "Build a Strong Online Presence",
+      content:
+        "A well-optimized Etsy store is the foundation of your eCommerce success. The design, speed, and functionality of your shop significantly influence brand perception and customer engagement",
+      content2:
+        "Our Etsy marketing agency specializes in creating visually appealing, conversion-focused storefronts that align with your brand’s vision. With expert Etsy Shop Optimization Services, we integrate essential eCommerce tools, including email marketing, social media widgets, and advanced analytics to help you stay ahead of the competition.",
+    },
+    {
+      id: 2,
+      heading: "Improve User Experience for Better Engagement",
+      content:
+        "User experience (UX) plays a crucial role in eCommerce success. A cluttered and confusing store can drive potential customers away, while an intuitive and engaging interface encourages browsing and purchasing.",
+      content2:
+        "Through strategic Etsy marketing services, we optimize shop navigation, refine product listings, and implement interactive elements such as AI-driven recommendations, chat support, and lead capture tools. These enhancements ensure a seamless shopping experience, increasing customer retention.",
+    },
+    {
+      id: 3,
+      heading: "Boost Sales with High-Performing CTAs",
+      content:
+        "Successful eCommerce brands rely on effective calls-to-action (CTAs) to drive conversions. Our Etsy consultant services include A/B testing, heatmap analysis, and conversion tracking to refine your CTAs for maximum impact.",
+      content2:
+        "We create high-converting product descriptions and landing pages tailored to lead generation and sales. Using data-driven marketing techniques, we help turn casual visitors into loyal customers",
+    },
+    {
+      id: 4,
+      heading: "Effortlessly Integrate Omnichannel Marketing",
+      content:
+        "A fully optimized Etsy store integrates seamlessly with multiple digital marketing channels, including social media, paid ads, and email campaigns.",
+      content2:
+        "We ensure that your store aligns with a powerful omnichannel strategy, allowing you to engage customers at every stage of their buying journey. With a well-structured Etsy ads services strategy, we maximize your return on investment (ROI) while enhancing brand visibility.",
+    },
+  ],
+};
+
+export const etsyWhyBrandsData = {
+  subheading: "WHY BRANDS CHOOSE US",
+  mainHeading: "Why Firms Choose Our Etsy Marketing Services",
+  text: "Our Expertise in Etsy Marketing",
+  buttons: [{ text: "SCHEDULE A CONSULTATION", link: "#" }],
+  cards: [
+    {
+      id: 1,
+      heading: "Proven Success with Five-Star Reviews",
+      text1:
+        "Our Etsy marketing services have been recognized for delivering outstanding results. Here’s what our clients have to say:",
+      text2:
+      "Working with Sat Americana has been a game-changer. Their Etsy consultant team revamped our store, significantly boosting sales and engagement. Their expertise and dedication made all the difference! – Sandra Bell, Founder at MS World",
+      text3:
+        "",
+    },
+    {
+      id: 2,
+      heading: "Full Ownership of Your Etsy Store’s Success",
+      text1:
+        "From initial consultation to execution and continuous support, we take full responsibility for your Etsy shop’s growth.",
+      text2:
+        "Our team develops a tailored Etsy marketing roadmap, ensuring every strategy is backed by data and aligned with your business objectives. At Sat Americana, we specialize in full-service Etsy marketing agency solutions, including product listing optimization, ad management, conversion tracking, and performance analytics. Using data-driven insights and innovative strategies, we drive measurable growth for eCommerce brands.",
+      text3:
+        "",
+    },
+    {
+      id: 3,
+      heading: "Our Expertise in Etsy Marketing",
+      text1:
+        "As a top Etsy agency, we specialize in developing high-performance stores that cater to your business objectives.",
+      text2:
+        "With extensive experience in Etsy Shop Optimization Services, product ranking, and ad strategies, we help brands expand their online presence, enhance user engagement, and increase sales. From strategic planning to execution and ongoing support, our services cater to businesses of all sizes and industries.",
+      text3: "",
+    },
+    {
+      id: 4,
+      heading: "",
+      text1:
+        "",
+      text2:
+        "",
+      text3: "",
+    },
+  ],
+};
+
+export const etsyCTA = {
+  title: "Start Growing Your Amazon Sales Today!",
+  description:
+    "Don’t let inefficient ad spend hold your business back. Our Amazon PPC services help you scale effectively with targeted campaigns, optimized listings, and expert management.",
+  cta: {
+    text: "CONTACT US TODAY",
+    link: "/consultation",
+  },
+};
+
+export const etsyFaqsData = [
+  {
+    id: "01",
+    question: "What is Etsy marketing, and why is it important?",
+    answer:
+      "Etsy marketing services involve optimizing and promoting your Etsy shop to improve visibility, user experience, and sales performance.",
+  },
+  {
+    id: "02",
+    question: "Can I migrate my existing eCommerce store to Etsy?",
+    answer:
+      "Yes! Our Etsy agency provides seamless migration services to ensure a smooth transition without losing data or sales momentum.",
+  },
+  {
+    id: "03",
+    question: "What third-party integrations can I add to my Etsy store",
+    answer:
+      "Etsy allows integrations such as payment gateways, CRM tools, email marketing platforms, and analytics solutions to enhance your store’s performance.",
+  },
+  {
+    id: "04",
+    question: "How does Etsy marketing enhance conversions?",
+    answer:
+      "With tailored UX/UI improvements, strategic CTA placement, and performance optimization, Etsy marketing services drive higher conversions and increase sales",
+  },
+  {
+    id: "05",
+    question: "How do you measure the success of an Etsy store?",
+    answer:
+      "Success is measured through key performance indicators (KPIs) such as traffic, conversion rate, average order value (AOV), customer retention, and ROI.",
+  },
+];

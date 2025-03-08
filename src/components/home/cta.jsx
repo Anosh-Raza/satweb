@@ -6,8 +6,8 @@ const CTAForm = ({ contactInfo, socialMediaLinks }) => {
     contactInfo;
 
   return (
-    <div className="bg-logo-medium-blue-2 py-24">
-      <div className=" py-12 px-6 sm:px-12 lg:px-24 text-white container mx-auto">
+    <div className="bg-logo-medium-blue-2 py-12 px-4">
+      <div className=" py-12 sm:px-12 text-white container mx-auto">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left Section */}
           <div className="lg:w-1/2 space-y-6">

@@ -13,6 +13,7 @@ import Packages from './pages/packages';
 import Blogs from './pages/blogs';
 import Contact from './pages/contact'
 import Amazon from './pages/services/amazon'
+import Etsy from './pages/services/etsy'
 import LogoBranding from './pages/services/logoBranding'
 import WebDevs from './pages/services/webdev';
 import SEO from './pages/services/seo';
@@ -37,6 +38,7 @@ function App() {
       <Route path='/blogs' element={<Blogs/>} />
       <Route path='/contact' element={<Contact  />} />
       <Route path="/amazon-services" element={<Amazon />} />
+      <Route path="/etsy-services" element={<Etsy />} />
       <Route path="/logo-branding-services" element={<LogoBranding />} />
       <Route path="/web-development-services" element={<WebDevs />} />
       <Route path="/search-engine-optimization" element={<SEO />} />
