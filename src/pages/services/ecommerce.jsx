@@ -6,7 +6,7 @@ import Edge from "../../components/edge"
 import WhyBrands from "../../components/whyBrands"
 import Verses from "../../components/verses";
 import FaqTemp from "../../components/faqTemp";
-import Timeline from "../../components/timeLine"
+import HorizontalTimeline from "../../components/globalTimeline"
 import { ecoHeroData } from "../../data";
 import { ecoTwoColumnSectionData } from "../../data";
 import { ecoCaseStudiesData } from "../../data";
@@ -34,11 +34,11 @@ const ecommerce = () => {
       <WhyBrands data={ecoWhyBrandsData}/>
       <Verses data={ecoVersesData}/>
       <FaqTemp data={ecoFaqsData}/>
-         <Timeline
-  data={ecoTimelineComp.items} // Ensure this is an array
-  heading={ecoTimelineComp.heading}
-  text={ecoTimelineComp.text}
-/>
+      <HorizontalTimeline
+        timelineData={ecoTimelineComp}
+        title="Our eCommerce Development Process"
+        description="At Sat Americana, we offer custom eCommerce development services that help businesses create high-performing online stores tailored for growth."
+      />
     </div>
   )
 }

@@ -44,7 +44,7 @@ const GlobalTimeline = ({ timelineData, title, description }) => {
         }
         return nextIndex;
       });
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(autoScroll);
   }, [timelineData]);
@@ -96,7 +96,7 @@ const GlobalTimeline = ({ timelineData, title, description }) => {
         </p>
         <div
           ref={timelineRef}
-          className="overflow-x-auto scroll-smooth flex pt-8 space-x-8"
+          className="overflow-x-auto scroll-smooth flex py-8 px-6 space-x-8"
           style={{
             scrollSnapType: "x mandatory",
             scrollbarWidth: "none",
@@ -136,7 +136,7 @@ const GlobalTimeline = ({ timelineData, title, description }) => {
                   </li>
                 ))}
               </ul>
-              <p className="text-9xl font-bold wi_processNo text-transparent">{item.processNo}</p>
+              <p className={`text-9xl font-bold wi_processNo text-transparent ${  index === activeIndex ? "wi_process" : "text-theme-white" }`}>{item.processNo}</p>
             </div>
           ))}
         </div>

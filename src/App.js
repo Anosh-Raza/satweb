@@ -15,6 +15,8 @@ import Contact from './pages/contact'
 import Amazon from './pages/services/amazon'
 import Etsy from './pages/services/etsy'
 import Ebay from './pages/services/ebay'
+import Digital from './pages/services/digital'
+import Shopify from './pages/services/shopify'
 import LogoBranding from './pages/services/logoBranding'
 import WebDevs from './pages/services/webdev';
 import SEO from './pages/services/seo';
@@ -38,9 +40,11 @@ function App() {
       <Route path='/packages' element={<Packages/>} />
       <Route path='/blogs' element={<Blogs/>} />
       <Route path='/contact' element={<Contact  />} />
-      <Route path="/amazon-services" element={<Amazon />} />
-      <Route path="/etsy-services" element={<Etsy />} />
-      <Route path="/ebay-services" element={<Ebay />} />
+      <Route path="/amazon-marketing-services" element={<Amazon />} />
+      <Route path="/etsy-marketing-services" element={<Etsy />} />
+      <Route path="/ebay-marketing-services" element={<Ebay />} />
+      <Route path="/digital-marketing-services" element={<Digital />} />
+      <Route path="/shopify-development-services" element={<Shopify />} />
       <Route path="/logo-branding-services" element={<LogoBranding />} />
       <Route path="/web-development-services" element={<WebDevs />} />
       <Route path="/search-engine-optimization" element={<SEO />} />

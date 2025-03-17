@@ -100,7 +100,15 @@ function Navbar() {
                         </Link>
                       </li>
                     </ul>
-                    <h3 className="font-bold mb-2">Digital Marketing</h3>
+                    <h3 className="font-bold mb-2">
+                      <Link
+                        to="/digital-marketing-services"
+                        onClick={handleLinkClick}
+                      >
+                        Digital Marketing
+                      </Link>
+                    </h3>
+
                     <ul>
                       <li>
                         <Link
@@ -221,7 +229,7 @@ function Navbar() {
                     <ul>
                       <li>
                         <Link
-                          to="/shopify-services"
+                          to="/shopify-development-services"
                           className="hover:text-gray-300"
                           onClick={handleLinkClick}
                         >
@@ -230,7 +238,7 @@ function Navbar() {
                       </li>
                       <li>
                         <Link
-                          to="/etsy-services"
+                          to="/etsy-marketing-services"
                           className="hover:text-gray-300"
                           onClick={handleLinkClick}
                         >
@@ -239,7 +247,7 @@ function Navbar() {
                       </li>
                       <li>
                         <Link
-                          to="/ebay-services"
+                          to="/ebay-marketing-services"
                           className="hover:text-gray-300"
                           onClick={handleLinkClick}
                         >
@@ -248,7 +256,7 @@ function Navbar() {
                       </li>
                       <li>
                         <Link
-                          to="/amazon-services"
+                          to="/amazon-marketing-services"
                           className="hover:text-gray-300"
                           onClick={handleLinkClick}
                         >
@@ -258,7 +266,14 @@ function Navbar() {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-bold mb-2">Digital Marketing</h3>
+                    <h3 className="font-bold mb-2">
+                      <Link
+                        to="/digital-marketing-services"
+                        onClick={handleLinkClick}
+                      >
+                        Digital Marketing
+                      </Link>
+                    </h3>
                     <ul>
                       <li>
                         <Link

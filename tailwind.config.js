@@ -32,6 +32,18 @@ module.exports = {
         'gradient-logo': 'linear-gradient(90deg, #5D41CA 10%, #0d2075d9 50%, #0D2074)',
         'home-gradient': 'linear-gradient(90deg, #5D41CA 10%, #0d207547 50%, #0D2074)',
       },
+      animation: {
+        gradientMove: "gradientMove 5s linear infinite",
+      },
+      keyframes: {
+        gradientMove: {
+          "0%": { backgroundPosition: "0% 0%" },
+          "100%": { backgroundPosition: "100% 0%" },
+        },
+      },
+      backgroundSize: {
+        "200%": "200% 100%",
+      },
     },
   },
   plugins: [

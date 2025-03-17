@@ -72,7 +72,8 @@ const TwoColumnSection = ({ data }) => {
         </div>
 
         {/* Right Column */}
-        <div className="bg-gray-50 p-6 rounded-lg shadow-lg w-full lg:w-1/2">
+        <div className="flex justify-center">
+        <div className="bg-gray-50 p-6 rounded-lg shadow-lg w-full lg:w-[60%]">
           <h2 className="text-5xl font-bold mb-2 text-dark-blue">
             {rightColumn.mainHeading}
           </h2>
@@ -88,6 +89,7 @@ const TwoColumnSection = ({ data }) => {
               Submit
             </button>
           </form>
+        </div>
         </div>
       </div>
     </section>

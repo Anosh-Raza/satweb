@@ -358,7 +358,7 @@ export const aboutData = {
   subheading: "Stay Ahead With the Latest Digital Trends",
   heading: "Your Trusted Team for E-Commerce Excellence",
   ctaBtnAbt:
-    "Speak With Our Experts Today – Let’s discuss how we can elevate your business.", // ✅ Button text
+    "Speak With Our Experts Today", // ✅ Button text
   abtcta: [
     {
       abtcta1Heading: "Expert-Led",
@@ -3243,48 +3243,74 @@ export const ecoFaqsData = [
   
 ];
 
-export const ecoTimelineComp = {
-  heading: "Our eCommerce Development Process",
-  text: "At Sat Americana, we offer custom eCommerce development services that help businesses create high-performing online stores tailored for growth.",
-  items: [
-    {
-      id: 1,
-      icon: "https://via.placeholder.com/50?text=A",
-      heading: "eCommerce Strategy & Planning",
-      content:
-        "A successful eCommerce store begins with a solid strategy. We analyze market trends and customer behaviors to build a roadmap for success.",
-    },
-    {
-      id: 2,
-      icon: "https://via.placeholder.com/50?text=B",
-      heading: "Custom Store Design & Development",
-      content:
-        "User experience (UX) is crucial for conversions. We design and develop eCommerce websites that provide a seamless shopping experience.",
-    },
-    {
-      id: 3,
-      icon: "https://via.placeholder.com/50?text=C",
-      heading: "eCommerce SEO & Product Optimization",
-      content:
-        "To succeed online, your store needs to rank high in search engines. We implement SEO best practices to boost visibility and sales",
-    },
-    {
-      id: 4,
-      icon: "https://via.placeholder.com/50?text=D",
-      heading: "eCommerce Marketing & Conversion Optimization",
-      content:
-        "Driving traffic is just the first step—we focus on turning visitors into customers through data-driven marketing strategies.",
-    },
-    {
-      id: 5,
-      icon: "https://via.placeholder.com/50?text=E",
-      heading: "Store Maintenance & Performance Optimization",
-      content:
-        "An eCommerce store requires continuous optimization to ensure smooth operation and long-term growth.",
-    },
-  ],
-};
+export const ecoTimelineComp = [
+  {
+    id: 1,
+    icon: "📝",
+    heading: "eCommerce Strategy & Planning",
+    content: "A successful eCommerce store begins with a solid strategy. We analyze market trends and customer behaviors to build a roadmap for success.",
+    bullet: [
+      { id: 1, point: "Identify target audiences and shopping behaviors" },
+      { id: 2, point: "Research competitor eCommerce strategies" },
+      { id: 3, point: "Define eCommerce business goals and KPIs" },
+      { id: 4, point: "Develop a tailored eCommerce platform selection strategy" },
+    ],
+    processNo: "01",
+  },
+  {
+    id: 2,
+    icon: "📝",
+    heading: "Custom Store Design & Development",
+    content: "User experience (UX) is crucial for conversions. We design and develop eCommerce websites that provide a seamless shopping experience.",
+    bullet: [
+      { id: 1, point: "Create responsive, mobile-friendly eCommerce designs" },
+      { id: 2, point: "Optimize navigation, product pages, and checkout flows" },
+      { id: 3, point: "Integrate secure payment gateways and shipping solutions" },
+      { id: 4, point: "Ensure fast-loading pages and high-performance UX" },
+    ],
+    processNo: "02",
+  },
+  {
+    id: 3,
+    icon: "📝",
+    heading: "eCommerce SEO & Product Optimization",
+    content: "To succeed online, your store needs to rank high in search engines. We implement SEO best practices to boost visibility and sales.",
+    bullet: [
+      { id: 1, point: "Conduct keyword research for product pages and categories" },
+      { id: 2, point: "Optimize meta descriptions, URLs, and schema markup" },
+      { id: 3, point: "Implement structured data for rich snippets and better rankings" },
+      { id: 4, point: "Use conversion-focused copywriting to enhance product pages" },
+    ],
+    processNo: "03",
+  },
+  {
+    id: 4,
+    icon: "📝",
+    heading: "eCommerce Marketing & Conversion Optimization",
+    content: "Driving traffic is just the first step—we focus on turning visitors into customers through data-driven marketing strategies.",
+    bullet: [
+      { id: 1, point: "Develop email marketing and retargeting campaigns" },
+      { id: 2, point: "Optimize for cart abandonment recovery and upselling" },
+      { id: 3, point: "Implement A/B testing to refine checkout experiences" },
+      { id: 4, point: "Use social media and paid advertising for higher sales" },
+    ],
+    processNo: "04",
+  },
+  {
+    id: 5,
+    icon: "📝",
+    heading: "Store Maintenance & Performance Optimization",
+    content: "An eCommerce store requires continuous optimization to ensure smooth operation and long-term growth.",
+    bullet: [
+      { id: 1, point: "Provide regular updates and security patches" },
+      { id: 2, point: "Optimize website speed and fix technical issues" },
+      { id: 3, point: "Monitor inventory management and store performance" },
+      { id: 4, point: "Track customer insights and sales trends to refine strategies" },
+    ],
+    processNo: "05",
+  },
 
+];
 
 export const amzheroData = {
   breadcrumb: [
@@ -4319,5 +4345,632 @@ export const ebayFaqsData = [
     question: "What are the benefits of eBay account management services?",
     answer:
       "eBay account management services handle everything from listing optimization to inventory updates, order management, and customer service. These services ensure your store operates smoothly, maintains high seller ratings, and maximizes profitability without the stress of daily operations.",
+  },
+];
+
+export const shopheroData = {
+  breadcrumb: [
+    { name: "Home", link: "/" },
+    { name: "Development Services", link: "/development" },
+    { name: "Custom Web Development", link: "/custom-web" },
+  ],
+  title: "Full-Service Shopify Development Solutions ",
+  image: WebDevPage,
+  description:
+    "Launch and grow your online store with expert Shopify website development services tailored for seamless user experiences. From custom theme development to store management, Sat Americana delivers solutions that enhance engagement, boost conversions, and optimize performance for eCommerce success.",
+  features: [
+    
+  ],
+  button: "REQUEST A QUOTE",
+  requestQuoteLink: "/contact",
+  awards: [
+    {
+      title: "5 Star DesignRush Reviews",
+      stars: 5,
+    },
+    {
+      title: "Latest Web Design Award",
+      image: "/assets/css-award.png",
+    },
+  ],
+  video: {
+    link: "/video-demo",
+    text: "SEE OUR WORK",
+    subText: "IN ACTION",
+    duration: "1 MINUTE",
+  },
+};
+
+export const shoptwoColumnSectionData = {
+  leftColumn: {
+    subHeading: "Why Choose Us",
+    mainHeading: "Data-Driven Shopify Development Agency ",
+    content:
+      "A robust Shopify store is essential for eCommerce growth. At Sat Americana, we take a data-driven approach to Shopify ecommerce development services, ensuring every aspect of your online store is optimized. From market research to user behavior analysis, we implement AI-powered tools to craft strategies that maximize conversions. Whether you're launching a new store, migrating to Shopify, or looking to scale operations, our full-funnel Shopify solutions are tailored to your unique business needs.",
+    collapsibles: [
+      {
+        title: "Custom Shopify Theme Development ",
+        description:
+          "Your store’s design is the first impression customers get—make it count! Our Shopify theme development services include custom themes, mobile responsiveness, and user-friendly interfaces. We ensure your Shopify store stands out with visually appealing, high-performing themes that match your brand identity and optimize conversions. Whether you need theme customization, speed optimization, or UI/UX enhancements, we create tailored Shopify solutions that drive engagement.",
+      },
+      {
+        title: "Shopify Store Management & Maintenance ",
+        description:
+          "Keep your store running smoothly with our Shopify store management services and Shopify maintenance services. We handle everything from inventory updates to performance optimization, ensuring seamless store operations. Our proactive maintenance approach minimizes downtime and enhances user experience. Whether it’s bug fixes, security updates, or store enhancements, our team ensures your Shopify site remains efficient and fully functional.",
+      },
+    ],
+  },
+  rightColumn: {
+    mainHeading: "Get In Touch",
+    content: "Fill out the form to request a quote or ask any questions.",
+    formFields: [
+      { label: "Name", placeholder: "Enter your name", type: "text" },
+      { label: "Email", placeholder: "Enter your email", type: "email" },
+      { label: "Message", placeholder: "Enter your message", type: "textarea" },
+    ],
+  },
+};
+
+export const shopCaseStudiesData = {
+  subheading: "Driving eCommerce Growth with Development Excellence",
+  mainHeading: "1,000+ Successful Shopify Stores",
+  content:
+    "We’ve helped brands scale their eCommerce presence with our Shopify web development services. Whether it’s custom theme development, app integrations, or conversion optimization, our expertise ensures seamless Shopify experiences that drive customer engagement, sales, and long-term success.",
+  tabs: [
+    {
+      id: "featured",
+      label: "Featured",
+      studies: [
+        {
+          id: 1,
+          image: "https://via.placeholder.com/400x300.png?text=Featured+Image",
+          title: "Creative Agency Website",
+          content:
+            "A creative agency website that boosts brand presence and drives conversions.",
+          cta: "Learn More",
+          ctaLink: "/case-studies/creative-agency",
+        },
+      ],
+    },
+    {
+      id: "b2b",
+      label: "B2B",
+      studies: [
+        {
+          id: 2,
+          image: "https://via.placeholder.com/400x300.png?text=B2B+Image",
+          title: "Corporate Portal",
+          content:
+            "An enterprise-level corporate portal that streamlines operations.",
+          cta: "View Details",
+          ctaLink: "/case-studies/corporate-portal",
+        },
+      ],
+    },
+    {
+      id: "ecommerce",
+      label: "eCommerce",
+      studies: [
+        {
+          id: 3,
+          image: "https://via.placeholder.com/400x300.png?text=eCommerce+Image",
+          title: "Online Store Redesign",
+          content:
+            "A redesigned online store that improves user engagement and sales.",
+          cta: "Discover More",
+          ctaLink: "/case-studies/online-store",
+        },
+      ],
+    },
+    {
+      id: "b2c",
+      label: "B2C",
+      studies: [
+        {
+          id: 4,
+          image: "https://via.placeholder.com/400x300.png?text=B2C+Image",
+          title: "Consumer Mobile App",
+          content:
+            "A mobile app for consumers that enhances engagement and retention.",
+          cta: "See App",
+          ctaLink: "/case-studies/mobile-app",
+        },
+      ],
+    },
+  ],
+};
+
+export const shopWhat = {
+  title: "What Is Shopify?",
+  description:
+    "Shopify is a hosted eCommerce platform with a user-friendly interface and an extensive drag-and-drop store library. You can get your Shopify store up and running with pre-built themes and minimal technical knowledge. Shopify stores offer easy scalability to accommodate your growing business and changing consumer behavior, secure payment gateways to handle sensitive data, precise tax calculations for straightforward financial overviews and regular updates for optimal functionality. One potential challenge with this eCommerce platform is its three-option limit — you can add three variant options and each product can have up to 100 variants. Options refer to signature product features or attributes — like color, size or material — while variants are specific option combinations, such as a blue, medium-sized, cotton shirt. The Shopify platform also lacks its own customizable backend, making it challenging to add third-party integrations without costly apps.Partnering with an end-to-end Shopify web design company means you can successfully mitigate these challenges and create a unique, fully functional eCommerce store.",
+  benefits: [
+    {
+      title: "Scalability",
+      description: "Reach more customers and scale your business effortlessly.",
+    },
+    {
+      title: "Performance Tracking",
+      description: "Monitor campaign success through detailed analytics.",
+    },
+    {
+      title: "Cost-Effective Advertising",
+      description: "Pay only for clicks, ensuring efficient ad spend.",
+    },
+    {
+      title: "Improved Ranking",
+      description: "Boost your organic rankings with high-performing ads.",
+    },
+  ],
+};
+
+export const shopEdgeData = {
+  mainHeading: "Maximizing Growth with Shopify Development Services",
+  cards: [
+    {
+      id: 1,
+      heading: "Establish a Strong Online Presence",
+      content:
+        "A well-developed Shopify store is the foundation of your online business. Your store’s design, speed, and functionality play a crucial role in brand perception and customer engagement.",
+      content2:
+        "Our Shopify developers create visually appealing, conversion-driven websites that align with your brand’s vision. With custom Shopify development, we seamlessly integrate essential eCommerce features, including email marketing tools, social media widgets, and advanced analytics to keep your business ahead of the competition.",
+    },
+    {
+      id: 2,
+      heading: "Enhance User Experience for Better Engagement ",
+      content:
+        "User experience (UX) is vital for eCommerce success. A poorly designed website leads to high bounce rates, whereas an intuitive and engaging interface keeps customers browsing and making purchases.",
+      content2:
+        "Through custom Shopify development, we optimize site navigation, refine product categorization, and add interactive elements like chatbots, AI-driven recommendations, and lead capture forms. These features ensure an engaging shopping journey that enhances customer retention.",
+    },
+    {
+      id: 3,
+      heading: "Boost Sales with High-Performing CTAs ",
+      content:
+        "Successful eCommerce businesses rely on strategic calls-to-action (CTAs) that encourage conversions. Custom Shopify development enables A/B testing, heatmap analysis, and conversion tracking to enhance CTA performance.",
+      content2:
+        "We design high-converting product pages and landing pages optimized for lead generation and purchases. By leveraging data-driven marketing strategies, we help transform visitors into loyal customers.",
+    },
+    {
+      id: 4,
+      heading: "Seamlessly Integrate Omnichannel Marketing",
+      content:
+        "A fully customized Shopify store effortlessly integrates with various digital marketing channels, such as social media, paid advertising, and email automation.",
+      content2:
+        "We ensure your Shopify store supports omnichannel marketing strategies, allowing you to reach customers at every stage of their purchasing journey. A fully optimized Shopify website maximizes return on investment (ROI) and strengthens brand visibility",
+    },
+  ],
+};
+
+export const shopWhyBrandsData = {
+  subheading: "Why Businesses Choose ",
+  mainHeading: "Our Shopify Development Services",
+  text: "Our Expertise in Shopify Development",
+  buttons: [{ text: "SCHEDULE A CONSULTATION", link: "#" }],
+  cards: [
+    {
+      id: 1,
+      heading: "Our Expertise in Shopify Web Development ",
+      text1:
+        "As a leading Shopify development agency, we specialize in creating high-performance eCommerce stores tailored to business goals.",
+      text2:
+      "With years of experience in Shopify store design, theme customization, and app development, we empower brands to enhance their online presence, improve customer experiences, and increase conversions.",
+      text3:
+        "From strategy planning to execution and ongoing support, our Shopify development services cater to businesses of all sizes and industries.",
+    },
+    {
+      id: 2,
+      heading: "Proven Success with Five-Star Reviews",
+      text1:
+        "Our Shopify development solutions have earned recognition for delivering exceptional results. Here’s what our clients say:",
+      text2:
+        "Working with Sat Americana has been a game-changer. Their Shopify experts helped us redesign our store, leading to a significant increase in sales and engagement. Their team’s dedication and expertise made all the difference! – Ella, Founder at IBLY",
+      text3:
+        "",
+    },
+    {
+      id: 3,
+      heading: "Full Ownership of Your Shopify Store’s Success ",
+      text1:
+        "From initial consultation to deployment and ongoing support, we take full ownership of your Shopify store’s success.",
+      text2:
+        "Our team creates a Shopify development roadmap tailored to your goals, ensuring every decision is backed by data and aligned with your business objectives.",
+      text3: 
+      "At Sat Americana, we specialize in full-service Shopify solutions, including theme customization, app integrations, conversion optimization, and performance tracking. With research-driven strategies and cutting-edge technology, we drive measurable growth for eCommerce brands.",
+    },
+    {
+      id: 4,
+      heading: "",
+      text1:
+        "",
+      text2:
+        "",
+      text3: "",
+    },
+  ],
+};
+
+export const shopCTA = {
+  title: "Meet Our Expert Shopify Developers ",
+  description:
+    "Request a free consultation for expert recommendations and a custom proposal for your Shopify web development project.",
+  cta: {
+    text: "CONTACT US TODAY",
+    link: "/consultation",
+  },
+};
+
+export const shopFaqsData = [
+  {
+    id: "01",
+    question: "What is Shopify development, and why is it important? ",
+    answer:
+      "Shopify development involves customizing and optimizing Shopify stores to improve functionality, user experience, and sales performance.",
+  },
+  {
+    id: "02",
+    question: "Can I migrate my existing eCommerce store to Shopify? ",
+    answer:
+      "Yes! Our Shopify migration services ensure a smooth transition without data loss or downtime.",
+  },
+  {
+    id: "03",
+    question: "What third-party integrations can I add to my Shopify store?",
+    answer:
+      "Shopify supports integrations like payment gateways, CRM software, email marketing tools, and analytics solutions.",
+  },
+  {
+    id: "04",
+    question: "How does custom Shopify development enhance conversions? ",
+    answer:
+      "Through tailored UX/UI improvements, strategic CTA placements, and performance optimization, custom Shopify development boosts conversions and sales.",
+  },
+  {
+    id: "05",
+    question: "How do you measure the success of a Shopify store?",
+    answer:
+      "Success is measured through KPIs like traffic, conversion rate, average order value (AOV), customer retention, and ROI.",
+  },
+];
+
+export const digiheroData = {
+  breadcrumb: [
+    { name: "Home", link: "/" },
+    { name: "Development Services", link: "/development" },
+    { name: "Custom Web Development", link: "/custom-web" },
+  ],
+  title: "Full-Service Digital Marketing Solutions",
+  image: WebDevPage,
+  description:
+    "Grow your brand with data-driven digital marketing strategies designed for maximum impact. From PPC advertising and social media marketing to content marketing and email campaigns, Sat Americana helps businesses engage their audience, generate leads, and increase online conversions.",
+  features: [
+    "Create A Unique Digital Experience",
+    "Drive Higher Conversions",
+    "Attract Qualified Traffic",
+  ],
+  button: "REQUEST A QUOTE",
+  requestQuoteLink: "/contact",
+  awards: [
+    {
+      title: "5 Star DesignRush Reviews",
+      stars: 5,
+    },
+    {
+      title: "Latest Web Design Award",
+      image: "/assets/css-award.png",
+    },
+  ],
+  video: {
+    link: "/video-demo",
+    text: "SEE OUR WORK",
+    subText: "IN ACTION",
+    duration: "1 MINUTE",
+  },
+};
+
+export const digitwoColumnSectionData = {
+  leftColumn: {
+    subHeading: "Why Choose Us",
+    mainHeading: "Data-Driven Digital Marketing Agency",
+    content:
+      "A powerful digital marketing strategy is essential for businesses looking to scale. At Sat Americana, we take a data-driven approach to SEO, PPC, social media marketing, email campaigns, and more. By analyzing market trends, understanding audience behavior, and leveraging AI-powered analytics, we create a custom marketing plan that delivers results. Whether you’re looking to improve brand awareness, generate high-quality leads, or increase online conversions, our full-funnel digital marketing solutions are tailored to your business’s unique needs.",
+    collapsibles: [
+      {
+        title: "Social Media Marketing to Boost Engagement",
+        description:
+          "Engage your audience where they spend the most time—on social media. Our social media marketing services help businesses grow their presence on Facebook, Instagram, LinkedIn, Twitter, and TikTok. We create compelling social media content, design high-converting ad campaigns, and manage your organic and paid social strategies to increase engagement and drive website traffic. Whether you need Facebook Ads management, Instagram promotions, or LinkedIn lead generation, our team ensures your brand stands out in the crowded digital space.",
+      },
+      {
+        title: "PPC Advertising for Instant Visibility",
+        description:
+          "Need fast results? Pay-per-click (PPC) advertising is the best way to get immediate visibility on search engines and social media platforms. Our PPC advertising services include Google Ads, Bing Ads, retargeting campaigns, and display ads to ensure that your business appears in front of the right audience at the right time. We conduct keyword research, optimize ad copy, and continuously track performance to maximize ROI. Whether you’re a startup looking to drive traffic quickly or an enterprise aiming to scale paid campaigns, we tailor PPC strategies to your budget and goals.",
+      },
+    ],
+  },
+  rightColumn: {
+    mainHeading: "Get In Touch",
+    content: "Fill out the form to request a quote or ask any questions.",
+    formFields: [
+      { label: "Name", placeholder: "Enter your name", type: "text" },
+      { label: "Email", placeholder: "Enter your email", type: "email" },
+      { label: "Message", placeholder: "Enter your message", type: "textarea" },
+    ],
+  },
+};
+
+export const digiCaseStudiesData = {
+  subheading: "Our Proven SEO Success Stories",
+  mainHeading: "1,000+ Successful Campaigns",
+  content:
+    "We’ve helped brands elevate their online presence through targeted digital marketing strategies. Whether it’s PPC, content marketing, social media, or email marketing, our expertise in digital marketing services has driven brand awareness, engagement, and ROI. Each campaign is a testament to our commitment to maximizing business growth.",
+  tabs: [
+    {
+      id: "featured",
+      label: "Featured",
+      studies: [
+        {
+          id: 1,
+          image: "https://via.placeholder.com/400x300.png?text=Featured+Image",
+          title: "Creative Agency Website",
+          content:
+            "A creative agency website that boosts brand presence and drives conversions.",
+          cta: "Learn More",
+          ctaLink: "/case-studies/creative-agency",
+        },
+      ],
+    },
+    {
+      id: "b2b",
+      label: "B2B",
+      studies: [
+        {
+          id: 2,
+          image: "https://via.placeholder.com/400x300.png?text=B2B+Image",
+          title: "Corporate Portal",
+          content:
+            "An enterprise-level corporate portal that streamlines operations.",
+          cta: "View Details",
+          ctaLink: "/case-studies/corporate-portal",
+        },
+      ],
+    },
+    {
+      id: "ecommerce",
+      label: "eCommerce",
+      studies: [
+        {
+          id: 3,
+          image: "https://via.placeholder.com/400x300.png?text=eCommerce+Image",
+          title: "Online Store Redesign",
+          content:
+            "A redesigned online store that improves user engagement and sales.",
+          cta: "Discover More",
+          ctaLink: "/case-studies/online-store",
+        },
+      ],
+    },
+    {
+      id: "b2c",
+      label: "B2C",
+      studies: [
+        {
+          id: 4,
+          image: "https://via.placeholder.com/400x300.png?text=B2C+Image",
+          title: "Consumer Mobile App",
+          content:
+            "A mobile app for consumers that enhances engagement and retention.",
+          cta: "See App",
+          ctaLink: "/case-studies/mobile-app",
+        },
+      ],
+    },
+  ],
+};
+
+export const digiEdgeData = {
+  mainHeading: "Digital Marketing: Maximize Your Online Growth",
+  cards: [
+    {
+      id: 1,
+      heading: "Build a Strong Brand Identity",
+      content:
+        "A custom-developed website is the cornerstone of any digital marketing strategy. Your website serves as the primary touchpoint for potential customers, and its design plays a vital role in communicating your brand identity.",
+      content2:
+        "We create visually stunning, conversion-focused websites that align with your business’s unique voice. Custom web development allows for the seamless integration of digital marketing tools, such as email marketing, social media widgets, and analytics tracking, ensuring your brand stays ahead of the competition.",
+    },
+    {
+      id: 2,
+      heading: "Create Engaging User Experiences",
+      content:
+        "User experience (UX) is a key factor in digital marketing success. A poorly designed website can drive visitors away, while a well-structured and intuitive interface keeps users engaged.",
+      content2:
+        "Through custom development, we optimize navigation, streamline content flow, and incorporate interactive elements that boost user retention. Whether you need lead generation forms, chatbots, or personalized content recommendations, our solutions ensure a seamless and engaging user journey.",
+    },
+    {
+      id: 3,
+      heading: "Drive Conversions with Data-Driven CTAs",
+      content:
+        "Effective digital marketing relies on strategic calls-to-action (CTAs) that drive conversions. Custom web development allows for A/B testing, heatmaps, and analytics tracking to optimize CTA placement and effectiveness.",
+      content2:
+        "We design high-converting landing pages that encourage sign-ups, purchases, or inquiries. By leveraging personalized marketing strategies, we help businesses turn website visitors into loyal customers.",
+    },
+    {
+      id: 4,
+      heading: "Leverage Omnichannel Marketing",
+      content:
+        "A custom-built website integrates seamlessly with various digital marketing channels, including social media, PPC campaigns, and email marketing automation.",
+      content2:
+        "We ensure that your website supports omnichannel marketing efforts, allowing you to reach customers at every stage of their journey. With a fully optimized website, businesses can maximize ROI on marketing campaigns and improve overall brand visibility.",
+    },
+  ],
+};
+
+export const digiWhyBrandsData = {
+  subheading: "WHY BRANDS CHOOSE US",
+  mainHeading: "Our Unique Value as a Digital Marketing Agency",
+  text: "Ownership. Transparency. Results.",
+  buttons: [{ text: "SCHEDULE A CONSULTATION", link: "#" }],
+  cards: [
+    {
+      id: 1,
+      heading: "Expertise in Digital Marketing Services",
+      text1:
+        "As a top-rated digital marketing agency, our team specializes in crafting high-impact campaigns that drive business growth.",
+      text2:
+        "With decades of experience in SEO, PPC, social media, and content marketing, we help brands maximize their online visibility, attract high-quality leads, and boost conversions.",
+      text3:
+        "From strategy development and implementation to ongoing optimization, our digital marketing services are designed for businesses of all sizes and industries.",
+    },
+    {
+      id: 2,
+      heading: "Proven Results with Five-Star Reviews",
+      text1:
+        "Our agency is recognized for delivering award-winning digital marketing strategies. Choosing us means working with industry leaders.",
+      text2:
+        "Our client reviews on platforms such as Clutch and DesignRush highlight our success:",
+      text3:
+        "If you need expert digital marketing services, Digital Silk is the agency to trust. Their team helped us create a multi-channel strategy that skyrocketed engagement and conversions. Thanks to their expertise, we’ve seen measurable business growth – Patrick Brown, CEO at Unity Communications",
+    },
+    {
+      id: 3,
+      heading: "Ownership of Your Digital Marketing Strategy",
+      text1:
+        "From the initial consultation to campaign execution and performance tracking, we take full ownership of your digital success.",
+      text2:
+        "Every marketing campaign we create is aligned with your goals, treating your brand as if it were our own.By partnering with us, you gain a team of digital marketing experts who guide you through every decision, ensuring data-driven, results-oriented strategies.",
+      text3: "",
+    },
+    {
+      id: 4,
+      heading: "Driving Brand Growth with Professional Digital Marketing Services",
+      text1:
+        "At Digital Silk, we help brands thrive online with our full-service digital marketing solutions, including SEO, PPC, social media, content marketing, and branding.",
+      text2:
+        "With research-driven strategies, cutting-edge technology, and performance-based insights, we deliver measurable results that fuel brand growth.",
+      text3: "",
+    },
+  ],
+};
+
+export const digiVersesData = {
+  heading:
+    "Digital Marketing: Custom Digital Marketing vs. Pre-Made Marketing Funnels",
+  webHead: "Custom Digital Marketing",
+  webTempHead: "Pre-Made Marketing Funnels",
+  featureHead: "Feature",
+  features: [
+    {
+      id: 1,
+      heading: "Strategy Alignment",
+    },
+    {
+      id: 2,
+      heading: "Omnichannel Approach",
+    },
+    {
+      id: 3,
+      heading: "Branding & Messaging",
+    },
+    {
+      id: 4,
+      heading: "Data-Driven Optimization",
+    },
+    {
+      id: 5,
+      heading: "Customer Engagement",
+    },
+  ],
+  webDesign: [
+    {
+      id: 1,
+      heading: "",
+      text: "Designed specifically for your audience, business goals, and industry trends.",
+    },
+    {
+      id: 2,
+      heading: "",
+      text: "Integrates SEO, PPC, content marketing, email marketing, and social media.",
+    },
+    {
+      id: 3,
+      heading: "",
+      text: "Ensures brand consistency through personalized visuals, messaging, and storytelling.",
+    },
+    {
+      id: 4,
+      heading: "",
+      text: "Uses deep analytics, A/B testing, and real-time data to optimize campaigns.",
+    },
+    {
+      id: 5,
+      heading: "",
+      text: "Creates interactive campaigns that foster long-term engagement.",
+    },
+  ],
+  webTemp: [
+    {
+      id: 1,
+      heading: "",
+      text: "",
+    },
+    {
+      id: 2,
+      heading: "",
+      text: "Focuses on a single predefined channel, lacking synergy between platforms.",
+    },
+    {
+      id: 3,
+      heading: "",
+      text: "Uses a one-size-fits-all approach, making differentiation difficult",
+    },
+    {
+      id: 4,
+      heading: "",
+      text: "Provides standard performance metrics without tailored insights",
+    },
+    {
+      id: 5,
+      heading: "",
+      text: "Relies on automated processes, reducing personalized interaction.",
+    },
+  ],
+};
+
+export const digiFaqsData = [
+  {
+    id: "01",
+    question: "What is the role of content marketing in digital marketing?",
+    answer:
+      "Content marketing helps businesses engage audiences, improve brand authority, and drive organic traffic through blogs, videos, and social media.",
+  },
+  {
+    id: "02",
+    question: "How does PPC advertising differ from organic SEO?",
+    answer:
+      "PPC (Pay-Per-Click) provides immediate traffic through paid ads, while organic SEO takes longer but delivers sustainable, long-term results.",
+  },
+  {
+    id: "03",
+    question: "What are the best social media platforms for digital marketing?",
+    answer:
+      "The best platforms depend on the audience—LinkedIn for B2B, Instagram & TikTok for brand awareness, Facebook for ads, and Twitter for real-time engagement",
+  },
+  {
+    id: "04",
+    question: "How does email marketing boost customer retention?",
+    answer:
+      "Email marketing allows businesses to send personalized offers, automate follow-ups, and nurture leads, increasing conversions and customer loyalty",
+  },
+  {
+    id: "05",
+    question: "Why is conversion rate optimization (CRO) important in digital marketing?",
+    answer:
+      "CRO improves website design, landing pages, and CTAs to turn visitors into customers, maximizing the ROI of ad spend and marketing campaigns",
+  },
+  {
+    id: "06",
+    question: "How can businesses measure the success of digital marketing campaigns?",
+    answer:
+      "Success is measured through KPIs like website traffic, engagement rates, conversion rates, ROI, and customer acquisition cost (CAC).",
   },
 ];

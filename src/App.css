@@ -140,8 +140,26 @@ h2.wi_ctaHeading {
 .wi_processNo {
   -webkit-text-fill-color: #00bcd400;
   -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #00e2fa;
+  -webkit-text-stroke-color: white;
   opacity: 0.3;
+}
+
+.wi_process{
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 5s ease-in-out infinite alternate;
+  opacity: 1;
+  -webkit-text-stroke-width: 2px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00e2fa, 0 0 10px #00e2fa, 0 0 10px #00e2fa, 0 0 10px #00e2fa, 0 0 10px #00e2fa, 0 0 10px #00e2fa, 0 0 10px #00e2fa;
+  }
+  to {
+    text-shadow: 0 0 2px #00e2fa, 0 0 3px #00e2fa, 0 0 4px #00e2fa, 0 0 5px #00e2fa, 0 0 6px #00e2fa, 0 0 7px #00e2fa, 0 0 8px #00e2fa;
+  }
 }
 
 .wi_video {
@@ -209,4 +227,26 @@ div#hs-form-virality-container {
 .wi_social:hover {
  transform: scale(1.5);
  transition: 1s;
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+    opacity: 1;
+  }
+  50% {
+    background-position: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    background-position: 0% 0%;
+    opacity: 0;
+  }
+}
+
+.animate-gradientMove {
+  background-image: linear-gradient(to right, rgb(14 32 115), rgb(93 65 202));
+  background-size: 200% 500%;
+  animation: gradientMove 5s linear infinite;
 }
