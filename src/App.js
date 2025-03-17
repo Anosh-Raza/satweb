@@ -25,37 +25,38 @@ import Content from './pages/services/contentWriting';
 import PPC from './pages/services/ppc';
 import MobileApp from './pages/services/mobileApp';
 import Ecommerce from './pages/services/ecommerce';
-
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
-     <HelmetProvider>
-    <Header/>
-    <Routes>
-      <Route path='/' element={<Home/>} />
-      <Route path='/about-us' element={<About/>} />
-      <Route path='/services' element={<Services/>} />
-      <Route path='/portfolio' element={<Portfolio/>} />
-      <Route path='/packages' element={<Packages/>} />
-      <Route path='/blogs' element={<Blogs/>} />
-      <Route path='/contact' element={<Contact  />} />
-      <Route path="/amazon-marketing-services" element={<Amazon />} />
-      <Route path="/etsy-marketing-services" element={<Etsy />} />
-      <Route path="/ebay-marketing-services" element={<Ebay />} />
-      <Route path="/digital-marketing-services" element={<Digital />} />
-      <Route path="/shopify-development-services" element={<Shopify />} />
-      <Route path="/logo-branding-services" element={<LogoBranding />} />
-      <Route path="/web-development-services" element={<WebDevs />} />
-      <Route path="/search-engine-optimization" element={<SEO />} />
-      <Route path="/social-media-marketing-services" element={<SMM />} />
-      <Route path="/content-writing-services" element={<Content />} />
-      <Route path="/pay-per-click" element={<PPC />} />
-      <Route path="/mobile-app-development-services" element={<MobileApp />} />
-      <Route path="/ecommerce-services" element={<Ecommerce />} />
-    </Routes>
-    <Footer/>
-    </HelmetProvider>
+      <HelmetProvider>
+        <Header />
+        <ScrollToTop /> {/* Move ScrollToTop here, outside Routes */}
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about-us' element={<About />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/packages' element={<Packages />} />
+          <Route path='/blogs' element={<Blogs />} />
+          <Route path='/contact-us' element={<Contact />} />
+          <Route path="/amazon-marketing-services" element={<Amazon />} />
+          <Route path="/etsy-marketing-services" element={<Etsy />} />
+          <Route path="/ebay-marketing-services" element={<Ebay />} />
+          <Route path="/digital-marketing-services" element={<Digital />} />
+          <Route path="/shopify-development-services" element={<Shopify />} />
+          <Route path="/logo-branding-services" element={<LogoBranding />} />
+          <Route path="/web-development-services" element={<WebDevs />} />
+          <Route path="/search-engine-optimization" element={<SEO />} />
+          <Route path="/social-media-marketing-services" element={<SMM />} />
+          <Route path="/content-writing-services" element={<Content />} />
+          <Route path="/pay-per-click" element={<PPC />} />
+          <Route path="/mobile-app-development-services" element={<MobileApp />} />
+          <Route path="/ecommerce-services" element={<Ecommerce />} />
+        </Routes>
+        <Footer />
+      </HelmetProvider>
     </>
   );
 }

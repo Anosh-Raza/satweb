@@ -41,11 +41,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="container mx-auto flex justify-between py-12">
+      <div className="container mx-auto sm:flex justify-between py-12 px-4">
         <div className="logoFooter">
           <img src={logo} alt={logo} width={80} />
         </div>
-        <div className="w-1/2">
+        <div className="sm:w-1/2 pt-6">
           <p>
             We are a full-service digital solution agency focusing on branding,
             marketing, web design, and development with clients ranging from

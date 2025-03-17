@@ -4974,3 +4974,47 @@ export const digiFaqsData = [
       "Success is measured through KPIs like website traffic, engagement rates, conversion rates, ROI, and customer acquisition cost (CAC).",
   },
 ];
+
+// data.js
+export const contactData = {
+  title: "Contact Us",
+  description:
+    "Have questions or need assistance? Reach out to us! We're here to help you with your queries and provide the best solutions.",
+  contactInfo: [
+    {
+      id: 1,
+      icon: "bi bi-telephone", // Bootstrap Icons
+      title: "Phone",
+      details: "+1 (800) 886-9095",
+    },
+    {
+      id: 2,
+      icon: "bi bi-envelope", // Bootstrap Icons
+      title: "Email",
+      details: "info@satamericana.com",
+    },
+    {
+      id: 3,
+      icon: "bi bi-geo-alt", // Bootstrap Icons
+      title: "Address",
+      details: "Washington DC, USA",
+    },
+  ],
+  socialMedia: [
+    {
+      id: 1,
+      icon: "bi bi-facebook", // Bootstrap Icons
+      link: "https://facebook.com/satamericana",
+    },
+    {
+      id: 2,
+      icon: "bi bi-instagram", // Bootstrap Icons
+      link: "https://instagram.com/satamericana",
+    },
+    {
+      id: 3,
+      icon: "bi bi-twitter", // Bootstrap Icons
+      link: "https://twitter.com/satamericana",
+    },
+  ],
+};

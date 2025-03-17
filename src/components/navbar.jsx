@@ -211,7 +211,7 @@ function Navbar() {
             </li>
             <li className="relative group">
               <button className="hover:text-gray-300">
-                <Link to="/services" className="hover:text-gray-300">
+                <Link to="#" className="hover:text-gray-300">
                   Services <i className="bi bi-chevron-down ml-2"></i>
                 </Link>
               </button>
